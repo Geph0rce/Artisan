@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>desc</key>
+		<string>不开启</string>
+		<key>time</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>10分钟</string>
+		<key>time</key>
+		<string>600</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>20分钟</string>
+		<key>time</key>
+		<string>1200</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>30分钟</string>
+		<key>time</key>
+		<string>1800</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>60分钟</string>
+		<key>time</key>
+		<string>3600</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>90分钟</string>
+		<key>time</key>
+		<string>5400</string>
+	</dict>
+</array>
+</plist>

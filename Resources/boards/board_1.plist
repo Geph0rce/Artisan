@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>gid</key>
+		<string>6</string>
+		<key>name</key>
+		<string>流行</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>8</string>
+		<key>name</key>
+		<string>摇滚</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>4</string>
+		<key>name</key>
+		<string>民谣</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>3</string>
+		<key>name</key>
+		<string>电子</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>5</string>
+		<key>name</key>
+		<string>爵士</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>2</string>
+		<key>name</key>
+		<string>轻音乐</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>1</string>
+		<key>name</key>
+		<string>古典</string>
+	</dict>
+	<dict>
+		<key>gid</key>
+		<string>7</string>
+		<key>name</key>
+		<string>说唱</string>
+	</dict>
+</array>
+</plist>

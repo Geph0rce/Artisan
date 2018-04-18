@@ -6,7 +6,6 @@
 //  Copyright (c) 2013年 Zen. All rights reserved.
 //
 
-#import "MobClick.h"
 
 #import "ZenMacros.h"
 #import "ZenConfig.h"
@@ -25,8 +24,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [MobClick startWithAppkey:kZenUmengAppKey reportPolicy:SEND_ON_EXIT channelId:@"AppStore"];
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     UIViewController *controller = [[ZenHotSongsController alloc] init];

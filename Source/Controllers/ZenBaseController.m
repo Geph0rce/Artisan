@@ -57,14 +57,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+   
     self.view.backgroundColor = [UIColor blackColor];
     
     UIView *container = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:container];
     _container = container;
     _container.backgroundColor = kZenBackgroundColor;
-    
+    [container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
     UIView *mask = [[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:mask];
     mask.alpha = 0.1f;

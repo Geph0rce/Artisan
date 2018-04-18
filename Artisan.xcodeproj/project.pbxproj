@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351B20873C31007C4163 /* NSString+RFNetworking.m */; };
+		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
+		16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352020873C32007C4163 /* RFNetworkTask.m */; };
+		16F5352620873C32007C4163 /* RFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352220873C32007C4163 /* RFNetworkManager.m */; };
 		7F328CF9F44E77E265FF9E57 /* libPods-Artisan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */; };
 		DB121462180F86A900C7C1EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121461180F86A900C7C1EE /* Foundation.framework */; };
 		DB121464180F86A900C7C1EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121463180F86A900C7C1EE /* CoreGraphics.framework */; };
@@ -100,7 +104,6 @@
 		DBE9DA5719BE97190068C1C3 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93319BE97190068C1C3 /* XPathQuery.m */; };
 		DBE9DA5819BE97190068C1C3 /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */; };
 		DBE9DA5919BE97190068C1C3 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93919BE97190068C1C3 /* UIImage+GIF.m */; };
-		DBE9DA5A19BE97190068C1C3 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE9D93B19BE97190068C1C3 /* libMobClickLibrary.a */; };
 		DBE9DA6419BE9AE70068C1C3 /* ZenColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */; };
 		DBE9DA6519BE9AE70068C1C3 /* ZenConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6319BE9AE70068C1C3 /* ZenConfig.m */; };
 		DBE9DA6919BE9D670068C1C3 /* ZenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6819BE9D670068C1C3 /* ZenTableViewCell.m */; };
@@ -303,6 +306,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16F5351920873C31007C4163 /* RFNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkTask.h; sourceTree = "<group>"; };
+		16F5351A20873C31007C4163 /* RFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkManager.h; sourceTree = "<group>"; };
+		16F5351B20873C31007C4163 /* NSString+RFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RFNetworking.m"; sourceTree = "<group>"; };
+		16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CRFNetworking.m"; sourceTree = "<group>"; };
+		16F5351D20873C32007C4163 /* RFNetworkingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkingMacros.h; sourceTree = "<group>"; };
+		16F5351E20873C32007C4163 /* UIViewController+CRFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CRFNetworking.h"; sourceTree = "<group>"; };
+		16F5351F20873C32007C4163 /* NSString+RFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RFNetworking.h"; sourceTree = "<group>"; };
+		16F5352020873C32007C4163 /* RFNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNetworkTask.m; sourceTree = "<group>"; };
+		16F5352120873C32007C4163 /* RFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworking.h; sourceTree = "<group>"; };
+		16F5352220873C32007C4163 /* RFNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNetworkManager.m; sourceTree = "<group>"; };
 		A98958DCF04C9DA9A2F65A96 /* Pods-Artisan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artisan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artisan/Pods-Artisan.debug.xcconfig"; sourceTree = "<group>"; };
 		AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Artisan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB12145E180F86A900C7C1EE /* Artisan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artisan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -493,8 +506,6 @@
 		DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MLPFlatColors.m"; sourceTree = "<group>"; };
 		DBE9D93819BE97190068C1C3 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		DBE9D93919BE97190068C1C3 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
-		DBE9D93B19BE97190068C1C3 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		DBE9D93C19BE97190068C1C3 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		DBE9DA6019BE9AE70068C1C3 /* ZenColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenColorManager.h; sourceTree = "<group>"; };
 		DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenColorManager.m; sourceTree = "<group>"; };
 		DBE9DA6219BE9AE70068C1C3 /* ZenConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenConfig.h; sourceTree = "<group>"; };
@@ -738,7 +749,6 @@
 			files = (
 				DBBAF1EE195D51F9004FE37B /* libz.dylib in Frameworks */,
 				DB1A06B7190E1A7E00F1924F /* AudioToolbox.framework in Frameworks */,
-				DBE9DA5A19BE97190068C1C3 /* libMobClickLibrary.a in Frameworks */,
 				DB121464180F86A900C7C1EE /* CoreGraphics.framework in Frameworks */,
 				DB817FF3183110660053BC69 /* QuartzCore.framework in Frameworks */,
 				DBB7B2E718238DCA00FDFC0B /* libxml2.2.dylib in Frameworks */,
@@ -751,6 +761,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16F5351820873C1B007C4163 /* RFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				16F5351F20873C32007C4163 /* NSString+RFNetworking.h */,
+				16F5351B20873C31007C4163 /* NSString+RFNetworking.m */,
+				16F5352120873C32007C4163 /* RFNetworking.h */,
+				16F5351D20873C32007C4163 /* RFNetworkingMacros.h */,
+				16F5351A20873C31007C4163 /* RFNetworkManager.h */,
+				16F5352220873C32007C4163 /* RFNetworkManager.m */,
+				16F5351920873C31007C4163 /* RFNetworkTask.h */,
+				16F5352020873C32007C4163 /* RFNetworkTask.m */,
+				16F5351E20873C32007C4163 /* UIViewController+CRFNetworking.h */,
+				16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */,
+			);
+			path = RFNetworking;
+			sourceTree = "<group>";
+		};
 		B6AD9DBAF1EE24D24E6DAC23 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,6 +1085,7 @@
 		DBE9D91519BE97190068C1C3 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				16F5351820873C1B007C4163 /* RFNetworking */,
 				DB5C0CEE19E78273008B43C8 /* Reachability */,
 				DB24CA4119D2F1C800C307A8 /* DouAudioStreamer */,
 				DBE9DBEC19BED02A0068C1C3 /* DoubanArtist */,
@@ -1067,7 +1095,6 @@
 				DBE9D92D19BE97190068C1C3 /* TFHpple */,
 				DBE9D93419BE97190068C1C3 /* UIColor+MLPFlatColors */,
 				DBE9D93719BE97190068C1C3 /* UIImage+Gif */,
-				DBE9D93A19BE97190068C1C3 /* UMAnalytics */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -1142,15 +1169,6 @@
 				DBE9D93919BE97190068C1C3 /* UIImage+GIF.m */,
 			);
 			path = "UIImage+Gif";
-			sourceTree = "<group>";
-		};
-		DBE9D93A19BE97190068C1C3 /* UMAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9D93B19BE97190068C1C3 /* libMobClickLibrary.a */,
-				DBE9D93C19BE97190068C1C3 /* MobClick.h */,
-			);
-			path = UMAnalytics;
 			sourceTree = "<group>";
 		};
 		DBE9DA8819BEACE20068C1C3 /* Artisan Tests */ = {
@@ -1785,14 +1803,18 @@
 				DB5C0CFA19E7BFC8008B43C8 /* ZenHtmlController.m in Sources */,
 				DB5C0CCF19E65A8A008B43C8 /* ZenSettingsController.m in Sources */,
 				DBE9DA0319BE97190068C1C3 /* ZenBaseController.m in Sources */,
+				16F5352620873C32007C4163 /* RFNetworkManager.m in Sources */,
 				DBE9DA9819BEC30A0068C1C3 /* ZenHotSongsController.m in Sources */,
 				DBE9DC9019C170250068C1C3 /* ZenHotArtistsController.m in Sources */,
 				DBE9DC5C19C01E6A0068C1C3 /* ZenProfileView.m in Sources */,
 				DBE9DA5819BE97190068C1C3 /* UIColor+MLPFlatColors.m in Sources */,
+				16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */,
 				DBE9DBF019BED02A0068C1C3 /* DoubanArtist.m in Sources */,
 				DBE9DC6C19C029400068C1C3 /* ZenAlbumData.m in Sources */,
 				DB5C0CE719E773F8008B43C8 /* ZenTimeCell.m in Sources */,
 				DBE9DA3519BE97190068C1C3 /* EGOLoadMoreTableFooterView.m in Sources */,
+				16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */,
+				16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */,
 				DB24CA6F19D2F1C800C307A8 /* DOUAudioFileProvider.m in Sources */,
 				DBE9DC4B19BFECE50068C1C3 /* ZenCategoryModel.m in Sources */,
 				DBE9DA0419BE97190068C1C3 /* ZenBoardsController.m in Sources */,
@@ -1866,7 +1888,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1898,7 +1920,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1928,12 +1950,9 @@
 				);
 				INFOPLIST_FILE = "Artisan/Artisan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vender/UMAnalytics",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = Artisan;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1972,7 +1991,7 @@
 					"$(PROJECT_DIR)/Vender/UMAnalytics",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = Artisan;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

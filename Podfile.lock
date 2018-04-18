@@ -1,4 +1,20 @@
 PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - FLEX (2.4.0)
   - Masonry (1.1.0)
   - RFCommonUI (0.1.0):
     - Masonry
@@ -27,19 +43,26 @@ PODS:
   - RFFoundation/Preprocessors (0.1.1)
   - RFTypeface (0.1.2):
     - RFFoundation
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - AFNetworking
+  - FLEX (~> 2.0)
   - Masonry
   - RFCommonUI
   - RFFoundation
   - RFTypeface
+  - YYModel
 
 SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RFCommonUI: 6a0919a76c683c9e7f0a53a7fb32cbbe60469d7f
   RFFoundation: 9c10f17a70521341c0fae0e7cb65d9ed08ffb451
   RFTypeface: 29c527c76ee5ce363bc414beb518f44ac0b6ab65
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: bcae64adfb5d7a3c7af436d2640451b222110076
+PODFILE CHECKSUM: fab08676e8aba2d9007b8f2270ba200f7b8fd97f
 
 COCOAPODS: 1.3.1

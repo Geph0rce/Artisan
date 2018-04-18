@@ -12,5 +12,8 @@ target 'Artisan' do
   pod 'RFFoundation'
   pod 'RFCommonUI'
   pod 'Masonry'
+  pod 'YYModel'
+  pod 'AFNetworking'
+  pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 
 end

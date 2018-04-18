@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F328CF9F44E77E265FF9E57 /* libPods-Artisan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */; };
 		DB121462180F86A900C7C1EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121461180F86A900C7C1EE /* Foundation.framework */; };
 		DB121464180F86A900C7C1EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121463180F86A900C7C1EE /* CoreGraphics.framework */; };
 		DB121466180F86A900C7C1EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121465180F86A900C7C1EE /* UIKit.framework */; };
@@ -317,6 +318,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A98958DCF04C9DA9A2F65A96 /* Pods-Artisan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artisan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artisan/Pods-Artisan.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Artisan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB12145E180F86A900C7C1EE /* Artisan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artisan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB121461180F86A900C7C1EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB121463180F86A900C7C1EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -741,6 +744,7 @@
 		DBEE934219D8F00B00DB920F /* ZenOfflineArtistData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineArtistData.m; sourceTree = "<group>"; };
 		DBFB6F781833B27100AABDE1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DBFB6F7A1833C4BF00AABDE1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F2E119E66395ECA4C214C999 /* Pods-Artisan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artisan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Artisan/Pods-Artisan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -756,6 +760,7 @@
 				DBB7B2E718238DCA00FDFC0B /* libxml2.2.dylib in Frameworks */,
 				DB121466180F86A900C7C1EE /* UIKit.framework in Frameworks */,
 				DB121462180F86A900C7C1EE /* Foundation.framework in Frameworks */,
+				7F328CF9F44E77E265FF9E57 /* libPods-Artisan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,6 +777,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6AD9DBAF1EE24D24E6DAC23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98958DCF04C9DA9A2F65A96 /* Pods-Artisan.debug.xcconfig */,
+				F2E119E66395ECA4C214C999 /* Pods-Artisan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB121455180F86A900C7C1EE = {
 			isa = PBXGroup;
 			children = (
@@ -782,6 +796,7 @@
 				DBE9DA8819BEACE20068C1C3 /* Artisan Tests */,
 				DB121460180F86A900C7C1EE /* Frameworks */,
 				DB12145F180F86A900C7C1EE /* Products */,
+				B6AD9DBAF1EE24D24E6DAC23 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -829,6 +844,7 @@
 				DB121463180F86A900C7C1EE /* CoreGraphics.framework */,
 				DB121465180F86A900C7C1EE /* UIKit.framework */,
 				DB12147A180F86A900C7C1EE /* XCTest.framework */,
+				AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1417,9 +1433,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB12148A180F86A900C7C1EE /* Build configuration list for PBXNativeTarget "Artisan" */;
 			buildPhases = (
+				20087022B113D48D7A0BED1D /* [CP] Check Pods Manifest.lock */,
 				DB12145A180F86A900C7C1EE /* Sources */,
 				DB12145B180F86A900C7C1EE /* Frameworks */,
 				DB12145C180F86A900C7C1EE /* Resources */,
+				6CAE334809C4ECF1A04845A2 /* [CP] Embed Pods Frameworks */,
+				160A46B6BD446D36D9C8A7C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1701,6 +1720,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		160A46B6BD446D36D9C8A7C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Artisan/Pods-Artisan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20087022B113D48D7A0BED1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artisan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CAE334809C4ECF1A04845A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Artisan/Pods-Artisan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB12145A180F86A900C7C1EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1908,6 +1978,7 @@
 		};
 		DB12148B180F86A900C7C1EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98958DCF04C9DA9A2F65A96 /* Pods-Artisan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1943,6 +2014,7 @@
 		};
 		DB12148C180F86A900C7C1EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E119E66395ECA4C214C999 /* Pods-Artisan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -11,6 +11,10 @@
 		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
 		16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352020873C32007C4163 /* RFNetworkTask.m */; };
 		16F5352620873C32007C4163 /* RFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352220873C32007C4163 /* RFNetworkManager.m */; };
+		16F5352F2089CD70007C4163 /* ZenTopSongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352E2089CD70007C4163 /* ZenTopSongsViewController.m */; };
+		16F535352089CF97007C4163 /* RFScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F535312089CF97007C4163 /* RFScreen.m */; };
+		16F535362089CF97007C4163 /* AIFMasonryMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F535342089CF97007C4163 /* AIFMasonryMacro.m */; };
+		16F5353A2089E3A9007C4163 /* ZenBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F535392089E3A9007C4163 /* ZenBaseViewController.m */; };
 		7F328CF9F44E77E265FF9E57 /* libPods-Artisan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */; };
 		DB121462180F86A900C7C1EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121461180F86A900C7C1EE /* Foundation.framework */; };
 		DB121464180F86A900C7C1EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121463180F86A900C7C1EE /* CoreGraphics.framework */; };
@@ -316,6 +320,14 @@
 		16F5352020873C32007C4163 /* RFNetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNetworkTask.m; sourceTree = "<group>"; };
 		16F5352120873C32007C4163 /* RFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworking.h; sourceTree = "<group>"; };
 		16F5352220873C32007C4163 /* RFNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFNetworkManager.m; sourceTree = "<group>"; };
+		16F5352D2089CD70007C4163 /* ZenTopSongsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTopSongsViewController.h; sourceTree = "<group>"; };
+		16F5352E2089CD70007C4163 /* ZenTopSongsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTopSongsViewController.m; sourceTree = "<group>"; };
+		16F535312089CF97007C4163 /* RFScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFScreen.m; sourceTree = "<group>"; };
+		16F535322089CF97007C4163 /* RFScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFScreen.h; sourceTree = "<group>"; };
+		16F535332089CF97007C4163 /* AIFMasonryMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFMasonryMacro.h; sourceTree = "<group>"; };
+		16F535342089CF97007C4163 /* AIFMasonryMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFMasonryMacro.m; sourceTree = "<group>"; };
+		16F535382089E3A9007C4163 /* ZenBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenBaseViewController.h; sourceTree = "<group>"; };
+		16F535392089E3A9007C4163 /* ZenBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenBaseViewController.m; sourceTree = "<group>"; };
 		A98958DCF04C9DA9A2F65A96 /* Pods-Artisan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artisan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Artisan/Pods-Artisan.debug.xcconfig"; sourceTree = "<group>"; };
 		AA4AC30CA2E8861C67A2A689 /* libPods-Artisan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Artisan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB12145E180F86A900C7C1EE /* Artisan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artisan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -778,6 +790,70 @@
 			path = RFNetworking;
 			sourceTree = "<group>";
 		};
+		16F535282089CCFC007C4163 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C0CFE19E7C119008B43C8 /* about.html */,
+				DBE9D7B419BE97180068C1C3 /* AppDelegate.h */,
+				DBE9D7B519BE97180068C1C3 /* AppDelegate.m */,
+				DBE9D7B619BE97180068C1C3 /* Artisan-Info.plist */,
+				DBE9D7B719BE97180068C1C3 /* Artisan-Prefix.pch */,
+				DBE9D7BD19BE97190068C1C3 /* InfoPlist.strings */,
+				DBE9D7BF19BE97190068C1C3 /* Images.xcassets */,
+				DBE9D7C019BE97190068C1C3 /* main.m */,
+				DB5C0CEC19E77735008B43C8 /* Artisan-timer.plist */,
+				DB19A7B119F8A5A3006892BC /* ArtisanApplication.h */,
+				DB19A7B219F8A5A3006892BC /* ArtisanApplication.m */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		16F535292089CD21007C4163 /* Top Song */ = {
+			isa = PBXGroup;
+			children = (
+				16F5352C2089CD5B007C4163 /* Controller */,
+			);
+			path = "Top Song";
+			sourceTree = "<group>";
+		};
+		16F5352A2089CD30007C4163 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				16F535372089E396007C4163 /* Controller */,
+				16F535302089CF83007C4163 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		16F5352C2089CD5B007C4163 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16F5352D2089CD70007C4163 /* ZenTopSongsViewController.h */,
+				16F5352E2089CD70007C4163 /* ZenTopSongsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16F535302089CF83007C4163 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				16F535332089CF97007C4163 /* AIFMasonryMacro.h */,
+				16F535342089CF97007C4163 /* AIFMasonryMacro.m */,
+				16F535322089CF97007C4163 /* RFScreen.h */,
+				16F535312089CF97007C4163 /* RFScreen.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		16F535372089E396007C4163 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16F535382089E3A9007C4163 /* ZenBaseViewController.h */,
+				16F535392089E3A9007C4163 /* ZenBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B6AD9DBAF1EE24D24E6DAC23 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,17 +984,9 @@
 		DBE9D7B319BE97180068C1C3 /* Artisan */ = {
 			isa = PBXGroup;
 			children = (
-				DB5C0CFE19E7C119008B43C8 /* about.html */,
-				DBE9D7B419BE97180068C1C3 /* AppDelegate.h */,
-				DBE9D7B519BE97180068C1C3 /* AppDelegate.m */,
-				DBE9D7B619BE97180068C1C3 /* Artisan-Info.plist */,
-				DBE9D7B719BE97180068C1C3 /* Artisan-Prefix.pch */,
-				DBE9D7BD19BE97190068C1C3 /* InfoPlist.strings */,
-				DBE9D7BF19BE97190068C1C3 /* Images.xcassets */,
-				DBE9D7C019BE97190068C1C3 /* main.m */,
-				DB5C0CEC19E77735008B43C8 /* Artisan-timer.plist */,
-				DB19A7B119F8A5A3006892BC /* ArtisanApplication.h */,
-				DB19A7B219F8A5A3006892BC /* ArtisanApplication.m */,
+				16F5352A2089CD30007C4163 /* Common */,
+				16F535292089CD21007C4163 /* Top Song */,
+				16F535282089CCFC007C4163 /* Support Files */,
 			);
 			path = Artisan;
 			sourceTree = "<group>";
@@ -1761,6 +1829,7 @@
 				DB9800B519D7F73D00BB36B5 /* ZenSwitchHeader.m in Sources */,
 				DB5C0CDF19E76D5D008B43C8 /* ZenOpenTimerController.m in Sources */,
 				DBE9DA2919BE97190068C1C3 /* GCDHelper.m in Sources */,
+				16F535362089CF97007C4163 /* AIFMasonryMacro.m in Sources */,
 				DB5C0CCB19E62E00008B43C8 /* ZenOfflineSongsController.m in Sources */,
 				DBE9DA3E19BE97190068C1C3 /* ZenMenuItem.m in Sources */,
 				DB9800B219D7DB7800BB36B5 /* ZenToast.m in Sources */,
@@ -1777,6 +1846,7 @@
 				DBE9DC8C19C1482A0068C1C3 /* ZenPlayerCell.m in Sources */,
 				DB24CA7419D2F1C800C307A8 /* DOUAudioSpatialAnalyzer.m in Sources */,
 				DBE9DBE219BECBDE0068C1C3 /* ZenLoadingController.m in Sources */,
+				16F5352F2089CD70007C4163 /* ZenTopSongsViewController.m in Sources */,
 				DB24CA6D19D2F1C800C307A8 /* DOUAudioEventLoop.m in Sources */,
 				DB9800A319D7AC5300BB36B5 /* ZenOfflineCell.m in Sources */,
 				DBE9DA5919BE97190068C1C3 /* UIImage+GIF.m in Sources */,
@@ -1826,9 +1896,11 @@
 				DBE9DC4F19BFED080068C1C3 /* ZenArtistCell.m in Sources */,
 				DBE9DC6819C024AE0068C1C3 /* ZenAlbumCell.m in Sources */,
 				DBE9D94A19BE97190068C1C3 /* AppDelegate.m in Sources */,
+				16F5353A2089E3A9007C4163 /* ZenBaseViewController.m in Sources */,
 				DBEE934319D8F00B00DB920F /* ZenOfflineArtistData.m in Sources */,
 				DBE9DA3F19BE97190068C1C3 /* ZenMoreOptionsView.m in Sources */,
 				DBE9DA3C19BE97190068C1C3 /* ZenLoadingView.m in Sources */,
+				16F535352089CF97007C4163 /* RFScreen.m in Sources */,
 				DBE9DC6419C0213C0068C1C3 /* ZenAlbumModel.m in Sources */,
 				DB5C0CF119E78273008B43C8 /* Reachability.m in Sources */,
 			);
@@ -1942,13 +2014,13 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Artisan/Artisan-Prefix.pch";
+				GCC_PREFIX_HEADER = "Artisan/Support Files/Artisan-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "Artisan/Artisan-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Artisan/Support Files/Artisan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
@@ -1978,13 +2050,13 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Artisan/Artisan-Prefix.pch";
+				GCC_PREFIX_HEADER = "Artisan/Support Files/Artisan-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				INFOPLIST_FILE = "Artisan/Artisan-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Artisan/Support Files/Artisan-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

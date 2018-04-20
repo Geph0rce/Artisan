@@ -19,6 +19,7 @@
     #import <RFCommonUI/RFCommonUI.h>
     #import <YYModel/YYModel.h>
     #import <AFNetworking/AFNetworking.h>
+    #import "AIFMasonryMacro.h"
 #endif
 
 #if !DEBUG

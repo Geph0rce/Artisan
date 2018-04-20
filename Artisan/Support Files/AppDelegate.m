@@ -13,6 +13,7 @@
 
 #import "ZenBoardsController.h"
 #import "ZenHotSongsController.h"
+#import "ZenTopSongsViewController.h"
 
 #define kZenUmengAppKey @"5438c92efd98c54d1f024b81"
 
@@ -26,7 +27,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UIViewController *controller = [[ZenHotSongsController alloc] init];
+    UIViewController *controller = [[ZenTopSongsViewController alloc] init];
     DDMenuController *menuController = [[DDMenuController alloc] initWithRootViewController:controller];
     ZenBoardsController *leftController = [ZenBoardsController sharedInstance];
     menuController.leftViewController = leftController;
@@ -34,7 +35,6 @@
     self.window.rootViewController = menuController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     return YES;
 }
 

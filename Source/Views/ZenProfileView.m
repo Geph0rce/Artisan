@@ -27,7 +27,7 @@
 
 - (void)load:(ZenArtistData *)artist
 {
-    [_picture setImageWithURL:[NSURL URLWithString:artist.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
+    [_picture sd_setImageWithURL:[NSURL URLWithString:artist.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
     _name.text = artist.name;
     _follower.text = [NSString stringWithFormat:@"%@人关注", artist.follower];
     _style.text = artist.style;

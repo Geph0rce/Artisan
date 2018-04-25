@@ -29,7 +29,7 @@
 
 - (void)load:(ZenOfflineArtistData *)artist
 {
-    [_picture setImageWithURL:[NSURL URLWithString:artist.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
+    [_picture sd_setImageWithURL:[NSURL URLWithString:artist.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
     _info.text = [NSString stringWithFormat:@"%@ (%lu)", artist.name, (unsigned long)artist.count];
 }
 

@@ -6,9 +6,10 @@
 //  Copyright © 2018 Zen. All rights reserved.
 //
 
+#import "ZenTopSongRow.h"
 #import "ZenTopSongsViewController.h"
 
-@interface ZenTopSongsViewController ()
+@interface ZenTopSongsViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) RFTableView *tableView;
 @property (nonatomic, strong) RFTableDataSource *dataSource;
@@ -20,8 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"热门歌曲";
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.tableView];
+    FORBIDDEN_ADJUST_SCROLLVIEW_INSETS(self, self.tableView);
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make_top_equalTo(self.topViewAttribute);
+        make.right.left.bottom.mas_equalTo(self.view);
+    }];
     [self reloadData];
 }
 
@@ -29,12 +36,25 @@
     [self startActivityIndicator];
     weakify(self);
     NSString *url = [[DoubanArtist sharedInstance] songs];
-    [self get:url params:nil complete:^(__kindof NSObject * _Nullable response, NSInteger statusCode, NSError * _Nullable error) {
+    [self get:url params:nil complete:^(__kindof NSObject * _Nullable responseData, NSInteger statusCode, NSError * _Nullable error) {
         strongify(self);
         [self stopActivityIndicator];
-        NSData *data = [response filter];
-        
+        NSString *json = [responseData json];
+        ZenTopSongResponse *response = [ZenTopSongResponse yy_modelWithJSON:json];
+        [self appendRows:response];
     }];
+}
+
+- (void)appendRows:(ZenTopSongResponse *)response {
+    if (response.songs.count > 0) {
+        [self.section removeAllChildren];
+        [response.songs enumerateObjectsUsingBlock:^(ZenTopSongModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ZenTopSongRow *row = [[ZenTopSongRow alloc] init];
+            row.model = obj;
+            [self.section addRow:row];
+        }];
+        [self.tableView reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,8 +71,35 @@
     return NO;
 }
 
+
 #pragma mark - Getters
 
+- (RFTableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[RFTableView alloc] init];
+        _tableView.delegate = self;
+        _tableView.dataSource = self.dataSource;
+        _tableView.estimatedRowHeight = 0.0;
+        _tableView.estimatedSectionHeaderHeight = 0.0;
+        _tableView.estimatedSectionFooterHeight = 0.0;
+    }
+    return _tableView;
+}
+
+- (RFTableDataSource *)dataSource {
+    if (!_dataSource) {
+        _dataSource = [[RFTableDataSource alloc] init];
+        [_dataSource addSection:self.section];
+    }
+    return _dataSource;
+}
+
+- (RFTableSection *)section {
+    if (!_section) {
+        _section = [[RFTableSection alloc] init];
+    }
+    return _section;
+}
 
 
 @end

@@ -14,6 +14,7 @@ target 'Artisan' do
   pod 'Masonry'
   pod 'YYModel'
   pod 'AFNetworking'
+  pod 'SDWebImage'
   pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 
 end

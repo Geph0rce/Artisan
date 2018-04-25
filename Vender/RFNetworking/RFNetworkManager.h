@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param errorType RFNetworkCompleteType
  @param response - JSON
  */
-typedef void (^RFNetworkCompleteBlock) (__kindof NSObject *_Nullable response, NSInteger statusCode, NSError * _Nullable error);
+typedef void (^RFNetworkCompleteBlock) (__kindof NSObject *_Nullable responseData, NSInteger statusCode, NSError * _Nullable error);
 typedef void (^RFNetworkProgressBlock) (NSProgress * _Nonnull uploadProgress);
 @interface RFNetworkManager : NSObject
 

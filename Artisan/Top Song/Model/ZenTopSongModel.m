@@ -11,3 +11,13 @@
 @implementation ZenTopSongModel
 
 @end
+
+@implementation ZenTopSongResponse
+
++ (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass {
+    return @{
+             @"songs" : [ZenTopSongModel class]
+            };
+}
+
+@end

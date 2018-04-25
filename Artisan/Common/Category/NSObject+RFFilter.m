@@ -10,7 +10,7 @@
 
 @implementation NSObject (RFFilter)
 
-- (NSData *)filter
+- (NSString *)json
 {
     if ([self isKindOfClass:[NSData class]]) {
         NSData *data = (NSData *)self;
@@ -19,7 +19,7 @@
             NSRange r = [str rangeOfString:@"\\{.+\\}" options:NSRegularExpressionSearch];
             if (r.location != NSNotFound) {
                 NSString *result = [str substringWithRange:r];
-                return  [result dataUsingEncoding:NSUTF8StringEncoding];
+                return result;
             }
         }
     }

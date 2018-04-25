@@ -15,7 +15,7 @@
 #define kZenFont14 [UIFont fontWithName:@"FZLTHK--GBK1-0" size:14.0f]
 #define kZenFont13 [UIFont fontWithName:@"FZLTHK--GBK1-0" size:13.0f]
 #define kZenFont10 [UIFont fontWithName:@"FZLTHK--GBK1-0" size:10.0f]
-
+#define kAppFont(sz) [UIFont fontWithName:@"FZLTHK--GBK1-0" size:sz]
 
 // Color Stuff
 

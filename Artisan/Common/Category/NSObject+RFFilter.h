@@ -10,6 +10,6 @@
 
 @interface NSObject (RFFilter)
 
-- (NSData *)filter;
+- (NSString *)json;
 
 @end

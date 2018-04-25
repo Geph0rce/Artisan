@@ -44,7 +44,7 @@
 {
     _title.text = song.name;
     _artist.text = song.artist;
-    [_picture setImageWithURL:[NSURL URLWithString:song.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
+    [_picture sd_setImageWithURL:[NSURL URLWithString:song.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
 
     // config progress bar
     if (song.progress > 0) {

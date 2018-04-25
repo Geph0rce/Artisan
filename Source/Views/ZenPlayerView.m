@@ -41,7 +41,7 @@
 {
     _name.text = song.name;
     _artist.text = song.artist;
-    [_picture setImageWithURL:[NSURL URLWithString:song.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
+    [_picture sd_setImageWithURL:[NSURL URLWithString:song.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
     if (song.status != ZenSongStatusPlay) {
         [_playBtn setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
         [_playBtn setImage:[UIImage imageNamed:@"play2"] forState:UIControlStateHighlighted];

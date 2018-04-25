@@ -78,6 +78,8 @@
 		DB24CA7919D2F1C800C307A8 /* DOUMPMediaLibraryAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA6519D2F1C800C307A8 /* DOUMPMediaLibraryAssetLoader.m */; };
 		DB24CA7A19D2F1C800C307A8 /* DOUSimpleHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA6719D2F1C800C307A8 /* DOUSimpleHTTPRequest.m */; };
 		DB24CA7B19D2F1C800C307A8 /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA6919D2F1C800C307A8 /* NSData+DOUMappedFile.m */; };
+		DB2A7A222090AD8B00EF1FD0 /* ZenTopSongRow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7A212090AD8B00EF1FD0 /* ZenTopSongRow.m */; };
+		DB2A7A262090B98900EF1FD0 /* RFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7A252090B98900EF1FD0 /* RFBaseModel.m */; };
 		DB50FDE919C2810A008E7974 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50FDE719C2810A008E7974 /* download.png */; };
 		DB50FDEA19C2810A008E7974 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50FDE819C2810A008E7974 /* download@2x.png */; };
 		DB5C0CCB19E62E00008B43C8 /* ZenOfflineSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CCA19E62E00008B43C8 /* ZenOfflineSongsController.m */; };
@@ -134,17 +136,10 @@
 		DBE9DA4819BE97190068C1C3 /* ZenStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D90C19BE97190068C1C3 /* ZenStatusBarOverlay.m */; };
 		DBE9DA4D19BE97190068C1C3 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D91819BE97190068C1C3 /* DDMenuController.m */; };
 		DBE9DA4E19BE97190068C1C3 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D91B19BE97190068C1C3 /* EGORefreshTableHeaderView.m */; };
-		DBE9DA4F19BE97190068C1C3 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D91E19BE97190068C1C3 /* SDImageCache.m */; };
-		DBE9DA5019BE97190068C1C3 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92219BE97190068C1C3 /* SDWebImageDecoder.m */; };
-		DBE9DA5119BE97190068C1C3 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92419BE97190068C1C3 /* SDWebImageDownloader.m */; };
-		DBE9DA5219BE97190068C1C3 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92719BE97190068C1C3 /* SDWebImageManager.m */; };
-		DBE9DA5319BE97190068C1C3 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92A19BE97190068C1C3 /* SDWebImagePrefetcher.m */; };
-		DBE9DA5419BE97190068C1C3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92C19BE97190068C1C3 /* UIImageView+WebCache.m */; };
 		DBE9DA5519BE97190068C1C3 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92F19BE97190068C1C3 /* TFHpple.m */; };
 		DBE9DA5619BE97190068C1C3 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93119BE97190068C1C3 /* TFHppleElement.m */; };
 		DBE9DA5719BE97190068C1C3 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93319BE97190068C1C3 /* XPathQuery.m */; };
 		DBE9DA5819BE97190068C1C3 /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */; };
-		DBE9DA5919BE97190068C1C3 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93919BE97190068C1C3 /* UIImage+GIF.m */; };
 		DBE9DA6419BE9AE70068C1C3 /* ZenColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */; };
 		DBE9DA6519BE9AE70068C1C3 /* ZenConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6319BE9AE70068C1C3 /* ZenConfig.m */; };
 		DBE9DA6919BE9D670068C1C3 /* ZenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6819BE9D670068C1C3 /* ZenTableViewCell.m */; };
@@ -497,6 +492,10 @@
 		DB24CA6719D2F1C800C307A8 /* DOUSimpleHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUSimpleHTTPRequest.m; sourceTree = "<group>"; };
 		DB24CA6819D2F1C800C307A8 /* NSData+DOUMappedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DOUMappedFile.h"; sourceTree = "<group>"; };
 		DB24CA6919D2F1C800C307A8 /* NSData+DOUMappedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DOUMappedFile.m"; sourceTree = "<group>"; };
+		DB2A7A202090AD8B00EF1FD0 /* ZenTopSongRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTopSongRow.h; sourceTree = "<group>"; };
+		DB2A7A212090AD8B00EF1FD0 /* ZenTopSongRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTopSongRow.m; sourceTree = "<group>"; };
+		DB2A7A242090B98900EF1FD0 /* RFBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFBaseModel.h; sourceTree = "<group>"; };
+		DB2A7A252090B98900EF1FD0 /* RFBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFBaseModel.m; sourceTree = "<group>"; };
 		DB416BDD18E552940020160F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DB4B42421861924D00E875FC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		DB50FDE719C2810A008E7974 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
@@ -604,22 +603,6 @@
 		DBE9D91819BE97190068C1C3 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		DBE9D91A19BE97190068C1C3 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		DBE9D91B19BE97190068C1C3 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
-		DBE9D91D19BE97190068C1C3 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
-		DBE9D91E19BE97190068C1C3 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
-		DBE9D91F19BE97190068C1C3 /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
-		DBE9D92019BE97190068C1C3 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
-		DBE9D92119BE97190068C1C3 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
-		DBE9D92219BE97190068C1C3 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
-		DBE9D92319BE97190068C1C3 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
-		DBE9D92419BE97190068C1C3 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
-		DBE9D92519BE97190068C1C3 /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
-		DBE9D92619BE97190068C1C3 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
-		DBE9D92719BE97190068C1C3 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
-		DBE9D92819BE97190068C1C3 /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
-		DBE9D92919BE97190068C1C3 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		DBE9D92A19BE97190068C1C3 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		DBE9D92B19BE97190068C1C3 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		DBE9D92C19BE97190068C1C3 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		DBE9D92E19BE97190068C1C3 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
 		DBE9D92F19BE97190068C1C3 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		DBE9D93019BE97190068C1C3 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
@@ -628,8 +611,6 @@
 		DBE9D93319BE97190068C1C3 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		DBE9D93519BE97190068C1C3 /* UIColor+MLPFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MLPFlatColors.h"; sourceTree = "<group>"; };
 		DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MLPFlatColors.m"; sourceTree = "<group>"; };
-		DBE9D93819BE97190068C1C3 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
-		DBE9D93919BE97190068C1C3 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		DBE9DA6019BE9AE70068C1C3 /* ZenColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenColorManager.h; sourceTree = "<group>"; };
 		DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenColorManager.m; sourceTree = "<group>"; };
 		DBE9DA6219BE9AE70068C1C3 /* ZenConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenConfig.h; sourceTree = "<group>"; };
@@ -1027,6 +1008,7 @@
 		16F535292089CD21007C4163 /* Top Song */ = {
 			isa = PBXGroup;
 			children = (
+				DB2A7A1F2090AD7000EF1FD0 /* Row */,
 				1672E4D62090580600916B3D /* Model */,
 				16F5352C2089CD5B007C4163 /* Controller */,
 			);
@@ -1036,6 +1018,7 @@
 		16F5352A2089CD30007C4163 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DB2A7A232090B96C00EF1FD0 /* Model */,
 				16F535372089E396007C4163 /* Controller */,
 				1672E4C62090299300916B3D /* Category */,
 				16F535302089CF83007C4163 /* Utils */,
@@ -1188,6 +1171,24 @@
 				DB24CA6919D2F1C800C307A8 /* NSData+DOUMappedFile.m */,
 			);
 			path = DouAudioStreamer;
+			sourceTree = "<group>";
+		};
+		DB2A7A1F2090AD7000EF1FD0 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A7A202090AD8B00EF1FD0 /* ZenTopSongRow.h */,
+				DB2A7A212090AD8B00EF1FD0 /* ZenTopSongRow.m */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		DB2A7A232090B96C00EF1FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB2A7A242090B98900EF1FD0 /* RFBaseModel.h */,
+				DB2A7A252090B98900EF1FD0 /* RFBaseModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DB5C0CEE19E78273008B43C8 /* Reachability */ = {
@@ -1378,10 +1379,8 @@
 				DBE9DBEC19BED02A0068C1C3 /* DoubanArtist */,
 				DBE9D91619BE97190068C1C3 /* DDMenuController */,
 				DBE9D91919BE97190068C1C3 /* RefreshTableHeaderView */,
-				DBE9D91C19BE97190068C1C3 /* SDWebImage */,
 				DBE9D92D19BE97190068C1C3 /* TFHpple */,
 				DBE9D93419BE97190068C1C3 /* UIColor+MLPFlatColors */,
-				DBE9D93719BE97190068C1C3 /* UIImage+Gif */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -1404,29 +1403,6 @@
 			path = RefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
-		DBE9D91C19BE97190068C1C3 /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9D91D19BE97190068C1C3 /* SDImageCache.h */,
-				DBE9D91E19BE97190068C1C3 /* SDImageCache.m */,
-				DBE9D91F19BE97190068C1C3 /* SDImageCacheDelegate.h */,
-				DBE9D92019BE97190068C1C3 /* SDWebImageCompat.h */,
-				DBE9D92119BE97190068C1C3 /* SDWebImageDecoder.h */,
-				DBE9D92219BE97190068C1C3 /* SDWebImageDecoder.m */,
-				DBE9D92319BE97190068C1C3 /* SDWebImageDownloader.h */,
-				DBE9D92419BE97190068C1C3 /* SDWebImageDownloader.m */,
-				DBE9D92519BE97190068C1C3 /* SDWebImageDownloaderDelegate.h */,
-				DBE9D92619BE97190068C1C3 /* SDWebImageManager.h */,
-				DBE9D92719BE97190068C1C3 /* SDWebImageManager.m */,
-				DBE9D92819BE97190068C1C3 /* SDWebImageManagerDelegate.h */,
-				DBE9D92919BE97190068C1C3 /* SDWebImagePrefetcher.h */,
-				DBE9D92A19BE97190068C1C3 /* SDWebImagePrefetcher.m */,
-				DBE9D92B19BE97190068C1C3 /* UIImageView+WebCache.h */,
-				DBE9D92C19BE97190068C1C3 /* UIImageView+WebCache.m */,
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
 		DBE9D92D19BE97190068C1C3 /* TFHpple */ = {
 			isa = PBXGroup;
 			children = (
@@ -1447,15 +1423,6 @@
 				DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */,
 			);
 			path = "UIColor+MLPFlatColors";
-			sourceTree = "<group>";
-		};
-		DBE9D93719BE97190068C1C3 /* UIImage+Gif */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9D93819BE97190068C1C3 /* UIImage+GIF.h */,
-				DBE9D93919BE97190068C1C3 /* UIImage+GIF.m */,
-			);
-			path = "UIImage+Gif";
 			sourceTree = "<group>";
 		};
 		DBE9DA8819BEACE20068C1C3 /* Artisan Tests */ = {
@@ -2037,7 +2004,6 @@
 				DBE9DA2F19BE97190068C1C3 /* ZenConnection.m in Sources */,
 				DB5C0CFD19E7C027008B43C8 /* ZenBottomBar.m in Sources */,
 				DBE9DA3319BE97190068C1C3 /* ZenStack.m in Sources */,
-				DBE9DA4F19BE97190068C1C3 /* SDImageCache.m in Sources */,
 				DB24CA7619D2F1C800C307A8 /* DOUAudioStreamer.m in Sources */,
 				DBE9DBE819BECFA90068C1C3 /* ZenHotSongsModel.m in Sources */,
 				DBE9DA6419BE9AE70068C1C3 /* ZenColorManager.m in Sources */,
@@ -2046,7 +2012,6 @@
 				DB24CA6C19D2F1C800C307A8 /* DOUAudioDecoder.m in Sources */,
 				1672E4D22090299300916B3D /* UIView+RFCorner.m in Sources */,
 				DBE9DA4819BE97190068C1C3 /* ZenStatusBarOverlay.m in Sources */,
-				DBE9DA5419BE97190068C1C3 /* UIImageView+WebCache.m in Sources */,
 				DB5C0CEB19E7769F008B43C8 /* ZenTimeData.m in Sources */,
 				1672E4C220901FF600916B3D /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
 				1672E4C320901FF600916B3D /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */,
@@ -2071,7 +2036,6 @@
 				DB24CA7719D2F1C800C307A8 /* DOUAudioVisualizer.m in Sources */,
 				DB24CA6E19D2F1C800C307A8 /* DOUAudioFilePreprocessor.m in Sources */,
 				DBE9DC6119C021280068C1C3 /* ZenAlbumController.m in Sources */,
-				DBE9DA5319BE97190068C1C3 /* SDWebImagePrefetcher.m in Sources */,
 				DB19A7B319F8A5A3006892BC /* ArtisanApplication.m in Sources */,
 				DBE9DC8C19C1482A0068C1C3 /* ZenPlayerCell.m in Sources */,
 				DB24CA7419D2F1C800C307A8 /* DOUAudioSpatialAnalyzer.m in Sources */,
@@ -2082,9 +2046,7 @@
 				1672E4B020901FF600916B3D /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				1672E4D12090299300916B3D /* UIView+RFLayout.m in Sources */,
 				DB9800A319D7AC5300BB36B5 /* ZenOfflineCell.m in Sources */,
-				DBE9DA5919BE97190068C1C3 /* UIImage+GIF.m in Sources */,
 				DBE9DA5619BE97190068C1C3 /* TFHppleElement.m in Sources */,
-				DBE9DA5219BE97190068C1C3 /* SDWebImageManager.m in Sources */,
 				1672E4B620901FF600916B3D /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
 				DBE9DA6519BE9AE70068C1C3 /* ZenConfig.m in Sources */,
 				1672E4AF20901FF600916B3D /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
@@ -2094,7 +2056,6 @@
 				1672E4D92090581500916B3D /* ZenTopSongModel.m in Sources */,
 				DBE9DC7B19C135D70068C1C3 /* ZenPlaylistController.m in Sources */,
 				1672E4B220901FF600916B3D /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
-				DBE9DA5119BE97190068C1C3 /* SDWebImageDownloader.m in Sources */,
 				1672E4AA20901FF600916B3D /* DGActivityIndicatorTriplePulseAnimation.m in Sources */,
 				1672E4AC20901FF600916B3D /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */,
 				1672E4C520901FF600916B3D /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
@@ -2105,7 +2066,6 @@
 				DB24CA7B19D2F1C800C307A8 /* NSData+DOUMappedFile.m in Sources */,
 				1672E4AE20901FF600916B3D /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
 				DBE9DC7E19C135E90068C1C3 /* ZenPlaylistModel.m in Sources */,
-				DBE9DA5019BE97190068C1C3 /* SDWebImageDecoder.m in Sources */,
 				DBE9D95319BE97190068C1C3 /* main.m in Sources */,
 				DB24CA7119D2F1C800C307A8 /* DOUAudioLPCM.m in Sources */,
 				DB24CA7819D2F1C800C307A8 /* DOUEAGLView.m in Sources */,
@@ -2129,9 +2089,11 @@
 				DBE9DBF019BED02A0068C1C3 /* DoubanArtist.m in Sources */,
 				1672E4BA20901FF600916B3D /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
 				DBE9DC6C19C029400068C1C3 /* ZenAlbumData.m in Sources */,
+				DB2A7A222090AD8B00EF1FD0 /* ZenTopSongRow.m in Sources */,
 				1672E4BB20901FF600916B3D /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */,
 				DB5C0CE719E773F8008B43C8 /* ZenTimeCell.m in Sources */,
 				DBE9DA3519BE97190068C1C3 /* EGOLoadMoreTableFooterView.m in Sources */,
+				DB2A7A262090B98900EF1FD0 /* RFBaseModel.m in Sources */,
 				1672E4B820901FF600916B3D /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
 				16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */,
 				16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */,

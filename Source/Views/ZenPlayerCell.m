@@ -25,7 +25,7 @@
 
 - (void)load:(ZenSongData *)song
 {
-    [_picture setImageWithURL:[NSURL URLWithString:song.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
+    [_picture sd_setImageWithURL:[NSURL URLWithString:song.picture] placeholderImage:[UIImage imageNamed:@"cover_default"]];
     _name.text = song.name;
     _artist.text = song.artist;
     if (song.status == ZenSongStatusNone) {

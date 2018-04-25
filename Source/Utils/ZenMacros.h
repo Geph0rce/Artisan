@@ -18,6 +18,9 @@
 
 
 // Color Stuff
+
+#define kRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define kRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define CGColorConvert(value)  (value/255.0f)
 #define ZenColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
@@ -49,9 +52,6 @@ alpha:0.8]
 
 #define kZenAppID @"928799039"
 
-
-//iOS Version
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch]!=NSOrderedAscending)
 // Other things
 
 #define kZenDeviceiPad (UIUserInterfaceIdiomPad == [[UIDevice currentDevice] userInterfaceIdiom])

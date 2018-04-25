@@ -33,7 +33,7 @@ static NSString *const kRFNetworkManagerErrorDomain = @"com.artisan.networkmanag
     requestSerializer.timeoutInterval = 30;
     [requestSerializer setValue:@"iOS" forHTTPHeaderField:@"User-Agent"];
     manager.requestSerializer = requestSerializer;
-    manager.responseSerializer = [[AFJSONResponseSerializer alloc] init];
+    manager.responseSerializer = [[AFHTTPResponseSerializer alloc] init];
     NSURLSessionDataTask *task = [manager GET:url parameters:params progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSInteger statusCode = [(NSHTTPURLResponse *)(task.response)  statusCode];
         [self removeTask:task];

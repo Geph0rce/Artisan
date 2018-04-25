@@ -20,6 +20,9 @@
     #import <YYModel/YYModel.h>
     #import <AFNetworking/AFNetworking.h>
     #import "AIFMasonryMacro.h"
+    #import "ZenMacros.h"
+    #import "UIView+RFCorner.h"
+    #import "UIView+RFLayout.h"
 #endif
 
 #if !DEBUG

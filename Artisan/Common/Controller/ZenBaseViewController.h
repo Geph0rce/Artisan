@@ -7,7 +7,13 @@
 //
 
 #import <RFCommonUI/RFCommonUI.h>
+#import "UIViewController+CRFNetworking.h"
+#import "NSObject+RFFilter.h"
+#import "DoubanArtist.h"
 
 @interface ZenBaseViewController : RFBaseViewController
+
+- (void)startActivityIndicator;
+- (void)stopActivityIndicator;
 
 @end

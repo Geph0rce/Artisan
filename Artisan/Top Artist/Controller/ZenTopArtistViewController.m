@@ -1,15 +1,15 @@
 //
-//  ZenTopSongsViewController.m
+//  ZenTopArtistViewController.m
 //  Artisan
 //
-//  Created by qianjie on 2018/4/20.
+//  Created by Roger on 26/04/2018.
 //  Copyright © 2018 Zen. All rights reserved.
 //
 
-#import "ZenTopSongRow.h"
-#import "ZenTopSongsViewController.h"
+#import "ZenTopArtistRow.h"
+#import "ZenTopArtistViewController.h"
 
-@interface ZenTopSongsViewController () <UITableViewDelegate>
+@interface ZenTopArtistViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) RFTableView *tableView;
 @property (nonatomic, strong) RFTableDataSource *dataSource;
@@ -17,26 +17,30 @@
 
 @end
 
-@implementation ZenTopSongsViewController
+@implementation ZenTopArtistViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"热门歌曲";
+    self.title = @"热门音乐人";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    FORBIDDEN_ADJUST_SCROLLVIEW_INSETS(self, self.tableView);
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make_top_equalTo(self.topViewAttribute);
-        make.right.left.bottom.mas_equalTo(self.view);
+        make.left.right.bottom.mas_equalTo(self.view);
     }];
+    
     [self reloadData];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 - (void)reloadData {
     [self hideNetworkErrorView];
     [self startActivityIndicator];
+    NSString *url = [[DoubanArtist sharedInstance] artists];
     weakify(self);
-    NSString *url = [[DoubanArtist sharedInstance] songs];
     [self get:url params:nil complete:^(__kindof NSObject * _Nullable responseData, NSInteger statusCode, NSError * _Nullable error) {
         strongify(self);
         [self stopActivityIndicator];
@@ -44,28 +48,26 @@
             [self showNetworkErrorView];
             return;
         }
+        
         NSString *json = [responseData json];
-        ZenTopSongResponse *response = [ZenTopSongResponse yy_modelWithJSON:json];
+        DLog(@"json: %@", json);
+        ZenTopArtistReponse *response = [ZenTopArtistReponse yy_modelWithJSON:json];
         [self appendRows:response];
     }];
 }
 
-- (void)appendRows:(ZenTopSongResponse *)response {
-    if (response.songs.count > 0) {
+
+- (void)appendRows:(ZenTopArtistReponse *)response {
+    if (response.artists.count > 0) {
         [self.section removeAllChildren];
-        [response.songs enumerateObjectsUsingBlock:^(ZenTopSongModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            ZenTopSongRow *row = [[ZenTopSongRow alloc] init];
+        [response.artists enumerateObjectsUsingBlock:^(ZenTopArtistModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            ZenTopArtistRow *row = [[ZenTopArtistRow alloc] init];
             row.model = obj;
             [self.section addRow:row];
         }];
         [self.tableView reloadData];
     }
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 
 #pragma mark - Getters
 
@@ -96,6 +98,7 @@
     }
     return _section;
 }
+
 
 
 @end

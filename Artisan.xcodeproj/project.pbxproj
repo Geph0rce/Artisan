@@ -87,6 +87,9 @@
 		DB24CA7B19D2F1C800C307A8 /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA6919D2F1C800C307A8 /* NSData+DOUMappedFile.m */; };
 		DB2A7A222090AD8B00EF1FD0 /* ZenTopSongRow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7A212090AD8B00EF1FD0 /* ZenTopSongRow.m */; };
 		DB2A7A262090B98900EF1FD0 /* RFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2A7A252090B98900EF1FD0 /* RFBaseModel.m */; };
+		DB378A7D2092102500289CDB /* ZenTopArtistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB378A7C2092102500289CDB /* ZenTopArtistModel.m */; };
+		DB378A802092141F00289CDB /* ZenTopArtistRow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB378A7F2092141F00289CDB /* ZenTopArtistRow.m */; };
+		DB446D3320920A20000FB38D /* ZenTopArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB446D3220920A20000FB38D /* ZenTopArtistViewController.m */; };
 		DB50FDE919C2810A008E7974 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50FDE719C2810A008E7974 /* download.png */; };
 		DB50FDEA19C2810A008E7974 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50FDE819C2810A008E7974 /* download@2x.png */; };
 		DB5C0CCB19E62E00008B43C8 /* ZenOfflineSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CCA19E62E00008B43C8 /* ZenOfflineSongsController.m */; };
@@ -514,7 +517,13 @@
 		DB2A7A212090AD8B00EF1FD0 /* ZenTopSongRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTopSongRow.m; sourceTree = "<group>"; };
 		DB2A7A242090B98900EF1FD0 /* RFBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFBaseModel.h; sourceTree = "<group>"; };
 		DB2A7A252090B98900EF1FD0 /* RFBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFBaseModel.m; sourceTree = "<group>"; };
+		DB378A7B2092102500289CDB /* ZenTopArtistModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTopArtistModel.h; sourceTree = "<group>"; };
+		DB378A7C2092102500289CDB /* ZenTopArtistModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTopArtistModel.m; sourceTree = "<group>"; };
+		DB378A7E2092141F00289CDB /* ZenTopArtistRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTopArtistRow.h; sourceTree = "<group>"; };
+		DB378A7F2092141F00289CDB /* ZenTopArtistRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTopArtistRow.m; sourceTree = "<group>"; };
 		DB416BDD18E552940020160F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DB446D3120920A20000FB38D /* ZenTopArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTopArtistViewController.h; sourceTree = "<group>"; };
+		DB446D3220920A20000FB38D /* ZenTopArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTopArtistViewController.m; sourceTree = "<group>"; };
 		DB4B42421861924D00E875FC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		DB50FDE719C2810A008E7974 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		DB50FDE819C2810A008E7974 /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
@@ -1044,8 +1053,8 @@
 		16F535292089CD21007C4163 /* Top Song */ = {
 			isa = PBXGroup;
 			children = (
-				DB2A7A1F2090AD7000EF1FD0 /* Row */,
 				1672E4D62090580600916B3D /* Model */,
+				DB2A7A1F2090AD7000EF1FD0 /* Row */,
 				16F5352C2089CD5B007C4163 /* Controller */,
 			);
 			path = "Top Song";
@@ -1227,6 +1236,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DB446D2D209209DC000FB38D /* Top Artist */ = {
+			isa = PBXGroup;
+			children = (
+				DB446D30209209F3000FB38D /* Model */,
+				DB446D2F209209EE000FB38D /* Row */,
+				DB446D2E209209E8000FB38D /* Controller */,
+			);
+			path = "Top Artist";
+			sourceTree = "<group>";
+		};
+		DB446D2E209209E8000FB38D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB446D3120920A20000FB38D /* ZenTopArtistViewController.h */,
+				DB446D3220920A20000FB38D /* ZenTopArtistViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB446D2F209209EE000FB38D /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				DB378A7E2092141F00289CDB /* ZenTopArtistRow.h */,
+				DB378A7F2092141F00289CDB /* ZenTopArtistRow.m */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
+		DB446D30209209F3000FB38D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB378A7B2092102500289CDB /* ZenTopArtistModel.h */,
+				DB378A7C2092102500289CDB /* ZenTopArtistModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DB5C0CEE19E78273008B43C8 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -1241,6 +1287,7 @@
 			children = (
 				16F5352A2089CD30007C4163 /* Common */,
 				16F535292089CD21007C4163 /* Top Song */,
+				DB446D2D209209DC000FB38D /* Top Artist */,
 				16F535282089CCFC007C4163 /* Support Files */,
 			);
 			path = Artisan;
@@ -2108,6 +2155,7 @@
 				DB24CA7B19D2F1C800C307A8 /* NSData+DOUMappedFile.m in Sources */,
 				1672E4AE20901FF600916B3D /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
 				DBE9DC7E19C135E90068C1C3 /* ZenPlaylistModel.m in Sources */,
+				DB378A7D2092102500289CDB /* ZenTopArtistModel.m in Sources */,
 				DBE9D95319BE97190068C1C3 /* main.m in Sources */,
 				DB24CA7119D2F1C800C307A8 /* DOUAudioLPCM.m in Sources */,
 				DB24CA7819D2F1C800C307A8 /* DOUEAGLView.m in Sources */,
@@ -2119,6 +2167,7 @@
 				1672E4AD20901FF600916B3D /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
 				DBEE933F19D8EED800DB920F /* ZenOfflineArtistCell.m in Sources */,
 				DB5C0CFA19E7BFC8008B43C8 /* ZenHtmlController.m in Sources */,
+				DB446D3320920A20000FB38D /* ZenTopArtistViewController.m in Sources */,
 				DB5C0CCF19E65A8A008B43C8 /* ZenSettingsController.m in Sources */,
 				DBE9DA0319BE97190068C1C3 /* ZenBaseController.m in Sources */,
 				16F5352620873C32007C4163 /* RFNetworkManager.m in Sources */,
@@ -2137,6 +2186,7 @@
 				DBE9DA3519BE97190068C1C3 /* EGOLoadMoreTableFooterView.m in Sources */,
 				DB2A7A262090B98900EF1FD0 /* RFBaseModel.m in Sources */,
 				1672E4B820901FF600916B3D /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
+				DB378A802092141F00289CDB /* ZenTopArtistRow.m in Sources */,
 				16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */,
 				16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */,
 				DB24CA6F19D2F1C800C307A8 /* DOUAudioFileProvider.m in Sources */,

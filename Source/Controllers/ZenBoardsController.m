@@ -16,11 +16,14 @@
 #import "ZenColorManager.h"
 #import "ZenTableViewCell.h"
 #import "ZenBoardsController.h"
-#import "ZenHotSongsController.h"
+
 #import "ZenHotArtistsController.h"
 #import "ZenCategoryController.h"
 #import "ZenOfflineController.h"
 #import "ZenSettingsController.h"
+
+#import "ZenTopSongsViewController.h"
+#import "ZenTopArtistViewController.h"
 
 #define kZenBoardWidth 240.0f
 #define kZenMenuItemHeight 64.0f
@@ -300,13 +303,13 @@ SINGLETON_FOR_CLASS(ZenBoardsController);
         if (board) {
             NSString *fid = [board stringForKey:@"fid"];
             if ([fid isEqualToString:kZenHotSongsFid]) {
-                // hot songs
-                ZenHotSongsController *controller = [[ZenHotSongsController alloc] init];
+                // top songs
+                ZenTopSongsViewController *controller = [[ZenTopSongsViewController alloc] init];
                 [menuController setRootController:controller animated:YES];
             }
             else if ([fid isEqualToString:kZenHotArtistsFid]) {
-                // hot artists
-                ZenHotArtistsController *controller = [[ZenHotArtistsController alloc] init];
+                // top artists
+                ZenTopArtistViewController *controller = [[ZenTopArtistViewController alloc] init];
                 [menuController setRootController:controller animated:YES];
             }
             else if ([fid isEqualToString:kZenSettingsFid]) {

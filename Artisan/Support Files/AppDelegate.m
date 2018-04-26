@@ -26,7 +26,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
     UIViewController *controller = [[ZenTopSongsViewController alloc] init];
     DDMenuController *menuController = [[DDMenuController alloc] initWithRootViewController:controller];
     ZenBoardsController *leftController = [ZenBoardsController sharedInstance];
@@ -35,7 +34,15 @@
     self.window.rootViewController = menuController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self configCustomTopBarAppearance];
     return YES;
+}
+
+- (void)configCustomTopBarAppearance {
+    [[RFCustomTopBar appearance] setTitleLabelTextColor:[UIColor blackColor]];
+    [[RFCustomTopBar appearance] setTitleLabelTextFont:kAppFont(17.0)];
+    [[RFCustomTopBar appearance] setBackgroundColor:[UIColor whiteColor]];
+    [[RFCustomTopBar appearance] setBottomSeparateLineColor:[UIColor zenLineColor]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

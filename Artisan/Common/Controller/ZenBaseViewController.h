@@ -16,4 +16,9 @@
 - (void)startActivityIndicator;
 - (void)stopActivityIndicator;
 
+- (void)showNetworkErrorView;
+- (void)hideNetworkErrorView;
+
+- (void)reloadData;
+
 @end

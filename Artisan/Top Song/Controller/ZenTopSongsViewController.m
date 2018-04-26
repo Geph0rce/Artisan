@@ -33,12 +33,17 @@
 }
 
 - (void)reloadData {
+    [self hideNetworkErrorView];
     [self startActivityIndicator];
     weakify(self);
     NSString *url = [[DoubanArtist sharedInstance] songs];
     [self get:url params:nil complete:^(__kindof NSObject * _Nullable responseData, NSInteger statusCode, NSError * _Nullable error) {
         strongify(self);
         [self stopActivityIndicator];
+        if (error) {
+            [self showNetworkErrorView];
+            return;
+        }
         NSString *json = [responseData json];
         ZenTopSongResponse *response = [ZenTopSongResponse yy_modelWithJSON:json];
         [self appendRows:response];

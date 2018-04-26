@@ -22,6 +22,7 @@
     #import <SDWebImage/UIImageView+WebCache.h>
     #import "AIFMasonryMacro.h"
     #import "ZenMacros.h"
+    #import "ZenIconFont.h"
     #import "RFCategory.h"
 #endif
 

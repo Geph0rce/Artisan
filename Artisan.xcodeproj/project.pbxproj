@@ -46,6 +46,11 @@
 		1672E4D92090581500916B3D /* ZenTopSongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4D82090581500916B3D /* ZenTopSongModel.m */; };
 		1672E4E22091660800916B3D /* UIColor+RFColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4E12091660800916B3D /* UIColor+RFColor.m */; };
 		1672E4E620916B6C00916B3D /* UIWindow+FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4E520916B6B00916B3D /* UIWindow+FLEX.m */; };
+		1672E4EE2091A97800916B3D /* Pe-icon-7-stroke.woff in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4E82091A97800916B3D /* Pe-icon-7-stroke.woff */; };
+		1672E4EF2091A97800916B3D /* Pe-icon-7-stroke.eot in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4E92091A97800916B3D /* Pe-icon-7-stroke.eot */; };
+		1672E4F02091A97800916B3D /* Pe-icon-7-stroke.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4EA2091A97800916B3D /* Pe-icon-7-stroke.ttf */; };
+		1672E4F12091A97800916B3D /* Pe-icon-7-stroke.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */; };
+		1672E4F22091A97800916B3D /* pe-icon-7-stroke.css in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */; };
 		16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351B20873C31007C4163 /* NSString+RFNetworking.m */; };
 		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
 		16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352020873C32007C4163 /* RFNetworkTask.m */; };
@@ -424,6 +429,12 @@
 		1672E4E3209166CE00916B3D /* RFCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFCategory.h; sourceTree = "<group>"; };
 		1672E4E420916B6B00916B3D /* UIWindow+FLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+FLEX.h"; sourceTree = "<group>"; };
 		1672E4E520916B6B00916B3D /* UIWindow+FLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+FLEX.m"; sourceTree = "<group>"; };
+		1672E4E82091A97800916B3D /* Pe-icon-7-stroke.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pe-icon-7-stroke.woff"; sourceTree = "<group>"; };
+		1672E4E92091A97800916B3D /* Pe-icon-7-stroke.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pe-icon-7-stroke.eot"; sourceTree = "<group>"; };
+		1672E4EA2091A97800916B3D /* Pe-icon-7-stroke.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pe-icon-7-stroke.ttf"; sourceTree = "<group>"; };
+		1672E4EB2091A97800916B3D /* ZenIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenIconFont.h; sourceTree = "<group>"; };
+		1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Pe-icon-7-stroke.svg"; sourceTree = "<group>"; };
+		1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "pe-icon-7-stroke.css"; sourceTree = "<group>"; };
 		16F5351920873C31007C4163 /* RFNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkTask.h; sourceTree = "<group>"; };
 		16F5351A20873C31007C4163 /* RFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkManager.h; sourceTree = "<group>"; };
 		16F5351B20873C31007C4163 /* NSString+RFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RFNetworking.m"; sourceTree = "<group>"; };
@@ -982,6 +993,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1672E4E72091A97800916B3D /* iconfonts */ = {
+			isa = PBXGroup;
+			children = (
+				1672E4E82091A97800916B3D /* Pe-icon-7-stroke.woff */,
+				1672E4E92091A97800916B3D /* Pe-icon-7-stroke.eot */,
+				1672E4EA2091A97800916B3D /* Pe-icon-7-stroke.ttf */,
+				1672E4EB2091A97800916B3D /* ZenIconFont.h */,
+				1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */,
+				1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */,
+			);
+			path = iconfonts;
+			sourceTree = "<group>";
+		};
 		16F5351820873C1B007C4163 /* RFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1459,6 +1483,7 @@
 		DBE9DA9919BEC4720068C1C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1672E4E72091A97800916B3D /* iconfonts */,
 				DBE9DA9A19BEC4720068C1C3 /* boards */,
 				DBE9DA9D19BEC4720068C1C3 /* bundles */,
 				DBE9DAA119BEC4720068C1C3 /* font */,
@@ -1712,7 +1737,7 @@
 		DB121456180F86A900C7C1EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Zen;
 				TargetAttributes = {
 					DB12145D180F86A900C7C1EE = {
@@ -1754,6 +1779,7 @@
 				DBE9DC7319C04A1A0068C1C3 /* hot_songs@2x.png in Resources */,
 				DBE9DB7919BEC4720068C1C3 /* comment_box.png in Resources */,
 				DBE9DB9819BEC4720068C1C3 /* menu_saved@2x.png in Resources */,
+				1672E4EF2091A97800916B3D /* Pe-icon-7-stroke.eot in Resources */,
 				DBE9DBAB19BEC4720068C1C3 /* next2@2x.png in Resources */,
 				DBE9DBAE19BEC4720068C1C3 /* no_message@2x.png in Resources */,
 				DBE9DBA819BEC4720068C1C3 /* more_share@2x.png in Resources */,
@@ -1779,6 +1805,7 @@
 				DBE9DBBD19BEC4720068C1C3 /* player_back2@2x.png in Resources */,
 				DBE9DB9319BEC4720068C1C3 /* menu_notifications.png in Resources */,
 				DBE9DBAA19BEC4720068C1C3 /* next2.png in Resources */,
+				1672E4F02091A97800916B3D /* Pe-icon-7-stroke.ttf in Resources */,
 				DBE9DB6C19BEC4720068C1C3 /* bottom_icon_return@2x.png in Resources */,
 				DBE9DBD219BEC4720068C1C3 /* share_evernote@2x.png in Resources */,
 				DBE9DBD719BEC4720068C1C3 /* share_weibo@2x.png in Resources */,
@@ -1825,6 +1852,7 @@
 				DBE9DBB519BEC4720068C1C3 /* play.png in Resources */,
 				DBE9DC5019BFED080068C1C3 /* ZenArtistCell.xib in Resources */,
 				DBEE934019D8EED800DB920F /* ZenOfflineArtistCell.xib in Resources */,
+				1672E4EE2091A97800916B3D /* Pe-icon-7-stroke.woff in Resources */,
 				DBE9DBB619BEC4720068C1C3 /* play2.png in Resources */,
 				DBE9DBD519BEC4720068C1C3 /* share_pic_background@2x.png in Resources */,
 				DBE9DB7E19BEC4720068C1C3 /* cover_default@2x.png in Resources */,
@@ -1848,6 +1876,7 @@
 				DBE9DBD019BEC4720068C1C3 /* share_clip@2x.png in Resources */,
 				DBE9DB8E19BEC4720068C1C3 /* list_split_line@2x.png in Resources */,
 				DBE9DB6E19BEC4720068C1C3 /* bottom_icon_save@2x.png in Resources */,
+				1672E4F22091A97800916B3D /* pe-icon-7-stroke.css in Resources */,
 				DB5C0D1419E8CC47008B43C8 /* cycled.png in Resources */,
 				DBE9DB6A19BEC4720068C1C3 /* bottom_icon_refresh@2x.png in Resources */,
 				DBE9DBA919BEC4720068C1C3 /* next.png in Resources */,
@@ -1896,6 +1925,7 @@
 				DBE9DB9D19BEC4720068C1C3 /* menu_settings.png in Resources */,
 				DB5C0CF419E78E4F008B43C8 /* ZenOfflineFooter.xib in Resources */,
 				DBE9DC7819C04A1A0068C1C3 /* offline.png in Resources */,
+				1672E4F12091A97800916B3D /* Pe-icon-7-stroke.svg in Resources */,
 				DBE9DB9519BEC4720068C1C3 /* menu_right_arrow.png in Resources */,
 				DBE9DB7B19BEC4720068C1C3 /* cover.png in Resources */,
 				DBE9DB6F19BEC4720068C1C3 /* bottom_icon_share.png in Resources */,
@@ -2168,18 +2198,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2206,18 +2248,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -2257,6 +2310,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.roger.artisan;
 				PRODUCT_NAME = Artisan;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2296,6 +2350,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = me.roger.artisan;
 				PRODUCT_NAME = Artisan;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

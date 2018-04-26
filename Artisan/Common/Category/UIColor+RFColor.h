@@ -13,4 +13,8 @@
 
 + (UIColor *)zenLineColor;
 
++ (UIColor *)zenGreenColor;
+
++ (UIColor *)zenRedColor;
+
 @end

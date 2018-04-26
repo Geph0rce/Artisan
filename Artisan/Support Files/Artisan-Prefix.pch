@@ -22,8 +22,7 @@
     #import <SDWebImage/UIImageView+WebCache.h>
     #import "AIFMasonryMacro.h"
     #import "ZenMacros.h"
-    #import "UIView+RFCorner.h"
-    #import "UIView+RFLayout.h"
+    #import "RFCategory.h"
 #endif
 
 #if !DEBUG

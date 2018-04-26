@@ -53,10 +53,10 @@
     [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make_top_equalTo(self.coverImageView.mas_bottom).offset(15.0);
         make_left_equalTo(15.0);
-        make.right.bottom.mas_equalTo(self.contentView);
+        make.bottom.mas_equalTo(self.contentView);
+        make_right_equalTo(-15.0);
         make_height_equalTo(ONE_PIXEL);
     }];
-    
 }
 
 #pragma mark - Getters
@@ -102,7 +102,7 @@
 - (UIView *)bottomLineView {
     if (!_bottomLineView) {
         _bottomLineView = [[UIView alloc] init];
-        _bottomLineView.backgroundColor = [UIColor lightGrayColor];
+        _bottomLineView.backgroundColor = [UIColor zenLineColor];
     }
     return _bottomLineView;
 }

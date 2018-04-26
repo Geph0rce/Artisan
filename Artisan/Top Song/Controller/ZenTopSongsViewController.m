@@ -82,6 +82,7 @@
         _tableView.estimatedRowHeight = 0.0;
         _tableView.estimatedSectionHeaderHeight = 0.0;
         _tableView.estimatedSectionFooterHeight = 0.0;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }

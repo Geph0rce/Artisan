@@ -51,7 +51,7 @@
     }];
     
     [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make_top_equalTo(self.coverImageView.mas_bottom).offset(15.0);
+        make_top_greaterThanOrEqualTo(self.coverImageView.mas_bottom).offset(15.0);
         make_left_equalTo(15.0);
         make.bottom.mas_equalTo(self.contentView);
         make_right_equalTo(-15.0);

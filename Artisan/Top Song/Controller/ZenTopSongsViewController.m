@@ -71,7 +71,7 @@
 
 - (RFTableView *)tableView {
     if (!_tableView) {
-        _tableView = [[RFTableView alloc] init];
+        _tableView = [[RFTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self.dataSource;
         _tableView.estimatedRowHeight = 0.0;

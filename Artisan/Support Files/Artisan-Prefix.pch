@@ -29,3 +29,5 @@
 #if !DEBUG
 #define NSLog(format, ...)
 #endif
+
+#define RFStatusBarHeight (IS_IPHONEX ? 44.0 : 20.0)

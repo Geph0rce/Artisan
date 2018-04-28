@@ -51,6 +51,7 @@
 		1672E4F02091A97800916B3D /* Pe-icon-7-stroke.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4EA2091A97800916B3D /* Pe-icon-7-stroke.ttf */; };
 		1672E4F12091A97800916B3D /* Pe-icon-7-stroke.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */; };
 		1672E4F22091A97800916B3D /* pe-icon-7-stroke.css in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */; };
+		1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */; };
 		16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351B20873C31007C4163 /* NSString+RFNetworking.m */; };
 		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
 		16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352020873C32007C4163 /* RFNetworkTask.m */; };
@@ -438,6 +439,8 @@
 		1672E4EB2091A97800916B3D /* ZenIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenIconFont.h; sourceTree = "<group>"; };
 		1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Pe-icon-7-stroke.svg"; sourceTree = "<group>"; };
 		1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "pe-icon-7-stroke.css"; sourceTree = "<group>"; };
+		1672E4F520945B9400916B3D /* ZenTableHeaderRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTableHeaderRow.h; sourceTree = "<group>"; };
+		1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTableHeaderRow.m; sourceTree = "<group>"; };
 		16F5351920873C31007C4163 /* RFNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkTask.h; sourceTree = "<group>"; };
 		16F5351A20873C31007C4163 /* RFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkManager.h; sourceTree = "<group>"; };
 		16F5351B20873C31007C4163 /* NSString+RFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RFNetworking.m"; sourceTree = "<group>"; };
@@ -1015,6 +1018,15 @@
 			path = iconfonts;
 			sourceTree = "<group>";
 		};
+		1672E4F420945B6800916B3D /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				1672E4F520945B9400916B3D /* ZenTableHeaderRow.h */,
+				1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
 		16F5351820873C1B007C4163 /* RFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1076,7 @@
 			isa = PBXGroup;
 			children = (
 				DB2A7A232090B96C00EF1FD0 /* Model */,
+				1672E4F420945B6800916B3D /* Row */,
 				16F535372089E396007C4163 /* Controller */,
 				1672E4C62090299300916B3D /* Category */,
 				16F535302089CF83007C4163 /* Utils */,
@@ -2112,6 +2125,7 @@
 				1672E4A520901FF600916B3D /* DGActivityIndicatorView.m in Sources */,
 				1672E4A920901FF600916B3D /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
 				DBE9DA2919BE97190068C1C3 /* GCDHelper.m in Sources */,
+				1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */,
 				16F535362089CF97007C4163 /* AIFMasonryMacro.m in Sources */,
 				DB5C0CCB19E62E00008B43C8 /* ZenOfflineSongsController.m in Sources */,
 				DBE9DA3E19BE97190068C1C3 /* ZenMenuItem.m in Sources */,

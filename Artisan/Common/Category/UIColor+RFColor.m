@@ -23,4 +23,16 @@
     return kRGB(202.0, 70.0, 32.0);
 }
 
++ (UIColor *)zenGrayColor {
+    return kRGB(131.0, 131.0, 131.0);
+}
+
++ (UIColor *)zenBlackColor {
+    return kRGB(72.0, 72.0, 72.0);
+}
+
++ (UIColor *)zenBackgroundColor {
+    return kRGB(248.0, 248.0, 248.0);
+}
+
 @end

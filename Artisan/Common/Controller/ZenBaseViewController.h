@@ -10,8 +10,9 @@
 #import "UIViewController+CRFNetworking.h"
 #import "NSObject+RFFilter.h"
 #import "DoubanArtist.h"
+#import "ZenTableHeaderRow.h"
 
-@interface ZenBaseViewController : RFBaseViewController
+@interface ZenBaseViewController : UIViewController
 
 - (void)startActivityIndicator;
 - (void)stopActivityIndicator;

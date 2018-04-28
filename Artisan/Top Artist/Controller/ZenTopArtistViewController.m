@@ -25,7 +25,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make_top_equalTo(self.topViewAttribute);
+        make_top_equalTo(RFStatusBarHeight);
         make.left.right.bottom.mas_equalTo(self.view);
     }];
     

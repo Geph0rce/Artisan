@@ -15,12 +15,9 @@
 #define kZenFont14 [UIFont fontWithName:@"FZLTHK--GBK1-0" size:14.0f]
 #define kZenFont13 [UIFont fontWithName:@"FZLTHK--GBK1-0" size:13.0f]
 #define kZenFont10 [UIFont fontWithName:@"FZLTHK--GBK1-0" size:10.0f]
-#define kAppFont(sz) [UIFont fontWithName:@"FZLTHK--GBK1-0" size:sz]
 
 // Color Stuff
 
-#define kRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
-#define kRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 #define CGColorConvert(value)  (value/255.0f)
 #define ZenColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \

@@ -21,12 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"热门歌曲";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     FORBIDDEN_ADJUST_SCROLLVIEW_INSETS(self, self.tableView);
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make_top_equalTo(self.topViewAttribute);
+        make_top_equalTo(RFStatusBarHeight);
         make.right.left.bottom.mas_equalTo(self.view);
     }];
     [self reloadData];
@@ -53,6 +52,9 @@
 - (void)appendRows:(ZenTopSongResponse *)response {
     if (response.songs.count > 0) {
         [self.section removeAllChildren];
+        ZenTableHeaderRow *row = [[ZenTableHeaderRow alloc] init];
+        row.title = @"热门单曲";
+        [self.section addRow:row];
         [response.songs enumerateObjectsUsingBlock:^(ZenTopSongModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             ZenTopSongRow *row = [[ZenTopSongRow alloc] init];
             row.model = obj;

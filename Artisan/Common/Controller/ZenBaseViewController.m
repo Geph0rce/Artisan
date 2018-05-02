@@ -58,12 +58,13 @@
     [self.networkErrorView addSubview:self.networkErrorActionLabel];
     
     [self.networkErrorView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make_edges_equalTo(self.view);
+        make_top_equalTo(self.topViewAttribute);
+        make.left.bottom.right.mas_equalTo(self.view);
     }];
     
     [self.networkErrorIconLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make_centerX_equalTo(self.networkErrorView);
-        make_bottom_equalTo(self.view.mas_centerY);
+        make_bottom_equalTo(self.networkErrorView.mas_centerY).offset(-20.0);
     }];
     
     [self.networkErrorTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setCustomNavigationBarHidden:YES animated:NO];
     [self.view addSubview:self.tableView];
     FORBIDDEN_ADJUST_SCROLLVIEW_INSETS(self, self.tableView);
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {

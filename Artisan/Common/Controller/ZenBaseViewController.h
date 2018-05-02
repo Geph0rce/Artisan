@@ -12,7 +12,8 @@
 #import "DoubanArtist.h"
 #import "ZenTableHeaderRow.h"
 
-@interface ZenBaseViewController : UIViewController
+
+@interface ZenBaseViewController : RFBaseViewController
 
 - (void)startActivityIndicator;
 - (void)stopActivityIndicator;

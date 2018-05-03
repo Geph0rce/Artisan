@@ -108,7 +108,7 @@
         [_zenTabBarItem setTitle:@"单曲" forState:UIControlStateNormal];
         [_zenTabBarItem setIcon:icon_musiclist forState:UIControlStateNormal];
         [_zenTabBarItem setColor:[UIColor zenBlackColor] forState:UIControlStateNormal];
-        [_zenTabBarItem setColor:[UIColor zenGreenColor] forState:UIControlStateSelected];
+        [_zenTabBarItem setColor:[UIColor zenRedColor] forState:UIControlStateSelected];
     }
     return _zenTabBarItem;
 }

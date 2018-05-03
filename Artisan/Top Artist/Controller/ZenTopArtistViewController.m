@@ -107,7 +107,7 @@
         [_zenTabBarItem setTitle:@"音乐人" forState:UIControlStateNormal];
         [_zenTabBarItem setIcon:icon_users forState:UIControlStateNormal];
         [_zenTabBarItem setColor:[UIColor zenBlackColor] forState:UIControlStateNormal];
-        [_zenTabBarItem setColor:[UIColor zenGreenColor] forState:UIControlStateSelected];
+        [_zenTabBarItem setColor:[UIColor zenRedColor] forState:UIControlStateSelected];
     }
     return _zenTabBarItem;
 }

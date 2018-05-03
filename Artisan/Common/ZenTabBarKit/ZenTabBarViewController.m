@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray <ZenBaseViewController *> *controllers;
 @property (nonatomic, strong) UIViewController *currentViewController;
+@property (nonatomic, strong) UIView *bottomView;
 
 @end
 
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.zenTabBar];
+    [self.view addSubview:self.bottomView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,9 +30,12 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    self.zenTabBar.top = self.view.height - self.zenTabBar.height;
+    self.bottomView.width = self.view.width;
+    self.bottomView.height = IS_IPHONEX ? 34.0 : 0.0;
+    self.bottomView.top = self.view.height - self.bottomView.height;
+    self.zenTabBar.top = self.bottomView.top - self.zenTabBar.height;
     self.currentViewController.view.width = self.view.width;
-    self.currentViewController.view.height = self.view.height - self.zenTabBar.height;
+    self.currentViewController.view.height = self.zenTabBar.top;
 }
 
 #pragma mark - Public API
@@ -67,6 +72,14 @@
 
 #pragma mark - Getters
 
+- (UIView *)bottomView {
+    if (!_bottomView) {
+        _bottomView = [[UIView alloc] init];
+        _bottomView.backgroundColor = [UIColor whiteColor];
+    }
+    return _bottomView;
+}
+
 - (NSMutableArray *)controllers {
     if (!_controllers) {
         _controllers = [[NSMutableArray alloc] init];
@@ -89,5 +102,6 @@
         self.zenTabBar.selectedItem = self.controllers[_selectedIndex].zenTabBarItem;
     }
 }
+
 
 @end

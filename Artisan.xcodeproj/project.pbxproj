@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161637E3209AA1510076A38A /* ZenTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161637E2209AA1510076A38A /* ZenTabBarViewController.m */; };
+		161637E7209AA5A20076A38A /* ZenTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 161637E6209AA5A20076A38A /* ZenTabBar.m */; };
+		161637EA209AA5B30076A38A /* ZenTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 161637E9209AA5B30076A38A /* ZenTabBarItem.m */; };
 		1672E4A520901FF600916B3D /* DGActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E46220901FF600916B3D /* DGActivityIndicatorView.m */; };
 		1672E4A620901FF600916B3D /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E46620901FF600916B3D /* DGActivityIndicatorTriangleSkewSpinAnimation.m */; };
 		1672E4A720901FF600916B3D /* DGActivityIndicatorTripleRingsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E46720901FF600916B3D /* DGActivityIndicatorTripleRingsAnimation.m */; };
@@ -353,6 +356,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161637E1209AA1510076A38A /* ZenTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTabBarViewController.h; sourceTree = "<group>"; };
+		161637E2209AA1510076A38A /* ZenTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTabBarViewController.m; sourceTree = "<group>"; };
+		161637E5209AA5A20076A38A /* ZenTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTabBar.h; sourceTree = "<group>"; };
+		161637E6209AA5A20076A38A /* ZenTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTabBar.m; sourceTree = "<group>"; };
+		161637E8209AA5B30076A38A /* ZenTabBarItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTabBarItem.h; sourceTree = "<group>"; };
+		161637E9209AA5B30076A38A /* ZenTabBarItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTabBarItem.m; sourceTree = "<group>"; };
 		1672E46120901FF600916B3D /* DGActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorView.h; sourceTree = "<group>"; };
 		1672E46220901FF600916B3D /* DGActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGActivityIndicatorView.m; sourceTree = "<group>"; };
 		1672E46320901FF600916B3D /* DGActivityIndicatorAnimationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGActivityIndicatorAnimationProtocol.h; sourceTree = "<group>"; };
@@ -896,6 +905,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161637E4209AA55F0076A38A /* ZenTabBarKit */ = {
+			isa = PBXGroup;
+			children = (
+				161637E1209AA1510076A38A /* ZenTabBarViewController.h */,
+				161637E2209AA1510076A38A /* ZenTabBarViewController.m */,
+				161637E5209AA5A20076A38A /* ZenTabBar.h */,
+				161637E6209AA5A20076A38A /* ZenTabBar.m */,
+				161637E8209AA5B30076A38A /* ZenTabBarItem.h */,
+				161637E9209AA5B30076A38A /* ZenTabBarItem.m */,
+			);
+			path = ZenTabBarKit;
+			sourceTree = "<group>";
+		};
 		1672E46020901FF600916B3D /* DGActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1075,6 +1097,7 @@
 		16F5352A2089CD30007C4163 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				161637E4209AA55F0076A38A /* ZenTabBarKit */,
 				DB2A7A232090B96C00EF1FD0 /* Model */,
 				1672E4F420945B6800916B3D /* Row */,
 				16F535372089E396007C4163 /* Controller */,
@@ -2199,6 +2222,7 @@
 				DB5C0CE719E773F8008B43C8 /* ZenTimeCell.m in Sources */,
 				DBE9DA3519BE97190068C1C3 /* EGOLoadMoreTableFooterView.m in Sources */,
 				DB2A7A262090B98900EF1FD0 /* RFBaseModel.m in Sources */,
+				161637E7209AA5A20076A38A /* ZenTabBar.m in Sources */,
 				1672E4B820901FF600916B3D /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
 				DB378A802092141F00289CDB /* ZenTopArtistRow.m in Sources */,
 				16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */,
@@ -2218,6 +2242,7 @@
 				DBE9DC4F19BFED080068C1C3 /* ZenArtistCell.m in Sources */,
 				DBE9DC6819C024AE0068C1C3 /* ZenAlbumCell.m in Sources */,
 				DBE9D94A19BE97190068C1C3 /* AppDelegate.m in Sources */,
+				161637E3209AA1510076A38A /* ZenTabBarViewController.m in Sources */,
 				16F5353A2089E3A9007C4163 /* ZenBaseViewController.m in Sources */,
 				DBEE934319D8F00B00DB920F /* ZenOfflineArtistData.m in Sources */,
 				DBE9DA3F19BE97190068C1C3 /* ZenMoreOptionsView.m in Sources */,
@@ -2228,6 +2253,7 @@
 				DBE9DC6419C0213C0068C1C3 /* ZenAlbumModel.m in Sources */,
 				1672E4B720901FF600916B3D /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
 				DB5C0CF119E78273008B43C8 /* Reachability.m in Sources */,
+				161637EA209AA5B30076A38A /* ZenTabBarItem.m in Sources */,
 				1672E4BE20901FF600916B3D /* DGActivityIndicatorBallScaleRippleMultipleAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

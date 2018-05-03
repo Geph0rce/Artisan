@@ -11,9 +11,13 @@
 #import "NSObject+RFFilter.h"
 #import "DoubanArtist.h"
 #import "ZenTableHeaderRow.h"
-
+#import "ZenTabBar.h"
 
 @interface ZenBaseViewController : RFBaseViewController
+{
+    ZenTabBarItem *_zenTabBarItem;
+}
+@property (nonatomic, strong) ZenTabBarItem *zenTabBarItem;
 
 - (void)startActivityIndicator;
 - (void)stopActivityIndicator;

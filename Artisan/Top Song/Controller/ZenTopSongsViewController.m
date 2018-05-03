@@ -100,5 +100,17 @@
     return _section;
 }
 
+- (ZenTabBarItem *)zenTabBarItem {
+    if (!_zenTabBarItem) {
+        _zenTabBarItem = [[ZenTabBarItem alloc] init];
+        _zenTabBarItem.tabBarItemStyle = ZenTabBarItemStyleIconfont;
+        _zenTabBarItem.controller = self;
+        [_zenTabBarItem setTitle:@"单曲" forState:UIControlStateNormal];
+        [_zenTabBarItem setIcon:icon_musiclist forState:UIControlStateNormal];
+        [_zenTabBarItem setColor:[UIColor zenBlackColor] forState:UIControlStateNormal];
+        [_zenTabBarItem setColor:[UIColor zenGreenColor] forState:UIControlStateSelected];
+    }
+    return _zenTabBarItem;
+}
 
 @end

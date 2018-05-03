@@ -13,7 +13,9 @@
 
 #import "ZenBoardsController.h"
 #import "ZenHotSongsController.h"
+#import "ZenTabBarViewController.h"
 #import "ZenTopSongsViewController.h"
+#import "ZenTopArtistViewController.h"
 
 #define kZenUmengAppKey @"5438c92efd98c54d1f024b81"
 
@@ -26,12 +28,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UIViewController *controller = [[ZenTopSongsViewController alloc] init];
-    DDMenuController *menuController = [[DDMenuController alloc] initWithRootViewController:controller];
-    ZenBoardsController *leftController = [ZenBoardsController sharedInstance];
-    menuController.leftViewController = leftController;
-    self.menuController = menuController;
-    self.window.rootViewController = menuController;
+    
+    
+//    UIViewController *controller = [[ZenTopSongsViewController alloc] init];
+//    DDMenuController *menuController = [[DDMenuController alloc] initWithRootViewController:controller];
+//    ZenBoardsController *leftController = [ZenBoardsController sharedInstance];
+//    menuController.leftViewController = leftController;
+//    self.menuController = menuController;
+    
+    ZenTabBarViewController *tabBarViewController = [[ZenTabBarViewController alloc] init];
+    [tabBarViewController setViewControllers:@[[ZenTopSongsViewController new], [ZenTopArtistViewController new]]];
+    tabBarViewController.selectedIndex = 0;
+    self.window.rootViewController = tabBarViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self configCustomTopBarAppearance];

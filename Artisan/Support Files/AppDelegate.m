@@ -43,6 +43,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self configCustomTopBarAppearance];
+    [self configZenTabBarItemAppearance];
     return YES;
 }
 
@@ -51,6 +52,11 @@
     [[RFCustomTopBar appearance] setTitleLabelTextFont:kAppFont(17.0)];
     [[RFCustomTopBar appearance] setBackgroundColor:[UIColor whiteColor]];
     [[RFCustomTopBar appearance] setBottomSeparateLineColor:[UIColor zenLineColor]];
+}
+
+- (void)configZenTabBarItemAppearance {
+    [[ZenTabBarItem appearance] setColor:[UIColor zenBlackColor] forState:UIControlStateNormal];
+    [[ZenTabBarItem appearance] setColor:[UIColor zenRedColor] forState:UIControlStateSelected];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

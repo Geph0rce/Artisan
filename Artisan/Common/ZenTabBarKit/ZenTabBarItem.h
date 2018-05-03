@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, ZenTabBarItemStyle) {
  @param color UIColor object
  @param state UIControlStateNormal or UIControlStateSelected
  */
-- (void)setColor:(nonnull UIColor *)color forState:(UIControlState)state;
+- (void)setColor:(nonnull UIColor *)color forState:(UIControlState)state UI_APPEARANCE_SELECTOR;
 
 
 /**
@@ -34,6 +34,7 @@ typedef NS_ENUM(NSInteger, ZenTabBarItemStyle) {
  @param state UIControlStateNormal or UIControlStateSelected
  */
 - (void)setTitle:(nonnull NSString *)title forState:(UIControlState)state;
+
 
 /**
  set title of the item for different states

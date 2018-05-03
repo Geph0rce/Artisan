@@ -77,6 +77,36 @@ static CGFloat const kZenTabBarItemImageHeight = 22.0;
     [self layoutIfNeeded];
 }
 
+#pragma mark - Store Values for Different State
+
+- (void)setTitle:(NSString *)title forState:(UIControlState)state {
+    if (!title) {
+        return;
+    }
+    [self setTabBarItemValue:title forKey:kZenTabBarItemTitleKey state:state];
+}
+
+- (void)setIcon:(NSString *)icon forState:(UIControlState)state {
+    if (!icon) {
+        return;
+    }
+    [self setTabBarItemValue:icon forKey:kZenTabBarItemIconKey state:state];
+}
+
+- (void)setColor:(UIColor *)color forState:(UIControlState)state {
+    if (!color) {
+        return;
+    }
+    [self setTabBarItemValue:color forKey:kZenTabBarItemColorKey state:state];
+}
+
+- (void)setImage:(UIImage *)image forState:(UIControlState)state {
+    if (!image) {
+        return;
+    }
+    [self setTabBarItemValue:image forKey:kZenTabBarItemImageKey state:state];
+}
+
 - (id)tabBarItemValueForKey:(NSString *)key {
     NSDictionary *currentStateValues = self.customizeDictionary[@(self.currentState)];
     id value = currentStateValues[key];
@@ -87,48 +117,16 @@ static CGFloat const kZenTabBarItemImageHeight = 22.0;
     return value;
 }
 
-#pragma mark - Store Values for Different State
-
-- (void)setTitle:(NSString *)title forState:(UIControlState)state {
+- (void)setTabBarItemValue:(id)value forKey:(NSString *)key state:(UIControlState)state {
+    if (!value || !key) {
+        return;
+    }
     NSMutableDictionary *currentStateValues = [self.customizeDictionary[@(state)] mutableCopy];
     if (!currentStateValues) {
         currentStateValues = [[NSMutableDictionary alloc] init];
     }
     
-    currentStateValues[kZenTabBarItemTitleKey] = (title ?: @"");
-    self.customizeDictionary[@(state)] = currentStateValues;
-    [self updateState];
-}
-
-- (void)setIcon:(NSString *)icon forState:(UIControlState)state {
-    NSMutableDictionary *currentStateValues = [self.customizeDictionary[@(state)] mutableCopy];
-    if (!currentStateValues) {
-        currentStateValues = [[NSMutableDictionary alloc] init];
-    }
-    
-    currentStateValues[kZenTabBarItemIconKey] = (icon ?: @"");
-    self.customizeDictionary[@(state)] = currentStateValues;
-    [self updateState];
-}
-
-- (void)setColor:(UIColor *)color forState:(UIControlState)state {
-    NSMutableDictionary *currentStateValues = [self.customizeDictionary[@(state)] mutableCopy];
-    if (!currentStateValues) {
-        currentStateValues = [[NSMutableDictionary alloc] init];
-    }
-    
-    currentStateValues[kZenTabBarItemColorKey] = (color ?: [UIColor blackColor]);
-    self.customizeDictionary[@(state)] = currentStateValues;
-    [self updateState];
-}
-
-- (void)setImage:(UIImage *)image forState:(UIControlState)state {
-    NSMutableDictionary *currentStateValues = [self.customizeDictionary[@(state)] mutableCopy];
-    if (!currentStateValues) {
-        currentStateValues = [[NSMutableDictionary alloc] init];
-    }
-    
-    currentStateValues[kZenTabBarItemImageKey] = (image ?: [[UIImage alloc] init]);
+    currentStateValues[key] = value;
     self.customizeDictionary[@(state)] = currentStateValues;
     [self updateState];
 }

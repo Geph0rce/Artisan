@@ -20,6 +20,7 @@
     #import <YYModel/YYModel.h>
     #import <AFNetworking/AFNetworking.h>
     #import <SDWebImage/UIImageView+WebCache.h>
+    #import <RFTypeface/RFTypeface.h>
     #import "AIFMasonryMacro.h"
     #import "ZenMacros.h"
     #import "ZenIconFont.h"

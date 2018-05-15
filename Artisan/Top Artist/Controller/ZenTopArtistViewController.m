@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"热门音乐人";
+    [self setCustomNavigationBarHidden:YES animated:NO];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -60,6 +60,9 @@
 - (void)appendRows:(ZenTopArtistReponse *)response {
     if (response.artists.count > 0) {
         [self.section removeAllChildren];
+        ZenTableHeaderRow *row = [[ZenTableHeaderRow alloc] init];
+        row.title = @"热门音乐人";
+        [self.section addRow:row];
         [response.artists enumerateObjectsUsingBlock:^(ZenTopArtistModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             ZenTopArtistRow *row = [[ZenTopArtistRow alloc] init];
             row.model = obj;

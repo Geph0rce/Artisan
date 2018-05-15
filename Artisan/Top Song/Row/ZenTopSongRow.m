@@ -33,27 +33,27 @@
     [self.contentView addSubview:self.bottomLineView];
     
     [self.coverImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make_top_equalTo(15.0);
-        make_left_equalTo(15.0);
+        make_top_equalTo(16.0);
+        make_left_equalTo(16.0);
         make_width_equalTo(50.0);
         make_height_equalTo(50.0);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make_top_equalTo(self.coverImageView).offset(2.0);
-        make_left_equalTo(self.coverImageView.mas_right).offset(12.0);
-        make_right_lessThanOrEqualTo(-15.0);
+        make_left_equalTo(self.coverImageView.mas_right).offset(16.0);
+        make_right_lessThanOrEqualTo(-16.0);
     }];
     
     [self.artistLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make_bottom_equalTo(self.coverImageView).offset(-2.0);
         make_left_equalTo(self.titleLabel);
-        make_right_lessThanOrEqualTo(-15.0);
+        make_right_lessThanOrEqualTo(-16.0);
     }];
     
     [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make_top_greaterThanOrEqualTo(self.coverImageView.mas_bottom).offset(15.0);
-        make_left_equalTo(15.0);
+        make_top_greaterThanOrEqualTo(self.coverImageView.mas_bottom).offset(16.0);
+        make_left_equalTo(16.0);
         make_right_equalTo(self.contentView);
         make_bottom_equalTo(self.contentView);
         make_height_equalTo(ONE_PIXEL);
@@ -117,7 +117,15 @@
     [super updateCell:cell indexPath:indexPath];
     [cell.coverImageView sd_setImageWithURL:[NSURL URLWithString:self.model.picture] placeholderImage:[UIImage imageNamed:@"cover"]];
     cell.titleLabel.text = self.model.name;
-    cell.artistLabel.text = self.model.artist;
+    cell.artistLabel.attributedText = [self artistAttributedString];
+}
+
+- (NSAttributedString *)artistAttributedString {
+    if (self.model.artist.length > 0) {
+        NSAttributedString *micro = icon_micro.typeface.font(kIconFont(12.0)).compose;
+        return RFAttributedString(micro, @" ", self.model.artist);
+    }
+    return [[NSAttributedString alloc] init];
 }
 
 - (BOOL)autoAdjustCellHeight {

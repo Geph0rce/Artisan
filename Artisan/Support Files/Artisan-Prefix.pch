@@ -13,7 +13,6 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import "ZenConfig.h"
     #import <Masonry/Masonry.h>
     #import <RFFoundation/RFFoundation.h>
     #import <RFCommonUI/RFCommonUI.h>

@@ -8,11 +8,8 @@
 
 
 #import "ZenMacros.h"
-#import "ZenConfig.h"
 #import "AppDelegate.h"
 
-#import "ZenBoardsController.h"
-#import "ZenHotSongsController.h"
 #import "ZenTabBarViewController.h"
 #import "ZenTopSongsViewController.h"
 #import "ZenTopArtistViewController.h"

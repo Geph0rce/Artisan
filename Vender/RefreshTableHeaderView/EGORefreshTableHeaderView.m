@@ -25,7 +25,6 @@
 //
 
 #import "ZenMacros.h"
-#import "ZenConfig.h"
 #import "EGORefreshTableHeaderView.h"
 
 

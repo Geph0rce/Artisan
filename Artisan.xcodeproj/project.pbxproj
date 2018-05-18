@@ -55,6 +55,9 @@
 		1672E4F12091A97800916B3D /* Pe-icon-7-stroke.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */; };
 		1672E4F22091A97800916B3D /* pe-icon-7-stroke.css in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */; };
 		1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */; };
+		16B9745820AED2D000482FD2 /* ZenArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */; };
+		16B9745B20AED2FF00482FD2 /* ZenArtistHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */; };
+		16B9745E20AED35700482FD2 /* ZenPlaylistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */; };
 		16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351B20873C31007C4163 /* NSString+RFNetworking.m */; };
 		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
 		16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352020873C32007C4163 /* RFNetworkTask.m */; };
@@ -67,10 +70,7 @@
 		DB121462180F86A900C7C1EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121461180F86A900C7C1EE /* Foundation.framework */; };
 		DB121464180F86A900C7C1EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121463180F86A900C7C1EE /* CoreGraphics.framework */; };
 		DB121466180F86A900C7C1EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB121465180F86A900C7C1EE /* UIKit.framework */; };
-		DB19A7B319F8A5A3006892BC /* ArtisanApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DB19A7B219F8A5A3006892BC /* ArtisanApplication.m */; };
 		DB1A06B7190E1A7E00F1924F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB818006183110CB0053BC69 /* AudioToolbox.framework */; };
-		DB24CA3419D2A4E000C307A8 /* ZenOfflineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA3319D2A4E000C307A8 /* ZenOfflineModel.m */; };
-		DB24CA4019D2D97100C307A8 /* ZenOfflineController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA3F19D2D97100C307A8 /* ZenOfflineController.m */; };
 		DB24CA6A19D2F1C800C307A8 /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA4319D2F1C800C307A8 /* DOUAudioAnalyzer+Default.m */; };
 		DB24CA6B19D2F1C800C307A8 /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA4519D2F1C800C307A8 /* DOUAudioAnalyzer.m */; };
 		DB24CA6C19D2F1C800C307A8 /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DB24CA4919D2F1C800C307A8 /* DOUAudioDecoder.m */; };
@@ -96,21 +96,10 @@
 		DB446D3320920A20000FB38D /* ZenTopArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB446D3220920A20000FB38D /* ZenTopArtistViewController.m */; };
 		DB50FDE919C2810A008E7974 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50FDE719C2810A008E7974 /* download.png */; };
 		DB50FDEA19C2810A008E7974 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB50FDE819C2810A008E7974 /* download@2x.png */; };
-		DB5C0CCB19E62E00008B43C8 /* ZenOfflineSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CCA19E62E00008B43C8 /* ZenOfflineSongsController.m */; };
-		DB5C0CCF19E65A8A008B43C8 /* ZenSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CCD19E65A8A008B43C8 /* ZenSettingsController.m */; };
-		DB5C0CD719E6656C008B43C8 /* ZenSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CD619E6656C008B43C8 /* ZenSettingsView.xib */; };
-		DB5C0CDF19E76D5D008B43C8 /* ZenOpenTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CDE19E76D5D008B43C8 /* ZenOpenTimerController.m */; };
 		DB5C0CE219E773D4008B43C8 /* time_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CE019E773D4008B43C8 /* time_selected@2x.png */; };
 		DB5C0CE319E773D4008B43C8 /* time_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CE119E773D4008B43C8 /* time_selected.png */; };
-		DB5C0CE719E773F8008B43C8 /* ZenTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CE519E773F8008B43C8 /* ZenTimeCell.m */; };
-		DB5C0CE819E773F8008B43C8 /* ZenTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CE619E773F8008B43C8 /* ZenTimeCell.xib */; };
-		DB5C0CEB19E7769F008B43C8 /* ZenTimeData.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CEA19E7769F008B43C8 /* ZenTimeData.m */; };
 		DB5C0CED19E77735008B43C8 /* Artisan-timer.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CEC19E77735008B43C8 /* Artisan-timer.plist */; };
 		DB5C0CF119E78273008B43C8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CF019E78273008B43C8 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DB5C0CF419E78E4F008B43C8 /* ZenOfflineFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CF319E78E4F008B43C8 /* ZenOfflineFooter.xib */; };
-		DB5C0CF719E78EA8008B43C8 /* ZenOfflineFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CF619E78EA8008B43C8 /* ZenOfflineFooter.m */; };
-		DB5C0CFA19E7BFC8008B43C8 /* ZenHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CF919E7BFC8008B43C8 /* ZenHtmlController.m */; };
-		DB5C0CFD19E7C027008B43C8 /* ZenBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5C0CFC19E7C027008B43C8 /* ZenBottomBar.m */; };
 		DB5C0CFF19E7C119008B43C8 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0CFE19E7C119008B43C8 /* about.html */; };
 		DB5C0D1419E8CC47008B43C8 /* cycled.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0D0C19E8CC47008B43C8 /* cycled.png */; };
 		DB5C0D1519E8CC47008B43C8 /* cycled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C0D0D19E8CC47008B43C8 /* cycled@2x.png */; };
@@ -123,41 +112,20 @@
 		DB6F07D219D5050A00A202C3 /* board_2.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB6F07D119D5050A00A202C3 /* board_2.plist */; };
 		DB817FF3183110660053BC69 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB817FF2183110660053BC69 /* QuartzCore.framework */; };
 		DB98009F19D7AC0400BB36B5 /* offline_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = DB98009E19D7AC0400BB36B5 /* offline_btn.png */; };
-		DB9800A319D7AC5300BB36B5 /* ZenOfflineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9800A119D7AC5300BB36B5 /* ZenOfflineCell.m */; };
-		DB9800A419D7AC5300BB36B5 /* ZenOfflineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9800A219D7AC5300BB36B5 /* ZenOfflineCell.xib */; };
 		DB9800A619D7B32500BB36B5 /* offline_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB9800A519D7B32500BB36B5 /* offline_btn@2x.png */; };
-		DB9800B219D7DB7800BB36B5 /* ZenToast.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9800B119D7DB7800BB36B5 /* ZenToast.m */; };
-		DB9800B519D7F73D00BB36B5 /* ZenSwitchHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9800B419D7F73D00BB36B5 /* ZenSwitchHeader.m */; };
-		DB9800B719D7F75400BB36B5 /* ZenSwitchHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9800B619D7F75400BB36B5 /* ZenSwitchHeader.xib */; };
 		DBB7B2E718238DCA00FDFC0B /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB7B2E618238DCA00FDFC0B /* libxml2.2.dylib */; };
 		DBBAF1EE195D51F9004FE37B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB817FEC183110490053BC69 /* libz.dylib */; };
 		DBE9D94A19BE97190068C1C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D7B519BE97180068C1C3 /* AppDelegate.m */; };
 		DBE9D95119BE97190068C1C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBE9D7BD19BE97190068C1C3 /* InfoPlist.strings */; };
 		DBE9D95219BE97190068C1C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE9D7BF19BE97190068C1C3 /* Images.xcassets */; };
 		DBE9D95319BE97190068C1C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D7C019BE97190068C1C3 /* main.m */; };
-		DBE9DA0319BE97190068C1C3 /* ZenBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D87C19BE97190068C1C3 /* ZenBaseController.m */; };
-		DBE9DA0419BE97190068C1C3 /* ZenBoardsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D87E19BE97190068C1C3 /* ZenBoardsController.m */; };
 		DBE9DA2919BE97190068C1C3 /* GCDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8CB19BE97190068C1C3 /* GCDHelper.m */; };
-		DBE9DA2C19BE97190068C1C3 /* ZenCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8D219BE97190068C1C3 /* ZenCategory.m */; };
-		DBE9DA2F19BE97190068C1C3 /* ZenConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8D819BE97190068C1C3 /* ZenConnection.m */; };
-		DBE9DA3219BE97190068C1C3 /* ZenOpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8DF19BE97190068C1C3 /* ZenOpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DBE9DA3319BE97190068C1C3 /* ZenStack.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8E119BE97190068C1C3 /* ZenStack.m */; };
-		DBE9DA3519BE97190068C1C3 /* EGOLoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8E619BE97190068C1C3 /* EGOLoadMoreTableFooterView.m */; };
-		DBE9DA3C19BE97190068C1C3 /* ZenLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8F419BE97190068C1C3 /* ZenLoadingView.m */; };
-		DBE9DA3E19BE97190068C1C3 /* ZenMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8F819BE97190068C1C3 /* ZenMenuItem.m */; };
-		DBE9DA3F19BE97190068C1C3 /* ZenMoreOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8FA19BE97190068C1C3 /* ZenMoreOptionsView.m */; };
-		DBE9DA4019BE97190068C1C3 /* ZenNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D8FC19BE97190068C1C3 /* ZenNavigationBar.m */; };
-		DBE9DA4819BE97190068C1C3 /* ZenStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D90C19BE97190068C1C3 /* ZenStatusBarOverlay.m */; };
 		DBE9DA4D19BE97190068C1C3 /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D91819BE97190068C1C3 /* DDMenuController.m */; };
 		DBE9DA4E19BE97190068C1C3 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D91B19BE97190068C1C3 /* EGORefreshTableHeaderView.m */; };
 		DBE9DA5519BE97190068C1C3 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D92F19BE97190068C1C3 /* TFHpple.m */; };
 		DBE9DA5619BE97190068C1C3 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93119BE97190068C1C3 /* TFHppleElement.m */; };
 		DBE9DA5719BE97190068C1C3 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93319BE97190068C1C3 /* XPathQuery.m */; };
 		DBE9DA5819BE97190068C1C3 /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */; };
-		DBE9DA6419BE9AE70068C1C3 /* ZenColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */; };
-		DBE9DA6519BE9AE70068C1C3 /* ZenConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6319BE9AE70068C1C3 /* ZenConfig.m */; };
-		DBE9DA6919BE9D670068C1C3 /* ZenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA6819BE9D670068C1C3 /* ZenTableViewCell.m */; };
-		DBE9DA9819BEC30A0068C1C3 /* ZenHotSongsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DA9719BEC30A0068C1C3 /* ZenHotSongsController.m */; };
 		DBE9DB3F19BEC4720068C1C3 /* board_1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DA9B19BEC4720068C1C3 /* board_1.plist */; };
 		DBE9DB4019BEC4720068C1C3 /* boards.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DA9C19BEC4720068C1C3 /* boards.plist */; };
 		DBE9DB4119BEC4720068C1C3 /* menubar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DA9E19BEC4720068C1C3 /* menubar.bundle */; };
@@ -316,43 +284,13 @@
 		DBE9DBDD19BEC4720068C1C3 /* user_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DB3C19BEC4720068C1C3 /* user_avatar@2x.png */; };
 		DBE9DBDE19BEC4720068C1C3 /* weibo_more.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DB3D19BEC4720068C1C3 /* weibo_more.png */; };
 		DBE9DBDF19BEC4720068C1C3 /* weibo_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DB3E19BEC4720068C1C3 /* weibo_more@2x.png */; };
-		DBE9DBE219BECBDE0068C1C3 /* ZenLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DBE119BECBDE0068C1C3 /* ZenLoadingController.m */; };
-		DBE9DBE519BECF3E0068C1C3 /* ZenBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DBE419BECF3E0068C1C3 /* ZenBaseModel.m */; };
-		DBE9DBE819BECFA90068C1C3 /* ZenHotSongsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DBE719BECFA90068C1C3 /* ZenHotSongsModel.m */; };
 		DBE9DBF019BED02A0068C1C3 /* DoubanArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DBEE19BED02A0068C1C3 /* DoubanArtist.m */; };
-		DBE9DBF319BED6850068C1C3 /* ZenSongData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DBF219BED6850068C1C3 /* ZenSongData.m */; };
-		DBE9DBF719BEDAA60068C1C3 /* ZenSongCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DBF519BEDAA60068C1C3 /* ZenSongCell.m */; };
-		DBE9DBF819BEDAA60068C1C3 /* ZenSongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DBF619BEDAA60068C1C3 /* ZenSongCell.xib */; };
-		DBE9DC4819BFECD30068C1C3 /* ZenArtistData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC4719BFECD30068C1C3 /* ZenArtistData.m */; };
-		DBE9DC4B19BFECE50068C1C3 /* ZenCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC4A19BFECE50068C1C3 /* ZenCategoryModel.m */; };
-		DBE9DC4F19BFED080068C1C3 /* ZenArtistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC4D19BFED080068C1C3 /* ZenArtistCell.m */; };
-		DBE9DC5019BFED080068C1C3 /* ZenArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC4E19BFED080068C1C3 /* ZenArtistCell.xib */; };
-		DBE9DC5319BFEECE0068C1C3 /* ZenCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC5219BFEECE0068C1C3 /* ZenCategoryController.m */; };
-		DBE9DC5C19C01E6A0068C1C3 /* ZenProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC5B19C01E6A0068C1C3 /* ZenProfileView.m */; };
-		DBE9DC5E19C01E790068C1C3 /* ZenProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC5D19C01E790068C1C3 /* ZenProfileView.xib */; };
-		DBE9DC6119C021280068C1C3 /* ZenAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC6019C021280068C1C3 /* ZenAlbumController.m */; };
-		DBE9DC6419C0213C0068C1C3 /* ZenAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC6319C0213C0068C1C3 /* ZenAlbumModel.m */; };
-		DBE9DC6819C024AE0068C1C3 /* ZenAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC6619C024AE0068C1C3 /* ZenAlbumCell.m */; };
-		DBE9DC6919C024AE0068C1C3 /* ZenAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC6719C024AE0068C1C3 /* ZenAlbumCell.xib */; };
-		DBE9DC6C19C029400068C1C3 /* ZenAlbumData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC6B19C029400068C1C3 /* ZenAlbumData.m */; };
 		DBE9DC7319C04A1A0068C1C3 /* hot_songs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC6D19C04A190068C1C3 /* hot_songs@2x.png */; };
 		DBE9DC7419C04A1A0068C1C3 /* hot_artists.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC6E19C04A1A0068C1C3 /* hot_artists.png */; };
 		DBE9DC7519C04A1A0068C1C3 /* hot_artists@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC6F19C04A1A0068C1C3 /* hot_artists@2x.png */; };
 		DBE9DC7619C04A1A0068C1C3 /* offline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC7019C04A1A0068C1C3 /* offline@2x.png */; };
 		DBE9DC7719C04A1A0068C1C3 /* hot_songs.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC7119C04A1A0068C1C3 /* hot_songs.png */; };
 		DBE9DC7819C04A1A0068C1C3 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC7219C04A1A0068C1C3 /* offline.png */; };
-		DBE9DC7B19C135D70068C1C3 /* ZenPlaylistController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC7A19C135D70068C1C3 /* ZenPlaylistController.m */; };
-		DBE9DC7E19C135E90068C1C3 /* ZenPlaylistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC7D19C135E90068C1C3 /* ZenPlaylistModel.m */; };
-		DBE9DC8219C13B7D0068C1C3 /* ZenPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC8019C13B7D0068C1C3 /* ZenPlayerController.m */; };
-		DBE9DC8519C13DC10068C1C3 /* ZenPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC8419C13DC10068C1C3 /* ZenPlayerView.xib */; };
-		DBE9DC8819C13F560068C1C3 /* ZenPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC8719C13F560068C1C3 /* ZenPlayerView.m */; };
-		DBE9DC8C19C1482A0068C1C3 /* ZenPlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC8A19C1482A0068C1C3 /* ZenPlayerCell.m */; };
-		DBE9DC8D19C1482A0068C1C3 /* ZenPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE9DC8B19C1482A0068C1C3 /* ZenPlayerCell.xib */; };
-		DBE9DC9019C170250068C1C3 /* ZenHotArtistsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC8F19C170250068C1C3 /* ZenHotArtistsController.m */; };
-		DBE9DC9319C1703E0068C1C3 /* ZenHotArtistsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9DC9219C1703E0068C1C3 /* ZenHotArtistsModel.m */; };
-		DBEE933F19D8EED800DB920F /* ZenOfflineArtistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE933D19D8EED800DB920F /* ZenOfflineArtistCell.m */; };
-		DBEE934019D8EED800DB920F /* ZenOfflineArtistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEE933E19D8EED800DB920F /* ZenOfflineArtistCell.xib */; };
-		DBEE934319D8F00B00DB920F /* ZenOfflineArtistData.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEE934219D8F00B00DB920F /* ZenOfflineArtistData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -450,6 +388,12 @@
 		1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "pe-icon-7-stroke.css"; sourceTree = "<group>"; };
 		1672E4F520945B9400916B3D /* ZenTableHeaderRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTableHeaderRow.h; sourceTree = "<group>"; };
 		1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTableHeaderRow.m; sourceTree = "<group>"; };
+		16B9745620AED2D000482FD2 /* ZenArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistDetailViewController.h; sourceTree = "<group>"; };
+		16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistDetailViewController.m; sourceTree = "<group>"; };
+		16B9745920AED2FE00482FD2 /* ZenArtistHeaderRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistHeaderRow.h; sourceTree = "<group>"; };
+		16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistHeaderRow.m; sourceTree = "<group>"; };
+		16B9745C20AED35700482FD2 /* ZenPlaylistModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenPlaylistModel.h; sourceTree = "<group>"; };
+		16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenPlaylistModel.m; sourceTree = "<group>"; };
 		16F5351920873C31007C4163 /* RFNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkTask.h; sourceTree = "<group>"; };
 		16F5351A20873C31007C4163 /* RFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkManager.h; sourceTree = "<group>"; };
 		16F5351B20873C31007C4163 /* NSString+RFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RFNetworking.m"; sourceTree = "<group>"; };
@@ -475,16 +419,10 @@
 		DB121463180F86A900C7C1EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DB121465180F86A900C7C1EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB12147A180F86A900C7C1EE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DB19A7B119F8A5A3006892BC /* ArtisanApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtisanApplication.h; sourceTree = "<group>"; };
-		DB19A7B219F8A5A3006892BC /* ArtisanApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtisanApplication.m; sourceTree = "<group>"; };
 		DB1A06AD190E1A3B00F1924F /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		DB1A06B0190E1A5300F1924F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DB1A06B2190E1A6500F1924F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		DB1A06B5190E1A7300F1924F /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		DB24CA3219D2A4E000C307A8 /* ZenOfflineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineModel.h; sourceTree = "<group>"; };
-		DB24CA3319D2A4E000C307A8 /* ZenOfflineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineModel.m; sourceTree = "<group>"; };
-		DB24CA3E19D2D97100C307A8 /* ZenOfflineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineController.h; sourceTree = "<group>"; };
-		DB24CA3F19D2D97100C307A8 /* ZenOfflineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineController.m; sourceTree = "<group>"; };
 		DB24CA4219D2F1C800C307A8 /* DOUAudioAnalyzer+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOUAudioAnalyzer+Default.h"; sourceTree = "<group>"; };
 		DB24CA4319D2F1C800C307A8 /* DOUAudioAnalyzer+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOUAudioAnalyzer+Default.m"; sourceTree = "<group>"; };
 		DB24CA4419D2F1C800C307A8 /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
@@ -539,30 +477,11 @@
 		DB4B42421861924D00E875FC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		DB50FDE719C2810A008E7974 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		DB50FDE819C2810A008E7974 /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
-		DB5C0CC919E62E00008B43C8 /* ZenOfflineSongsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineSongsController.h; sourceTree = "<group>"; };
-		DB5C0CCA19E62E00008B43C8 /* ZenOfflineSongsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineSongsController.m; sourceTree = "<group>"; };
-		DB5C0CCC19E65A8A008B43C8 /* ZenSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenSettingsController.h; sourceTree = "<group>"; };
-		DB5C0CCD19E65A8A008B43C8 /* ZenSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenSettingsController.m; sourceTree = "<group>"; };
-		DB5C0CD619E6656C008B43C8 /* ZenSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenSettingsView.xib; sourceTree = "<group>"; };
-		DB5C0CDD19E76D5D008B43C8 /* ZenOpenTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOpenTimerController.h; sourceTree = "<group>"; };
-		DB5C0CDE19E76D5D008B43C8 /* ZenOpenTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOpenTimerController.m; sourceTree = "<group>"; };
 		DB5C0CE019E773D4008B43C8 /* time_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time_selected@2x.png"; sourceTree = "<group>"; };
 		DB5C0CE119E773D4008B43C8 /* time_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time_selected.png; sourceTree = "<group>"; };
-		DB5C0CE419E773F8008B43C8 /* ZenTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenTimeCell.h; sourceTree = "<group>"; };
-		DB5C0CE519E773F8008B43C8 /* ZenTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenTimeCell.m; sourceTree = "<group>"; };
-		DB5C0CE619E773F8008B43C8 /* ZenTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenTimeCell.xib; sourceTree = "<group>"; };
-		DB5C0CE919E7769F008B43C8 /* ZenTimeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenTimeData.h; sourceTree = "<group>"; };
-		DB5C0CEA19E7769F008B43C8 /* ZenTimeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenTimeData.m; sourceTree = "<group>"; };
 		DB5C0CEC19E77735008B43C8 /* Artisan-timer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Artisan-timer.plist"; sourceTree = "<group>"; };
 		DB5C0CEF19E78273008B43C8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DB5C0CF019E78273008B43C8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		DB5C0CF319E78E4F008B43C8 /* ZenOfflineFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenOfflineFooter.xib; sourceTree = "<group>"; };
-		DB5C0CF519E78EA8008B43C8 /* ZenOfflineFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineFooter.h; sourceTree = "<group>"; };
-		DB5C0CF619E78EA8008B43C8 /* ZenOfflineFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineFooter.m; sourceTree = "<group>"; };
-		DB5C0CF819E7BFC8008B43C8 /* ZenHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenHtmlController.h; sourceTree = "<group>"; };
-		DB5C0CF919E7BFC8008B43C8 /* ZenHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenHtmlController.m; sourceTree = "<group>"; };
-		DB5C0CFB19E7C027008B43C8 /* ZenBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenBottomBar.h; sourceTree = "<group>"; };
-		DB5C0CFC19E7C027008B43C8 /* ZenBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenBottomBar.m; sourceTree = "<group>"; };
 		DB5C0CFE19E7C119008B43C8 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 		DB5C0D0C19E8CC47008B43C8 /* cycled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycled.png; sourceTree = "<group>"; };
 		DB5C0D0D19E8CC47008B43C8 /* cycled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cycled@2x.png"; sourceTree = "<group>"; };
@@ -592,15 +511,7 @@
 		DB818008183110D70053BC69 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DB832CB7184E1934001137A1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		DB98009E19D7AC0400BB36B5 /* offline_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline_btn.png; sourceTree = "<group>"; };
-		DB9800A019D7AC5300BB36B5 /* ZenOfflineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineCell.h; sourceTree = "<group>"; };
-		DB9800A119D7AC5300BB36B5 /* ZenOfflineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineCell.m; sourceTree = "<group>"; };
-		DB9800A219D7AC5300BB36B5 /* ZenOfflineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenOfflineCell.xib; sourceTree = "<group>"; };
 		DB9800A519D7B32500BB36B5 /* offline_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offline_btn@2x.png"; sourceTree = "<group>"; };
-		DB9800B019D7DB7800BB36B5 /* ZenToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenToast.h; sourceTree = "<group>"; };
-		DB9800B119D7DB7800BB36B5 /* ZenToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenToast.m; sourceTree = "<group>"; };
-		DB9800B319D7F73D00BB36B5 /* ZenSwitchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenSwitchHeader.h; sourceTree = "<group>"; };
-		DB9800B419D7F73D00BB36B5 /* ZenSwitchHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenSwitchHeader.m; sourceTree = "<group>"; };
-		DB9800B619D7F75400BB36B5 /* ZenSwitchHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenSwitchHeader.xib; sourceTree = "<group>"; };
 		DBB7B2E618238DCA00FDFC0B /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		DBBAF1F4195D533C004FE37B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		DBE9D7B419BE97180068C1C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -610,34 +521,10 @@
 		DBE9D7BE19BE97190068C1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBE9D7BF19BE97190068C1C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBE9D7C019BE97190068C1C3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBE9D87B19BE97190068C1C3 /* ZenBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenBaseController.h; sourceTree = "<group>"; };
-		DBE9D87C19BE97190068C1C3 /* ZenBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenBaseController.m; sourceTree = "<group>"; };
-		DBE9D87D19BE97190068C1C3 /* ZenBoardsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenBoardsController.h; sourceTree = "<group>"; };
-		DBE9D87E19BE97190068C1C3 /* ZenBoardsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenBoardsController.m; sourceTree = "<group>"; };
 		DBE9D8CA19BE97190068C1C3 /* GCDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDHelper.h; sourceTree = "<group>"; };
 		DBE9D8CB19BE97190068C1C3 /* GCDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDHelper.m; sourceTree = "<group>"; };
 		DBE9D8CC19BE97190068C1C3 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		DBE9D8D119BE97190068C1C3 /* ZenCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenCategory.h; sourceTree = "<group>"; };
-		DBE9D8D219BE97190068C1C3 /* ZenCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenCategory.m; sourceTree = "<group>"; };
-		DBE9D8D719BE97190068C1C3 /* ZenConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenConnection.h; sourceTree = "<group>"; };
-		DBE9D8D819BE97190068C1C3 /* ZenConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenConnection.m; sourceTree = "<group>"; };
 		DBE9D8DD19BE97190068C1C3 /* ZenMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenMacros.h; sourceTree = "<group>"; };
-		DBE9D8DE19BE97190068C1C3 /* ZenOpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOpenUDID.h; sourceTree = "<group>"; };
-		DBE9D8DF19BE97190068C1C3 /* ZenOpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOpenUDID.m; sourceTree = "<group>"; };
-		DBE9D8E019BE97190068C1C3 /* ZenStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenStack.h; sourceTree = "<group>"; };
-		DBE9D8E119BE97190068C1C3 /* ZenStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenStack.m; sourceTree = "<group>"; };
-		DBE9D8E519BE97190068C1C3 /* EGOLoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOLoadMoreTableFooterView.h; sourceTree = "<group>"; };
-		DBE9D8E619BE97190068C1C3 /* EGOLoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOLoadMoreTableFooterView.m; sourceTree = "<group>"; };
-		DBE9D8F319BE97190068C1C3 /* ZenLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenLoadingView.h; sourceTree = "<group>"; };
-		DBE9D8F419BE97190068C1C3 /* ZenLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenLoadingView.m; sourceTree = "<group>"; };
-		DBE9D8F719BE97190068C1C3 /* ZenMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenMenuItem.h; sourceTree = "<group>"; };
-		DBE9D8F819BE97190068C1C3 /* ZenMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenMenuItem.m; sourceTree = "<group>"; };
-		DBE9D8F919BE97190068C1C3 /* ZenMoreOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenMoreOptionsView.h; sourceTree = "<group>"; };
-		DBE9D8FA19BE97190068C1C3 /* ZenMoreOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenMoreOptionsView.m; sourceTree = "<group>"; };
-		DBE9D8FB19BE97190068C1C3 /* ZenNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenNavigationBar.h; sourceTree = "<group>"; };
-		DBE9D8FC19BE97190068C1C3 /* ZenNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenNavigationBar.m; sourceTree = "<group>"; };
-		DBE9D90B19BE97190068C1C3 /* ZenStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenStatusBarOverlay.h; sourceTree = "<group>"; };
-		DBE9D90C19BE97190068C1C3 /* ZenStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenStatusBarOverlay.m; sourceTree = "<group>"; };
 		DBE9D91719BE97190068C1C3 /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
 		DBE9D91819BE97190068C1C3 /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
 		DBE9D91A19BE97190068C1C3 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
@@ -650,18 +537,10 @@
 		DBE9D93319BE97190068C1C3 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		DBE9D93519BE97190068C1C3 /* UIColor+MLPFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MLPFlatColors.h"; sourceTree = "<group>"; };
 		DBE9D93619BE97190068C1C3 /* UIColor+MLPFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MLPFlatColors.m"; sourceTree = "<group>"; };
-		DBE9DA6019BE9AE70068C1C3 /* ZenColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenColorManager.h; sourceTree = "<group>"; };
-		DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenColorManager.m; sourceTree = "<group>"; };
-		DBE9DA6219BE9AE70068C1C3 /* ZenConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenConfig.h; sourceTree = "<group>"; };
-		DBE9DA6319BE9AE70068C1C3 /* ZenConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenConfig.m; sourceTree = "<group>"; };
-		DBE9DA6719BE9D670068C1C3 /* ZenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenTableViewCell.h; sourceTree = "<group>"; };
-		DBE9DA6819BE9D670068C1C3 /* ZenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenTableViewCell.m; sourceTree = "<group>"; };
 		DBE9DA8A19BEACE20068C1C3 /* Artisan Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Artisan Tests-Info.plist"; sourceTree = "<group>"; };
 		DBE9DA8C19BEACE20068C1C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBE9DA8E19BEACE20068C1C3 /* Artisan_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artisan_Tests.m; sourceTree = "<group>"; };
 		DBE9DA9019BEACE20068C1C3 /* Artisan Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Artisan Tests-Prefix.pch"; sourceTree = "<group>"; };
-		DBE9DA9619BEC30A0068C1C3 /* ZenHotSongsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenHotSongsController.h; sourceTree = "<group>"; };
-		DBE9DA9719BEC30A0068C1C3 /* ZenHotSongsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenHotSongsController.m; sourceTree = "<group>"; };
 		DBE9DA9B19BEC4720068C1C3 /* board_1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = board_1.plist; sourceTree = "<group>"; };
 		DBE9DA9C19BEC4720068C1C3 /* boards.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = boards.plist; sourceTree = "<group>"; };
 		DBE9DA9E19BEC4720068C1C3 /* menubar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = menubar.bundle; sourceTree = "<group>"; };
@@ -820,67 +699,14 @@
 		DBE9DB3C19BEC4720068C1C3 /* user_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_avatar@2x.png"; sourceTree = "<group>"; };
 		DBE9DB3D19BEC4720068C1C3 /* weibo_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo_more.png; sourceTree = "<group>"; };
 		DBE9DB3E19BEC4720068C1C3 /* weibo_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibo_more@2x.png"; sourceTree = "<group>"; };
-		DBE9DBE019BECBDE0068C1C3 /* ZenLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenLoadingController.h; sourceTree = "<group>"; };
-		DBE9DBE119BECBDE0068C1C3 /* ZenLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenLoadingController.m; sourceTree = "<group>"; };
-		DBE9DBE319BECF3E0068C1C3 /* ZenBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenBaseModel.h; sourceTree = "<group>"; };
-		DBE9DBE419BECF3E0068C1C3 /* ZenBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenBaseModel.m; sourceTree = "<group>"; };
-		DBE9DBE619BECFA90068C1C3 /* ZenHotSongsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenHotSongsModel.h; sourceTree = "<group>"; };
-		DBE9DBE719BECFA90068C1C3 /* ZenHotSongsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenHotSongsModel.m; sourceTree = "<group>"; };
 		DBE9DBED19BED02A0068C1C3 /* DoubanArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubanArtist.h; sourceTree = "<group>"; };
 		DBE9DBEE19BED02A0068C1C3 /* DoubanArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubanArtist.m; sourceTree = "<group>"; };
-		DBE9DBF119BED6850068C1C3 /* ZenSongData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenSongData.h; sourceTree = "<group>"; };
-		DBE9DBF219BED6850068C1C3 /* ZenSongData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenSongData.m; sourceTree = "<group>"; };
-		DBE9DBF419BEDAA60068C1C3 /* ZenSongCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenSongCell.h; sourceTree = "<group>"; };
-		DBE9DBF519BEDAA60068C1C3 /* ZenSongCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenSongCell.m; sourceTree = "<group>"; };
-		DBE9DBF619BEDAA60068C1C3 /* ZenSongCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenSongCell.xib; sourceTree = "<group>"; };
-		DBE9DC4619BFECD30068C1C3 /* ZenArtistData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenArtistData.h; sourceTree = "<group>"; };
-		DBE9DC4719BFECD30068C1C3 /* ZenArtistData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenArtistData.m; sourceTree = "<group>"; };
-		DBE9DC4919BFECE50068C1C3 /* ZenCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenCategoryModel.h; sourceTree = "<group>"; };
-		DBE9DC4A19BFECE50068C1C3 /* ZenCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenCategoryModel.m; sourceTree = "<group>"; };
-		DBE9DC4C19BFED080068C1C3 /* ZenArtistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenArtistCell.h; sourceTree = "<group>"; };
-		DBE9DC4D19BFED080068C1C3 /* ZenArtistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenArtistCell.m; sourceTree = "<group>"; };
-		DBE9DC4E19BFED080068C1C3 /* ZenArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenArtistCell.xib; sourceTree = "<group>"; };
-		DBE9DC5119BFEECE0068C1C3 /* ZenCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenCategoryController.h; sourceTree = "<group>"; };
-		DBE9DC5219BFEECE0068C1C3 /* ZenCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenCategoryController.m; sourceTree = "<group>"; };
-		DBE9DC5A19C01E6A0068C1C3 /* ZenProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenProfileView.h; sourceTree = "<group>"; };
-		DBE9DC5B19C01E6A0068C1C3 /* ZenProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenProfileView.m; sourceTree = "<group>"; };
-		DBE9DC5D19C01E790068C1C3 /* ZenProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenProfileView.xib; sourceTree = "<group>"; };
-		DBE9DC5F19C021280068C1C3 /* ZenAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenAlbumController.h; sourceTree = "<group>"; };
-		DBE9DC6019C021280068C1C3 /* ZenAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenAlbumController.m; sourceTree = "<group>"; };
-		DBE9DC6219C0213C0068C1C3 /* ZenAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenAlbumModel.h; sourceTree = "<group>"; };
-		DBE9DC6319C0213C0068C1C3 /* ZenAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenAlbumModel.m; sourceTree = "<group>"; };
-		DBE9DC6519C024AE0068C1C3 /* ZenAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenAlbumCell.h; sourceTree = "<group>"; };
-		DBE9DC6619C024AE0068C1C3 /* ZenAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenAlbumCell.m; sourceTree = "<group>"; };
-		DBE9DC6719C024AE0068C1C3 /* ZenAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenAlbumCell.xib; sourceTree = "<group>"; };
-		DBE9DC6A19C029400068C1C3 /* ZenAlbumData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenAlbumData.h; sourceTree = "<group>"; };
-		DBE9DC6B19C029400068C1C3 /* ZenAlbumData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenAlbumData.m; sourceTree = "<group>"; };
 		DBE9DC6D19C04A190068C1C3 /* hot_songs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hot_songs@2x.png"; sourceTree = "<group>"; };
 		DBE9DC6E19C04A1A0068C1C3 /* hot_artists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot_artists.png; sourceTree = "<group>"; };
 		DBE9DC6F19C04A1A0068C1C3 /* hot_artists@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hot_artists@2x.png"; sourceTree = "<group>"; };
 		DBE9DC7019C04A1A0068C1C3 /* offline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offline@2x.png"; sourceTree = "<group>"; };
 		DBE9DC7119C04A1A0068C1C3 /* hot_songs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot_songs.png; sourceTree = "<group>"; };
 		DBE9DC7219C04A1A0068C1C3 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
-		DBE9DC7919C135D70068C1C3 /* ZenPlaylistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenPlaylistController.h; sourceTree = "<group>"; };
-		DBE9DC7A19C135D70068C1C3 /* ZenPlaylistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenPlaylistController.m; sourceTree = "<group>"; };
-		DBE9DC7C19C135E90068C1C3 /* ZenPlaylistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenPlaylistModel.h; sourceTree = "<group>"; };
-		DBE9DC7D19C135E90068C1C3 /* ZenPlaylistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenPlaylistModel.m; sourceTree = "<group>"; };
-		DBE9DC7F19C13B7D0068C1C3 /* ZenPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenPlayerController.h; sourceTree = "<group>"; };
-		DBE9DC8019C13B7D0068C1C3 /* ZenPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenPlayerController.m; sourceTree = "<group>"; };
-		DBE9DC8419C13DC10068C1C3 /* ZenPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenPlayerView.xib; sourceTree = "<group>"; };
-		DBE9DC8619C13F560068C1C3 /* ZenPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenPlayerView.h; sourceTree = "<group>"; };
-		DBE9DC8719C13F560068C1C3 /* ZenPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenPlayerView.m; sourceTree = "<group>"; };
-		DBE9DC8919C1482A0068C1C3 /* ZenPlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenPlayerCell.h; sourceTree = "<group>"; };
-		DBE9DC8A19C1482A0068C1C3 /* ZenPlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenPlayerCell.m; sourceTree = "<group>"; };
-		DBE9DC8B19C1482A0068C1C3 /* ZenPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenPlayerCell.xib; sourceTree = "<group>"; };
-		DBE9DC8E19C170250068C1C3 /* ZenHotArtistsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenHotArtistsController.h; sourceTree = "<group>"; };
-		DBE9DC8F19C170250068C1C3 /* ZenHotArtistsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenHotArtistsController.m; sourceTree = "<group>"; };
-		DBE9DC9119C1703E0068C1C3 /* ZenHotArtistsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenHotArtistsModel.h; sourceTree = "<group>"; };
-		DBE9DC9219C1703E0068C1C3 /* ZenHotArtistsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenHotArtistsModel.m; sourceTree = "<group>"; };
-		DBEE933C19D8EED800DB920F /* ZenOfflineArtistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineArtistCell.h; sourceTree = "<group>"; };
-		DBEE933D19D8EED800DB920F /* ZenOfflineArtistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineArtistCell.m; sourceTree = "<group>"; };
-		DBEE933E19D8EED800DB920F /* ZenOfflineArtistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZenOfflineArtistCell.xib; sourceTree = "<group>"; };
-		DBEE934119D8F00B00DB920F /* ZenOfflineArtistData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZenOfflineArtistData.h; sourceTree = "<group>"; };
-		DBEE934219D8F00B00DB920F /* ZenOfflineArtistData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZenOfflineArtistData.m; sourceTree = "<group>"; };
 		DBFB6F781833B27100AABDE1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DBFB6F7A1833C4BF00AABDE1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F2E119E66395ECA4C214C999 /* Pods-Artisan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artisan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Artisan/Pods-Artisan.release.xcconfig"; sourceTree = "<group>"; };
@@ -1049,6 +875,43 @@
 			path = Row;
 			sourceTree = "<group>";
 		};
+		16B9745220AED28500482FD2 /* Artist Detail */ = {
+			isa = PBXGroup;
+			children = (
+				16B9745420AED29F00482FD2 /* Model */,
+				16B9745520AED2A700482FD2 /* Row */,
+				16B9745320AED29600482FD2 /* Controller */,
+			);
+			path = "Artist Detail";
+			sourceTree = "<group>";
+		};
+		16B9745320AED29600482FD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16B9745620AED2D000482FD2 /* ZenArtistDetailViewController.h */,
+				16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16B9745420AED29F00482FD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16B9745C20AED35700482FD2 /* ZenPlaylistModel.h */,
+				16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16B9745520AED2A700482FD2 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				16B9745920AED2FE00482FD2 /* ZenArtistHeaderRow.h */,
+				16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */,
+			);
+			path = Row;
+			sourceTree = "<group>";
+		};
 		16F5351820873C1B007C4163 /* RFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -1078,8 +941,6 @@
 				DBE9D7BF19BE97190068C1C3 /* Images.xcassets */,
 				DBE9D7C019BE97190068C1C3 /* main.m */,
 				DB5C0CEC19E77735008B43C8 /* Artisan-timer.plist */,
-				DB19A7B119F8A5A3006892BC /* ArtisanApplication.h */,
-				DB19A7B219F8A5A3006892BC /* ArtisanApplication.m */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -1123,6 +984,10 @@
 				16F535342089CF97007C4163 /* AIFMasonryMacro.m */,
 				16F535322089CF97007C4163 /* RFScreen.h */,
 				16F535312089CF97007C4163 /* RFScreen.m */,
+				DBE9D8DD19BE97190068C1C3 /* ZenMacros.h */,
+				DBE9D8CA19BE97190068C1C3 /* GCDHelper.h */,
+				DBE9D8CB19BE97190068C1C3 /* GCDHelper.m */,
+				DBE9D8CC19BE97190068C1C3 /* Singleton.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1148,7 +1013,6 @@
 		DB121455180F86A900C7C1EE = {
 			isa = PBXGroup;
 			children = (
-				DBE9D87519BE97190068C1C3 /* Source */,
 				DBE9D7B319BE97180068C1C3 /* Artisan */,
 				DBE9D91519BE97190068C1C3 /* Vender */,
 				DBE9DA9919BEC4720068C1C3 /* Resources */,
@@ -1324,168 +1188,10 @@
 				16F5352A2089CD30007C4163 /* Common */,
 				16F535292089CD21007C4163 /* Top Song */,
 				DB446D2D209209DC000FB38D /* Top Artist */,
+				16B9745220AED28500482FD2 /* Artist Detail */,
 				16F535282089CCFC007C4163 /* Support Files */,
 			);
 			path = Artisan;
-			sourceTree = "<group>";
-		};
-		DBE9D87519BE97190068C1C3 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9D8A819BE97190068C1C3 /* Models */,
-				DBE9D8E419BE97190068C1C3 /* Views */,
-				DBE9D87619BE97190068C1C3 /* Controllers */,
-				DBE9D8C919BE97190068C1C3 /* Utils */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		DBE9D87619BE97190068C1C3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DB5C0CF819E7BFC8008B43C8 /* ZenHtmlController.h */,
-				DB5C0CF919E7BFC8008B43C8 /* ZenHtmlController.m */,
-				DBE9D87B19BE97190068C1C3 /* ZenBaseController.h */,
-				DBE9D87C19BE97190068C1C3 /* ZenBaseController.m */,
-				DBE9D87D19BE97190068C1C3 /* ZenBoardsController.h */,
-				DBE9D87E19BE97190068C1C3 /* ZenBoardsController.m */,
-				DBE9DBE019BECBDE0068C1C3 /* ZenLoadingController.h */,
-				DBE9DBE119BECBDE0068C1C3 /* ZenLoadingController.m */,
-				DBE9DA9619BEC30A0068C1C3 /* ZenHotSongsController.h */,
-				DBE9DA9719BEC30A0068C1C3 /* ZenHotSongsController.m */,
-				DBE9DC8E19C170250068C1C3 /* ZenHotArtistsController.h */,
-				DBE9DC8F19C170250068C1C3 /* ZenHotArtistsController.m */,
-				DBE9DC5119BFEECE0068C1C3 /* ZenCategoryController.h */,
-				DBE9DC5219BFEECE0068C1C3 /* ZenCategoryController.m */,
-				DBE9DC5F19C021280068C1C3 /* ZenAlbumController.h */,
-				DBE9DC6019C021280068C1C3 /* ZenAlbumController.m */,
-				DBE9DC7919C135D70068C1C3 /* ZenPlaylistController.h */,
-				DBE9DC7A19C135D70068C1C3 /* ZenPlaylistController.m */,
-				DBE9DC7F19C13B7D0068C1C3 /* ZenPlayerController.h */,
-				DBE9DC8019C13B7D0068C1C3 /* ZenPlayerController.m */,
-				DB24CA3E19D2D97100C307A8 /* ZenOfflineController.h */,
-				DB24CA3F19D2D97100C307A8 /* ZenOfflineController.m */,
-				DB5C0CC919E62E00008B43C8 /* ZenOfflineSongsController.h */,
-				DB5C0CCA19E62E00008B43C8 /* ZenOfflineSongsController.m */,
-				DB5C0CCC19E65A8A008B43C8 /* ZenSettingsController.h */,
-				DB5C0CCD19E65A8A008B43C8 /* ZenSettingsController.m */,
-				DB5C0CDD19E76D5D008B43C8 /* ZenOpenTimerController.h */,
-				DB5C0CDE19E76D5D008B43C8 /* ZenOpenTimerController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DBE9D8A819BE97190068C1C3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9DBE319BECF3E0068C1C3 /* ZenBaseModel.h */,
-				DBE9DBE419BECF3E0068C1C3 /* ZenBaseModel.m */,
-				DBE9DBF119BED6850068C1C3 /* ZenSongData.h */,
-				DBE9DBF219BED6850068C1C3 /* ZenSongData.m */,
-				DBE9DBE619BECFA90068C1C3 /* ZenHotSongsModel.h */,
-				DBE9DBE719BECFA90068C1C3 /* ZenHotSongsModel.m */,
-				DBE9DC9119C1703E0068C1C3 /* ZenHotArtistsModel.h */,
-				DBE9DC9219C1703E0068C1C3 /* ZenHotArtistsModel.m */,
-				DBE9DC4619BFECD30068C1C3 /* ZenArtistData.h */,
-				DBE9DC4719BFECD30068C1C3 /* ZenArtistData.m */,
-				DBE9DC4919BFECE50068C1C3 /* ZenCategoryModel.h */,
-				DBE9DC4A19BFECE50068C1C3 /* ZenCategoryModel.m */,
-				DBE9DC6A19C029400068C1C3 /* ZenAlbumData.h */,
-				DBE9DC6B19C029400068C1C3 /* ZenAlbumData.m */,
-				DBE9DC6219C0213C0068C1C3 /* ZenAlbumModel.h */,
-				DBE9DC6319C0213C0068C1C3 /* ZenAlbumModel.m */,
-				DBE9DC7C19C135E90068C1C3 /* ZenPlaylistModel.h */,
-				DBE9DC7D19C135E90068C1C3 /* ZenPlaylistModel.m */,
-				DBEE934119D8F00B00DB920F /* ZenOfflineArtistData.h */,
-				DBEE934219D8F00B00DB920F /* ZenOfflineArtistData.m */,
-				DB24CA3219D2A4E000C307A8 /* ZenOfflineModel.h */,
-				DB24CA3319D2A4E000C307A8 /* ZenOfflineModel.m */,
-				DB5C0CE919E7769F008B43C8 /* ZenTimeData.h */,
-				DB5C0CEA19E7769F008B43C8 /* ZenTimeData.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DBE9D8C919BE97190068C1C3 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9D8DD19BE97190068C1C3 /* ZenMacros.h */,
-				DBE9DA6019BE9AE70068C1C3 /* ZenColorManager.h */,
-				DBE9DA6119BE9AE70068C1C3 /* ZenColorManager.m */,
-				DBE9DA6219BE9AE70068C1C3 /* ZenConfig.h */,
-				DBE9DA6319BE9AE70068C1C3 /* ZenConfig.m */,
-				DBE9D8CA19BE97190068C1C3 /* GCDHelper.h */,
-				DBE9D8CB19BE97190068C1C3 /* GCDHelper.m */,
-				DBE9D8CC19BE97190068C1C3 /* Singleton.h */,
-				DBE9D8D119BE97190068C1C3 /* ZenCategory.h */,
-				DBE9D8D219BE97190068C1C3 /* ZenCategory.m */,
-				DBE9D8D719BE97190068C1C3 /* ZenConnection.h */,
-				DBE9D8D819BE97190068C1C3 /* ZenConnection.m */,
-				DBE9D8DE19BE97190068C1C3 /* ZenOpenUDID.h */,
-				DBE9D8DF19BE97190068C1C3 /* ZenOpenUDID.m */,
-				DBE9D8E019BE97190068C1C3 /* ZenStack.h */,
-				DBE9D8E119BE97190068C1C3 /* ZenStack.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		DBE9D8E419BE97190068C1C3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DB5C0CFB19E7C027008B43C8 /* ZenBottomBar.h */,
-				DB5C0CFC19E7C027008B43C8 /* ZenBottomBar.m */,
-				DBE9DA6719BE9D670068C1C3 /* ZenTableViewCell.h */,
-				DBE9DA6819BE9D670068C1C3 /* ZenTableViewCell.m */,
-				DBE9D8E519BE97190068C1C3 /* EGOLoadMoreTableFooterView.h */,
-				DBE9D8E619BE97190068C1C3 /* EGOLoadMoreTableFooterView.m */,
-				DBE9D8F319BE97190068C1C3 /* ZenLoadingView.h */,
-				DBE9D8F419BE97190068C1C3 /* ZenLoadingView.m */,
-				DBE9D8F719BE97190068C1C3 /* ZenMenuItem.h */,
-				DBE9D8F819BE97190068C1C3 /* ZenMenuItem.m */,
-				DBE9D8F919BE97190068C1C3 /* ZenMoreOptionsView.h */,
-				DBE9D8FA19BE97190068C1C3 /* ZenMoreOptionsView.m */,
-				DBE9D8FB19BE97190068C1C3 /* ZenNavigationBar.h */,
-				DBE9D8FC19BE97190068C1C3 /* ZenNavigationBar.m */,
-				DBE9D90B19BE97190068C1C3 /* ZenStatusBarOverlay.h */,
-				DBE9D90C19BE97190068C1C3 /* ZenStatusBarOverlay.m */,
-				DB9800B019D7DB7800BB36B5 /* ZenToast.h */,
-				DB9800B119D7DB7800BB36B5 /* ZenToast.m */,
-				DBE9DBF419BEDAA60068C1C3 /* ZenSongCell.h */,
-				DBE9DBF519BEDAA60068C1C3 /* ZenSongCell.m */,
-				DBE9DBF619BEDAA60068C1C3 /* ZenSongCell.xib */,
-				DBE9DC4C19BFED080068C1C3 /* ZenArtistCell.h */,
-				DBE9DC4D19BFED080068C1C3 /* ZenArtistCell.m */,
-				DBE9DC4E19BFED080068C1C3 /* ZenArtistCell.xib */,
-				DBE9DC5A19C01E6A0068C1C3 /* ZenProfileView.h */,
-				DBE9DC5B19C01E6A0068C1C3 /* ZenProfileView.m */,
-				DBE9DC5D19C01E790068C1C3 /* ZenProfileView.xib */,
-				DBE9DC6519C024AE0068C1C3 /* ZenAlbumCell.h */,
-				DBE9DC6619C024AE0068C1C3 /* ZenAlbumCell.m */,
-				DBE9DC6719C024AE0068C1C3 /* ZenAlbumCell.xib */,
-				DBE9DC8619C13F560068C1C3 /* ZenPlayerView.h */,
-				DBE9DC8719C13F560068C1C3 /* ZenPlayerView.m */,
-				DBE9DC8419C13DC10068C1C3 /* ZenPlayerView.xib */,
-				DBE9DC8919C1482A0068C1C3 /* ZenPlayerCell.h */,
-				DBE9DC8A19C1482A0068C1C3 /* ZenPlayerCell.m */,
-				DBE9DC8B19C1482A0068C1C3 /* ZenPlayerCell.xib */,
-				DB9800A019D7AC5300BB36B5 /* ZenOfflineCell.h */,
-				DB9800A119D7AC5300BB36B5 /* ZenOfflineCell.m */,
-				DB9800A219D7AC5300BB36B5 /* ZenOfflineCell.xib */,
-				DB9800B319D7F73D00BB36B5 /* ZenSwitchHeader.h */,
-				DB9800B419D7F73D00BB36B5 /* ZenSwitchHeader.m */,
-				DB9800B619D7F75400BB36B5 /* ZenSwitchHeader.xib */,
-				DBEE933C19D8EED800DB920F /* ZenOfflineArtistCell.h */,
-				DBEE933D19D8EED800DB920F /* ZenOfflineArtistCell.m */,
-				DBEE933E19D8EED800DB920F /* ZenOfflineArtistCell.xib */,
-				DB5C0CD619E6656C008B43C8 /* ZenSettingsView.xib */,
-				DB5C0CE419E773F8008B43C8 /* ZenTimeCell.h */,
-				DB5C0CE519E773F8008B43C8 /* ZenTimeCell.m */,
-				DB5C0CE619E773F8008B43C8 /* ZenTimeCell.xib */,
-				DB5C0CF519E78EA8008B43C8 /* ZenOfflineFooter.h */,
-				DB5C0CF619E78EA8008B43C8 /* ZenOfflineFooter.m */,
-				DB5C0CF319E78E4F008B43C8 /* ZenOfflineFooter.xib */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		DBE9D91519BE97190068C1C3 /* Vender */ = {
@@ -1933,27 +1639,21 @@
 				DBE9DB7219BEC4720068C1C3 /* bottom_icon_write@2x.png in Resources */,
 				DBE9DBC119BEC4720068C1C3 /* prev2@2x.png in Resources */,
 				DBE9DBB519BEC4720068C1C3 /* play.png in Resources */,
-				DBE9DC5019BFED080068C1C3 /* ZenArtistCell.xib in Resources */,
-				DBEE934019D8EED800DB920F /* ZenOfflineArtistCell.xib in Resources */,
 				1672E4EE2091A97800916B3D /* Pe-icon-7-stroke.woff in Resources */,
 				DBE9DBB619BEC4720068C1C3 /* play2.png in Resources */,
 				DBE9DBD519BEC4720068C1C3 /* share_pic_background@2x.png in Resources */,
 				DBE9DB7E19BEC4720068C1C3 /* cover_default@2x.png in Resources */,
-				DB9800B719D7F75400BB36B5 /* ZenSwitchHeader.xib in Resources */,
-				DB9800A419D7AC5300BB36B5 /* ZenOfflineCell.xib in Resources */,
 				DBE9DBD919BEC4720068C1C3 /* status_pause.png in Resources */,
 				DBE9DBBE19BEC4720068C1C3 /* player_back@2x.png in Resources */,
 				DBE9DC7719C04A1A0068C1C3 /* hot_songs.png in Resources */,
 				DBE9DB8A19BEC4720068C1C3 /* list2.png in Resources */,
 				DBE9DBDA19BEC4720068C1C3 /* status_pause@2x.png in Resources */,
-				DBE9DC5E19C01E790068C1C3 /* ZenProfileView.xib in Resources */,
 				DBE9DBCD19BEC4720068C1C3 /* settingcell_bg_selected.png in Resources */,
 				DB50FDEA19C2810A008E7974 /* download@2x.png in Resources */,
 				DBE9DB4019BEC4720068C1C3 /* boards.plist in Resources */,
 				DBE9DB4C19BEC4720068C1C3 /* album_btn_add_click@2x.png in Resources */,
 				DBE9DB8919BEC4720068C1C3 /* list.png in Resources */,
 				DBE9DBC019BEC4720068C1C3 /* prev2.png in Resources */,
-				DB5C0CE819E773F8008B43C8 /* ZenTimeCell.xib in Resources */,
 				DB5C0D1519E8CC47008B43C8 /* cycled@2x.png in Resources */,
 				DBE9DB5E19BEC4720068C1C3 /* bottom_bg.png in Resources */,
 				DBE9DBD019BEC4720068C1C3 /* share_clip@2x.png in Resources */,
@@ -1990,14 +1690,12 @@
 				DB5C0D1619E8CC47008B43C8 /* random.png in Resources */,
 				DBE9DB4A19BEC4720068C1C3 /* album_btn_add@2x.png in Resources */,
 				DB6F07D219D5050A00A202C3 /* board_2.plist in Resources */,
-				DBE9DC8D19C1482A0068C1C3 /* ZenPlayerCell.xib in Resources */,
 				DBE9DBCA19BEC4720068C1C3 /* settingcell_arrow@2x.png in Resources */,
 				DBE9DBD619BEC4720068C1C3 /* share_pocket@2x.png in Resources */,
 				DBE9DB8F19BEC4720068C1C3 /* menu.png in Resources */,
 				DB98009F19D7AC0400BB36B5 /* offline_btn.png in Resources */,
 				DBE9DB8319BEC4720068C1C3 /* feedback_more.png in Resources */,
 				DBE9DB4119BEC4720068C1C3 /* menubar.bundle in Resources */,
-				DBE9DC8519C13DC10068C1C3 /* ZenPlayerView.xib in Resources */,
 				DBE9DB8219BEC4720068C1C3 /* empty_normal@2x.png in Resources */,
 				DBE9DB6119BEC4720068C1C3 /* bottom_icon_comment.png in Resources */,
 				DBE9DC7519C04A1A0068C1C3 /* hot_artists@2x.png in Resources */,
@@ -2006,7 +1704,6 @@
 				DBE9DBC519BEC4720068C1C3 /* preview_close_pressed.png in Resources */,
 				DBE9DB8419BEC4720068C1C3 /* feedback_more@2x.png in Resources */,
 				DBE9DB9D19BEC4720068C1C3 /* menu_settings.png in Resources */,
-				DB5C0CF419E78E4F008B43C8 /* ZenOfflineFooter.xib in Resources */,
 				DBE9DC7819C04A1A0068C1C3 /* offline.png in Resources */,
 				1672E4F12091A97800916B3D /* Pe-icon-7-stroke.svg in Resources */,
 				DBE9DB9519BEC4720068C1C3 /* menu_right_arrow.png in Resources */,
@@ -2028,13 +1725,10 @@
 				DBE9DB9619BEC4720068C1C3 /* menu_right_arrow@2x.png in Resources */,
 				DBE9DB8619BEC4720068C1C3 /* header_shadow@2x.png in Resources */,
 				DBE9DB6419BEC4720068C1C3 /* bottom_icon_more@2x.png in Resources */,
-				DBE9DBF819BEDAA60068C1C3 /* ZenSongCell.xib in Resources */,
-				DBE9DC6919C024AE0068C1C3 /* ZenAlbumCell.xib in Resources */,
 				DBE9DB7319BEC4720068C1C3 /* btn_login.png in Resources */,
 				DBE9DB6719BEC4720068C1C3 /* bottom_icon_prev.png in Resources */,
 				DBE9DBA519BEC4720068C1C3 /* more_reply.png in Resources */,
 				DBE9DB7C19BEC4720068C1C3 /* cover@2x.png in Resources */,
-				DB5C0CD719E6656C008B43C8 /* ZenSettingsView.xib in Resources */,
 				DBE9DB4B19BEC4720068C1C3 /* album_btn_add_click.png in Resources */,
 				DBE9DBB219BEC4720068C1C3 /* pause2.png in Resources */,
 				DBE9DB4519BEC4720068C1C3 /* about_more.png in Resources */,
@@ -2117,110 +1811,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBE9DC8219C13B7D0068C1C3 /* ZenPlayerController.m in Sources */,
 				1672E4AB20901FF600916B3D /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
 				DB24CA7219D2F1C800C307A8 /* DOUAudioPlaybackItem.m in Sources */,
-				DB24CA4019D2D97100C307A8 /* ZenOfflineController.m in Sources */,
-				DBE9DA4019BE97190068C1C3 /* ZenNavigationBar.m in Sources */,
 				1672E4C020901FF600916B3D /* DGActivityIndicatorTwoDotsAnimation.m in Sources */,
-				DBE9DC9319C1703E0068C1C3 /* ZenHotArtistsModel.m in Sources */,
 				DB24CA7919D2F1C800C307A8 /* DOUMPMediaLibraryAssetLoader.m in Sources */,
-				DBE9DA2C19BE97190068C1C3 /* ZenCategory.m in Sources */,
-				DBE9DA2F19BE97190068C1C3 /* ZenConnection.m in Sources */,
-				DB5C0CFD19E7C027008B43C8 /* ZenBottomBar.m in Sources */,
-				DBE9DA3319BE97190068C1C3 /* ZenStack.m in Sources */,
 				DB24CA7619D2F1C800C307A8 /* DOUAudioStreamer.m in Sources */,
-				DBE9DBE819BECFA90068C1C3 /* ZenHotSongsModel.m in Sources */,
-				DBE9DA6419BE9AE70068C1C3 /* ZenColorManager.m in Sources */,
 				DBE9DA5719BE97190068C1C3 /* XPathQuery.m in Sources */,
 				DB24CA7019D2F1C800C307A8 /* DOUAudioFrequencyAnalyzer.m in Sources */,
 				DB24CA6C19D2F1C800C307A8 /* DOUAudioDecoder.m in Sources */,
 				1672E4D22090299300916B3D /* UIView+RFCorner.m in Sources */,
-				DBE9DA4819BE97190068C1C3 /* ZenStatusBarOverlay.m in Sources */,
-				DB5C0CEB19E7769F008B43C8 /* ZenTimeData.m in Sources */,
 				1672E4C220901FF600916B3D /* DGActivityIndicatorBallBeatAnimation.m in Sources */,
 				1672E4C320901FF600916B3D /* DGActivityIndicatorRotatingTrigonAnimation.m in Sources */,
 				1672E4B920901FF600916B3D /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
 				1672E4B520901FF600916B3D /* DGActivityIndicatorLineScaleAnimation.m in Sources */,
 				1672E4A720901FF600916B3D /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
-				DB9800B519D7F73D00BB36B5 /* ZenSwitchHeader.m in Sources */,
-				DB5C0CDF19E76D5D008B43C8 /* ZenOpenTimerController.m in Sources */,
 				1672E4A520901FF600916B3D /* DGActivityIndicatorView.m in Sources */,
 				1672E4A920901FF600916B3D /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
 				DBE9DA2919BE97190068C1C3 /* GCDHelper.m in Sources */,
 				1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */,
 				16F535362089CF97007C4163 /* AIFMasonryMacro.m in Sources */,
-				DB5C0CCB19E62E00008B43C8 /* ZenOfflineSongsController.m in Sources */,
-				DBE9DA3E19BE97190068C1C3 /* ZenMenuItem.m in Sources */,
-				DB9800B219D7DB7800BB36B5 /* ZenToast.m in Sources */,
 				DB24CA6B19D2F1C800C307A8 /* DOUAudioAnalyzer.m in Sources */,
 				1672E4C120901FF600916B3D /* DGActivityIndicatorBallZigZagDeflectAnimation.m in Sources */,
-				DBE9DBF719BEDAA60068C1C3 /* ZenSongCell.m in Sources */,
 				DB24CA7519D2F1C800C307A8 /* DOUAudioStreamer+Options.m in Sources */,
 				DBE9DA5519BE97190068C1C3 /* TFHpple.m in Sources */,
-				DBE9DA3219BE97190068C1C3 /* ZenOpenUDID.m in Sources */,
 				DB24CA7719D2F1C800C307A8 /* DOUAudioVisualizer.m in Sources */,
 				DB24CA6E19D2F1C800C307A8 /* DOUAudioFilePreprocessor.m in Sources */,
-				DBE9DC6119C021280068C1C3 /* ZenAlbumController.m in Sources */,
-				DB19A7B319F8A5A3006892BC /* ArtisanApplication.m in Sources */,
-				DBE9DC8C19C1482A0068C1C3 /* ZenPlayerCell.m in Sources */,
 				DB24CA7419D2F1C800C307A8 /* DOUAudioSpatialAnalyzer.m in Sources */,
-				DBE9DBE219BECBDE0068C1C3 /* ZenLoadingController.m in Sources */,
 				1672E4BF20901FF600916B3D /* DGActivityIndicatorNineDotsAnimation.m in Sources */,
 				16F5352F2089CD70007C4163 /* ZenTopSongsViewController.m in Sources */,
 				DB24CA6D19D2F1C800C307A8 /* DOUAudioEventLoop.m in Sources */,
 				1672E4B020901FF600916B3D /* DGActivityIndicatorThreeDotsAnimation.m in Sources */,
 				1672E4D12090299300916B3D /* UIView+RFLayout.m in Sources */,
-				DB9800A319D7AC5300BB36B5 /* ZenOfflineCell.m in Sources */,
 				DBE9DA5619BE97190068C1C3 /* TFHppleElement.m in Sources */,
 				1672E4B620901FF600916B3D /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
-				DBE9DA6519BE9AE70068C1C3 /* ZenConfig.m in Sources */,
 				1672E4AF20901FF600916B3D /* DGActivityIndicatorBallZigZagAnimation.m in Sources */,
-				DBE9DBE519BECF3E0068C1C3 /* ZenBaseModel.m in Sources */,
+				16B9745820AED2D000482FD2 /* ZenArtistDetailViewController.m in Sources */,
 				1672E4B120901FF600916B3D /* DGActivityIndicatorLineScalePulseOutAnimation.m in Sources */,
-				DB24CA3419D2A4E000C307A8 /* ZenOfflineModel.m in Sources */,
 				1672E4D92090581500916B3D /* ZenTopSongModel.m in Sources */,
-				DBE9DC7B19C135D70068C1C3 /* ZenPlaylistController.m in Sources */,
 				1672E4B220901FF600916B3D /* DGActivityIndicatorDoubleBounceAnimation.m in Sources */,
 				1672E4AA20901FF600916B3D /* DGActivityIndicatorTriplePulseAnimation.m in Sources */,
 				1672E4AC20901FF600916B3D /* DGActivityIndicatorBallScaleMultipleAnimation.m in Sources */,
 				1672E4C520901FF600916B3D /* DGActivityIndicatorLineScalePulseOutRapidAnimation.m in Sources */,
-				DBE9DC5319BFEECE0068C1C3 /* ZenCategoryController.m in Sources */,
 				1672E4A620901FF600916B3D /* DGActivityIndicatorTriangleSkewSpinAnimation.m in Sources */,
 				DBE9DA4D19BE97190068C1C3 /* DDMenuController.m in Sources */,
-				DBE9DA6919BE9D670068C1C3 /* ZenTableViewCell.m in Sources */,
+				16B9745E20AED35700482FD2 /* ZenPlaylistModel.m in Sources */,
 				DB24CA7B19D2F1C800C307A8 /* NSData+DOUMappedFile.m in Sources */,
 				1672E4AE20901FF600916B3D /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
-				DBE9DC7E19C135E90068C1C3 /* ZenPlaylistModel.m in Sources */,
 				DB378A7D2092102500289CDB /* ZenTopArtistModel.m in Sources */,
 				DBE9D95319BE97190068C1C3 /* main.m in Sources */,
 				DB24CA7119D2F1C800C307A8 /* DOUAudioLPCM.m in Sources */,
 				DB24CA7819D2F1C800C307A8 /* DOUEAGLView.m in Sources */,
-				DB5C0CF719E78EA8008B43C8 /* ZenOfflineFooter.m in Sources */,
+				16B9745B20AED2FF00482FD2 /* ZenArtistHeaderRow.m in Sources */,
 				1672E4D52090575D00916B3D /* NSObject+RFFilter.m in Sources */,
-				DBE9DBF319BED6850068C1C3 /* ZenSongData.m in Sources */,
-				DBE9DC8819C13F560068C1C3 /* ZenPlayerView.m in Sources */,
 				1672E4BD20901FF600916B3D /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				1672E4AD20901FF600916B3D /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,
-				DBEE933F19D8EED800DB920F /* ZenOfflineArtistCell.m in Sources */,
-				DB5C0CFA19E7BFC8008B43C8 /* ZenHtmlController.m in Sources */,
 				DB446D3320920A20000FB38D /* ZenTopArtistViewController.m in Sources */,
-				DB5C0CCF19E65A8A008B43C8 /* ZenSettingsController.m in Sources */,
-				DBE9DA0319BE97190068C1C3 /* ZenBaseController.m in Sources */,
 				16F5352620873C32007C4163 /* RFNetworkManager.m in Sources */,
-				DBE9DA9819BEC30A0068C1C3 /* ZenHotSongsController.m in Sources */,
-				DBE9DC9019C170250068C1C3 /* ZenHotArtistsController.m in Sources */,
 				1672E4BC20901FF600916B3D /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
-				DBE9DC5C19C01E6A0068C1C3 /* ZenProfileView.m in Sources */,
 				DBE9DA5819BE97190068C1C3 /* UIColor+MLPFlatColors.m in Sources */,
 				16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */,
 				DBE9DBF019BED02A0068C1C3 /* DoubanArtist.m in Sources */,
 				1672E4BA20901FF600916B3D /* DGActivityIndicatorBallPulseAnimation.m in Sources */,
-				DBE9DC6C19C029400068C1C3 /* ZenAlbumData.m in Sources */,
 				DB2A7A222090AD8B00EF1FD0 /* ZenTopSongRow.m in Sources */,
 				1672E4BB20901FF600916B3D /* DGActivityIndicatorBallPulseSyncAnimation.m in Sources */,
-				DB5C0CE719E773F8008B43C8 /* ZenTimeCell.m in Sources */,
-				DBE9DA3519BE97190068C1C3 /* EGOLoadMoreTableFooterView.m in Sources */,
 				DB2A7A262090B98900EF1FD0 /* RFBaseModel.m in Sources */,
 				161637E7209AA5A20076A38A /* ZenTabBar.m in Sources */,
 				1672E4B820901FF600916B3D /* DGActivityIndicatorBallTrianglePathAnimation.m in Sources */,
@@ -2228,29 +1881,20 @@
 				16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */,
 				16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */,
 				DB24CA6F19D2F1C800C307A8 /* DOUAudioFileProvider.m in Sources */,
-				DBE9DC4B19BFECE50068C1C3 /* ZenCategoryModel.m in Sources */,
 				1672E4C420901FF600916B3D /* DGActivityIndicatorBallClipRotateAnimation.m in Sources */,
-				DBE9DA0419BE97190068C1C3 /* ZenBoardsController.m in Sources */,
 				DB24CA7319D2F1C800C307A8 /* DOUAudioRenderer.m in Sources */,
 				1672E4B420901FF600916B3D /* DGActivityIndicatorLineScalePartyAnimation.m in Sources */,
-				DBE9DC4819BFECD30068C1C3 /* ZenArtistData.m in Sources */,
 				DBE9DA4E19BE97190068C1C3 /* EGORefreshTableHeaderView.m in Sources */,
 				DB24CA7A19D2F1C800C307A8 /* DOUSimpleHTTPRequest.m in Sources */,
 				1672E4E620916B6C00916B3D /* UIWindow+FLEX.m in Sources */,
 				1672E4A820901FF600916B3D /* DGActivityIndicatorBallGridPulseAnimation.m in Sources */,
 				DB24CA6A19D2F1C800C307A8 /* DOUAudioAnalyzer+Default.m in Sources */,
-				DBE9DC4F19BFED080068C1C3 /* ZenArtistCell.m in Sources */,
-				DBE9DC6819C024AE0068C1C3 /* ZenAlbumCell.m in Sources */,
 				DBE9D94A19BE97190068C1C3 /* AppDelegate.m in Sources */,
 				161637E3209AA1510076A38A /* ZenTabBarViewController.m in Sources */,
 				16F5353A2089E3A9007C4163 /* ZenBaseViewController.m in Sources */,
-				DBEE934319D8F00B00DB920F /* ZenOfflineArtistData.m in Sources */,
-				DBE9DA3F19BE97190068C1C3 /* ZenMoreOptionsView.m in Sources */,
-				DBE9DA3C19BE97190068C1C3 /* ZenLoadingView.m in Sources */,
 				16F535352089CF97007C4163 /* RFScreen.m in Sources */,
 				1672E4B320901FF600916B3D /* DGActivityIndicatorCookieTerminatorAnimation.m in Sources */,
 				1672E4E22091660800916B3D /* UIColor+RFColor.m in Sources */,
-				DBE9DC6419C0213C0068C1C3 /* ZenAlbumModel.m in Sources */,
 				1672E4B720901FF600916B3D /* DGActivityIndicatorBallClipRotateMultipleAnimation.m in Sources */,
 				DB5C0CF119E78273008B43C8 /* Reachability.m in Sources */,
 				161637EA209AA5B30076A38A /* ZenTabBarItem.m in Sources */,

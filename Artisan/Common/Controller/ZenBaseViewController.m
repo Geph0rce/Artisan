@@ -155,6 +155,17 @@
     return _networkErrorActionLabel;
 }
 
+- (RFCustomTopBarButtonItem *)backBarButtonItem {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.titleLabel.font = kIconFont(30.0);
+    button.titleLabel.backgroundColor = [[UIColor zenBlackColor] colorWithAlphaComponent:0.6];
+    button.titleLabel.layer.cornerRadius = 15.0;
+    button.titleLabel.layer.masksToBounds = YES;
+    [button setTitle:icon_angle_left forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(backBarButtonDidClicked:) forControlEvents:UIControlEventTouchUpInside];
+    return [[RFCustomTopBarButtonItem alloc] initWithCustomView:button];
+}
 
 
 @end

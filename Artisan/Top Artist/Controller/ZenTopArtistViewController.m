@@ -8,6 +8,7 @@
 
 #import "ZenTopArtistRow.h"
 #import "ZenTopArtistViewController.h"
+#import "ZenArtistDetailViewController.h"
 
 @interface ZenTopArtistViewController () <UITableViewDelegate>
 
@@ -66,10 +67,23 @@
         [response.artists enumerateObjectsUsingBlock:^(ZenTopArtistModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             ZenTopArtistRow *row = [[ZenTopArtistRow alloc] init];
             row.model = obj;
+            weakify(self, row);
+            row.selectedBlock = ^(RFTableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+                strongify(self, row);
+                ZenArtistDetailViewController *controller = [[ZenArtistDetailViewController alloc] init];;
+                controller.model = row.model;
+                [self.navigationController pushViewController:controller animated:YES];
+            };
             [self.section addRow:row];
         }];
         [self.tableView reloadData];
     }
+}
+
+#pragma mark - Custom Top Bar
+
+- (BOOL)shouldUseCustomTopBar {
+    return YES;
 }
 
 #pragma mark - Getters

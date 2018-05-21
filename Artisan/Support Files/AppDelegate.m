@@ -36,7 +36,8 @@
     ZenTabBarViewController *tabBarViewController = [[ZenTabBarViewController alloc] init];
     [tabBarViewController setViewControllers:@[[ZenTopSongsViewController new], [ZenTopArtistViewController new]]];
     tabBarViewController.selectedIndex = 0;
-    self.window.rootViewController = tabBarViewController;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarViewController];
+    self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self configCustomTopBarAppearance];

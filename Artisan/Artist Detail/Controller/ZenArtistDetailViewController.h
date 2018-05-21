@@ -7,7 +7,10 @@
 //
 
 #import "ZenBaseViewController.h"
+#import "ZenTopArtistModel.h"
 
 @interface ZenArtistDetailViewController : ZenBaseViewController
+
+@property (nonatomic, strong) ZenTopArtistModel *model;
 
 @end

@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     self.title = self.model.name;
     FORBIDDEN_ADJUST_SCROLLVIEW_INSETS(self, self.tableView);
     [self setLeftTopBarItems:@[self.backBarButtonItem]];

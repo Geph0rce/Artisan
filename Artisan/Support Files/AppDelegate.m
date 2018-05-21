@@ -41,7 +41,7 @@
 }
 
 - (void)configCustomTopBarAppearance {
-    [[RFCustomTopBar appearance] setTitleLabelTextColor:[UIColor blackColor]];
+    [[RFCustomTopBar appearance] setTitleLabelTextColor:[UIColor zenBlackColor]];
     [[RFCustomTopBar appearance] setTitleLabelTextFont:kAppFont(17.0)];
     [[RFCustomTopBar appearance] setBackgroundColor:[UIColor whiteColor]];
     [[RFCustomTopBar appearance] setBottomSeparateLineColor:[UIColor zenLineColor]];

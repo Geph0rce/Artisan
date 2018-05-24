@@ -6,18 +6,26 @@
 //  Copyright © 2018 Zen. All rights reserved.
 //
 
-#import "ZenArtistHeaderRow.h"
+#import "ZenArtistHeaderView.h"
 #import "ZenArtistDetailViewController.h"
+
+#define kZenArtistHeaderViewHeight (102.0 + RFStatusBarHeight + RFNavigationBarHeight)
 
 @interface ZenArtistDetailViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) RFTableView *tableView;
 @property (nonatomic, strong) RFTableDataSource *dataSource;
 @property (nonatomic, strong) RFTableSection *section;
+@property (nonatomic, strong) ZenArtistHeaderView *headerContentView;
+@property (nonatomic, strong) UIView *headerView;
 
 @end
 
 @implementation ZenArtistDetailViewController
+
+- (void)dealloc {
+    DLog(@"dealloc")
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,10 +37,7 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make_edges_equalTo(self.view);
     }];
-    
-    ZenArtistHeaderRow *row = [[ZenArtistHeaderRow alloc] init];
-    row.model = self.model;
-    [self.section addRow:row];
+    [self.headerContentView reloadData:self.model];
     [self.tableView reloadData];
 }
 
@@ -59,6 +64,11 @@
             alpha = 1;
         } 
         [self updateCustomTopBarBackgroundAlpha:alpha];
+        
+        if (yOffset < 0) {
+            self.headerContentView.top = yOffset;
+            self.headerContentView.height = -yOffset + kZenArtistHeaderViewHeight;
+        }
     }
 }
 
@@ -95,6 +105,7 @@
         _tableView.estimatedSectionHeaderHeight = 0.0;
         _tableView.estimatedSectionFooterHeight = 0.0;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.tableHeaderView = self.headerView;
     }
     return _tableView;
 }
@@ -114,5 +125,21 @@
     return _section;
 }
 
+
+- (ZenArtistHeaderView *)headerContentView {
+    if (!_headerContentView) {
+        _headerContentView = [[ZenArtistHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, SCREEN_WIDTH, kZenArtistHeaderViewHeight)];
+    }
+    return _headerContentView;
+}
+
+- (UIView *)headerView {
+    if (!_headerView) {
+        _headerView = [[UIView alloc] init];
+        [_headerView addSubview:self.headerContentView];
+        _headerView.frame = _headerContentView.bounds;
+    }
+    return _headerView;
+}
 
 @end

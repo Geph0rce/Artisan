@@ -56,7 +56,6 @@
 		1672E4F22091A97800916B3D /* pe-icon-7-stroke.css in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */; };
 		1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */; };
 		16B9745820AED2D000482FD2 /* ZenArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */; };
-		16B9745B20AED2FF00482FD2 /* ZenArtistHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */; };
 		16B9745E20AED35700482FD2 /* ZenPlaylistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */; };
 		16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351B20873C31007C4163 /* NSString+RFNetworking.m */; };
 		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
@@ -115,6 +114,7 @@
 		DB9800A619D7B32500BB36B5 /* offline_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB9800A519D7B32500BB36B5 /* offline_btn@2x.png */; };
 		DBB7B2E718238DCA00FDFC0B /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB7B2E618238DCA00FDFC0B /* libxml2.2.dylib */; };
 		DBBAF1EE195D51F9004FE37B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB817FEC183110490053BC69 /* libz.dylib */; };
+		DBD1AB1D20B7116300CBE9CA /* ZenArtistHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD1AB1C20B7116300CBE9CA /* ZenArtistHeaderView.m */; };
 		DBE9D94A19BE97190068C1C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE9D7B519BE97180068C1C3 /* AppDelegate.m */; };
 		DBE9D95119BE97190068C1C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBE9D7BD19BE97190068C1C3 /* InfoPlist.strings */; };
 		DBE9D95219BE97190068C1C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE9D7BF19BE97190068C1C3 /* Images.xcassets */; };
@@ -390,8 +390,6 @@
 		1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTableHeaderRow.m; sourceTree = "<group>"; };
 		16B9745620AED2D000482FD2 /* ZenArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistDetailViewController.h; sourceTree = "<group>"; };
 		16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistDetailViewController.m; sourceTree = "<group>"; };
-		16B9745920AED2FE00482FD2 /* ZenArtistHeaderRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistHeaderRow.h; sourceTree = "<group>"; };
-		16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistHeaderRow.m; sourceTree = "<group>"; };
 		16B9745C20AED35700482FD2 /* ZenPlaylistModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenPlaylistModel.h; sourceTree = "<group>"; };
 		16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenPlaylistModel.m; sourceTree = "<group>"; };
 		16F5351920873C31007C4163 /* RFNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkTask.h; sourceTree = "<group>"; };
@@ -514,6 +512,8 @@
 		DB9800A519D7B32500BB36B5 /* offline_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offline_btn@2x.png"; sourceTree = "<group>"; };
 		DBB7B2E618238DCA00FDFC0B /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		DBBAF1F4195D533C004FE37B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		DBD1AB1B20B7116300CBE9CA /* ZenArtistHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistHeaderView.h; sourceTree = "<group>"; };
+		DBD1AB1C20B7116300CBE9CA /* ZenArtistHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistHeaderView.m; sourceTree = "<group>"; };
 		DBE9D7B419BE97180068C1C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBE9D7B519BE97180068C1C3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DBE9D7B619BE97180068C1C3 /* Artisan-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Artisan-Info.plist"; sourceTree = "<group>"; };
@@ -878,6 +878,7 @@
 		16B9745220AED28500482FD2 /* Artist Detail */ = {
 			isa = PBXGroup;
 			children = (
+				DBD1AB1A20B7113500CBE9CA /* View */,
 				16B9745420AED29F00482FD2 /* Model */,
 				16B9745520AED2A700482FD2 /* Row */,
 				16B9745320AED29600482FD2 /* Controller */,
@@ -906,8 +907,6 @@
 		16B9745520AED2A700482FD2 /* Row */ = {
 			isa = PBXGroup;
 			children = (
-				16B9745920AED2FE00482FD2 /* ZenArtistHeaderRow.h */,
-				16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */,
 			);
 			path = Row;
 			sourceTree = "<group>";
@@ -1180,6 +1179,15 @@
 				DB5C0CF019E78273008B43C8 /* Reachability.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		DBD1AB1A20B7113500CBE9CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBD1AB1B20B7116300CBE9CA /* ZenArtistHeaderView.h */,
+				DBD1AB1C20B7116300CBE9CA /* ZenArtistHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DBE9D7B319BE97180068C1C3 /* Artisan */ = {
@@ -1826,6 +1834,7 @@
 				1672E4B520901FF600916B3D /* DGActivityIndicatorLineScaleAnimation.m in Sources */,
 				1672E4A720901FF600916B3D /* DGActivityIndicatorTripleRingsAnimation.m in Sources */,
 				1672E4A520901FF600916B3D /* DGActivityIndicatorView.m in Sources */,
+				DBD1AB1D20B7116300CBE9CA /* ZenArtistHeaderView.m in Sources */,
 				1672E4A920901FF600916B3D /* DGActivityIndicatorBallClipRotatePulseAnimation.m in Sources */,
 				DBE9DA2919BE97190068C1C3 /* GCDHelper.m in Sources */,
 				1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */,
@@ -1861,7 +1870,6 @@
 				DBE9D95319BE97190068C1C3 /* main.m in Sources */,
 				DB24CA7119D2F1C800C307A8 /* DOUAudioLPCM.m in Sources */,
 				DB24CA7819D2F1C800C307A8 /* DOUEAGLView.m in Sources */,
-				16B9745B20AED2FF00482FD2 /* ZenArtistHeaderRow.m in Sources */,
 				1672E4D52090575D00916B3D /* NSObject+RFFilter.m in Sources */,
 				1672E4BD20901FF600916B3D /* DGActivityIndicatorFiveDotsAnimation.m in Sources */,
 				1672E4AD20901FF600916B3D /* DGActivityIndicatorBallScaleRippleAnimation.m in Sources */,

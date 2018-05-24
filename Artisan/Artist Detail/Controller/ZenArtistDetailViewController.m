@@ -37,6 +37,7 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make_edges_equalTo(self.view);
     }];
+    
     [self.headerContentView reloadData:self.model];
     [self.tableView reloadData];
 }

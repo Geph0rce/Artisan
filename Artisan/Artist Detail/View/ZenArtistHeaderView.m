@@ -74,34 +74,14 @@
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    self.backgroundImageView.frame = self.bounds;
-    self.blurView.frame = self.bounds;
-    
-    self.avatarImageView.left = 20.0;
-    self.avatarImageView.bottom = self.height - 20.0;
-    
-    self.styleLabel.left = self.avatarImageView.right + 20.0;
-    self.styleLabel.centerY = self.avatarImageView.centerY;
-
-    self.nameLabel.left = self.styleLabel.left;
-    self.nameLabel.bottom = self.styleLabel.top - 8.0;
-    
-    self.fansLabel.left = self.styleLabel.left;
-    self.fansLabel.top = self.styleLabel.bottom + 8.0;
-}
 
 - (void)reloadData:(ZenTopArtistModel *)model {
     self.model = model;
     [self.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:self.model.picture] placeholderImage:[UIImage imageNamed:@"cover"]];
     [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:self.model.picture] placeholderImage:[UIImage imageNamed:@"cover"]];
     self.nameLabel.text = self.model.name;
-    [self.nameLabel sizeToFit];
     self.styleLabel.attributedText = [self styleAttributedString];
-    [self.styleLabel sizeToFit];
     self.fansLabel.attributedText = [self fansAttributedString];
-    [self.fansLabel sizeToFit];
 }
 
 - (NSAttributedString *)styleAttributedString {

@@ -35,8 +35,8 @@
     [self.coverImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make_top_equalTo(16.0);
         make_left_equalTo(16.0);
-        make_width_equalTo(50.0);
-        make_height_equalTo(50.0);
+        make_width_equalTo(60.0);
+        make_height_equalTo(60.0);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -65,7 +65,7 @@
 - (UIImageView *)coverImageView {
     if (!_coverImageView) {
         _coverImageView = [[UIImageView alloc] init];
-        _coverImageView.layer.cornerRadius = 25.0;
+        _coverImageView.layer.cornerRadius = 30.0;
         _coverImageView.layer.masksToBounds = YES;
         _coverImageView.contentMode = UIViewContentModeScaleAspectFill;
     }

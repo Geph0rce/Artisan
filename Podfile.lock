@@ -41,7 +41,7 @@ PODS:
     - RFFoundation/Preprocessors (= 0.1.2)
   - RFFoundation/Categories (0.1.2)
   - RFFoundation/Preprocessors (0.1.2)
-  - RFTypeface (0.1.3):
+  - RFTypeface (0.1.4):
     - RFFoundation
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
@@ -64,7 +64,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RFCommonUI: 78d86d68ed1cdb3646c9e00645da70eecc891e10
   RFFoundation: b30559f8d2320a12fdba81fce010f05defd65543
-  RFTypeface: bbf1bcc804bad86f4d88f209417d6979d25c79c8
+  RFTypeface: c7a9f5a5548d5a06d5b30f329ab892b48ae8faa0
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 

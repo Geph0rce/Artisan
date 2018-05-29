@@ -58,16 +58,14 @@
 #pragma mark - ZenTabBarDelegate
 
 - (void)tabBar:(ZenTabBar *)tabBar didSelectItem:(ZenTabBarItem *)item {
-    [self.currentViewController viewWillDisappear:NO];
     [self.currentViewController.view removeFromSuperview];
-    [self.currentViewController viewDidDisappear:NO];
+    [self.currentViewController removeFromParentViewController];
     
     self.currentViewController = item.controller;
-    [self.currentViewController viewWillAppear:NO];
+    [self addChildViewController:self.currentViewController];
     [self.view addSubview:self.currentViewController.view];
     self.currentViewController.view.width = self.view.width;
     self.currentViewController.view.height = self.view.height - self.zenTabBar.height;
-    [self.currentViewController viewDidDisappear:NO];
 }
 
 #pragma mark - Getters

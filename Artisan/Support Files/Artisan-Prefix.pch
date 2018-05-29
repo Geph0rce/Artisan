@@ -31,3 +31,4 @@
 #endif
 
 #define RFStatusBarHeight (IS_IPHONEX ? 44.0 : 20.0)
+#define RFNavigationBarHeight 44.0

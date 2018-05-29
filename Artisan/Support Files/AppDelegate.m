@@ -18,6 +18,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) UINavigationController *navigationController;
+
 @end
 
 @implementation AppDelegate
@@ -26,17 +28,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    
-//    UIViewController *controller = [[ZenTopSongsViewController alloc] init];
-//    DDMenuController *menuController = [[DDMenuController alloc] initWithRootViewController:controller];
-//    ZenBoardsController *leftController = [ZenBoardsController sharedInstance];
-//    menuController.leftViewController = leftController;
-//    self.menuController = menuController;
-    
     ZenTabBarViewController *tabBarViewController = [[ZenTabBarViewController alloc] init];
     [tabBarViewController setViewControllers:@[[ZenTopSongsViewController new], [ZenTopArtistViewController new]]];
     tabBarViewController.selectedIndex = 0;
-    self.window.rootViewController = tabBarViewController;
+    [self.navigationController setViewControllers:@[ tabBarViewController ]];
+    self.window.rootViewController = self.navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [self configCustomTopBarAppearance];
@@ -45,7 +41,7 @@
 }
 
 - (void)configCustomTopBarAppearance {
-    [[RFCustomTopBar appearance] setTitleLabelTextColor:[UIColor blackColor]];
+    [[RFCustomTopBar appearance] setTitleLabelTextColor:[UIColor zenBlackColor]];
     [[RFCustomTopBar appearance] setTitleLabelTextFont:kAppFont(17.0)];
     [[RFCustomTopBar appearance] setBackgroundColor:[UIColor whiteColor]];
     [[RFCustomTopBar appearance] setBottomSeparateLineColor:[UIColor zenLineColor]];
@@ -82,6 +78,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark - Getters
+
+- (UINavigationController *)navigationController {
+    if (!_navigationController) {
+        _navigationController = [[UINavigationController alloc] init];
+    }
+    return _navigationController;
 }
 
 @end

@@ -55,6 +55,13 @@
 		1672E4F12091A97800916B3D /* Pe-icon-7-stroke.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */; };
 		1672E4F22091A97800916B3D /* pe-icon-7-stroke.css in Resources */ = {isa = PBXBuildFile; fileRef = 1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */; };
 		1672E4F720945B9400916B3D /* ZenTableHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */; };
+		16B7839620BD6B83001552E4 /* font-awesome.css in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839520BD6B83001552E4 /* font-awesome.css */; };
+		16B7839D20BD6B8E001552E4 /* fontawesome-webfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839720BD6B8D001552E4 /* fontawesome-webfont.eot */; };
+		16B7839E20BD6B8E001552E4 /* fontawesome-webfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839820BD6B8D001552E4 /* fontawesome-webfont.woff */; };
+		16B7839F20BD6B8E001552E4 /* fontawesome-webfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839920BD6B8D001552E4 /* fontawesome-webfont.svg */; };
+		16B783A020BD6B8E001552E4 /* fontawesome-webfont.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839A20BD6B8E001552E4 /* fontawesome-webfont.woff2 */; };
+		16B783A120BD6B8E001552E4 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839B20BD6B8E001552E4 /* fontawesome-webfont.ttf */; };
+		16B783A220BD6B8E001552E4 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839C20BD6B8E001552E4 /* FontAwesome.otf */; };
 		16B9745820AED2D000482FD2 /* ZenArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */; };
 		16B9745B20AED2FF00482FD2 /* ZenArtistHeaderRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745A20AED2FE00482FD2 /* ZenArtistHeaderRow.m */; };
 		16B9745E20AED35700482FD2 /* ZenPlaylistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */; };
@@ -388,6 +395,14 @@
 		1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "pe-icon-7-stroke.css"; sourceTree = "<group>"; };
 		1672E4F520945B9400916B3D /* ZenTableHeaderRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenTableHeaderRow.h; sourceTree = "<group>"; };
 		1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenTableHeaderRow.m; sourceTree = "<group>"; };
+		16B7839120BD65C7001552E4 /* iconfont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iconfont.h; sourceTree = "<group>"; };
+		16B7839520BD6B83001552E4 /* font-awesome.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "font-awesome.css"; sourceTree = "<group>"; };
+		16B7839720BD6B8D001552E4 /* fontawesome-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.eot"; sourceTree = "<group>"; };
+		16B7839820BD6B8D001552E4 /* fontawesome-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.woff"; sourceTree = "<group>"; };
+		16B7839920BD6B8D001552E4 /* fontawesome-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fontawesome-webfont.svg"; sourceTree = "<group>"; };
+		16B7839A20BD6B8E001552E4 /* fontawesome-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.woff2"; sourceTree = "<group>"; };
+		16B7839B20BD6B8E001552E4 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		16B7839C20BD6B8E001552E4 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		16B9745620AED2D000482FD2 /* ZenArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistDetailViewController.h; sourceTree = "<group>"; };
 		16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistDetailViewController.m; sourceTree = "<group>"; };
 		16B9745920AED2FE00482FD2 /* ZenArtistHeaderRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenArtistHeaderRow.h; sourceTree = "<group>"; };
@@ -856,12 +871,8 @@
 		1672E4E72091A97800916B3D /* iconfonts */ = {
 			isa = PBXGroup;
 			children = (
-				1672E4E82091A97800916B3D /* Pe-icon-7-stroke.woff */,
-				1672E4E92091A97800916B3D /* Pe-icon-7-stroke.eot */,
-				1672E4EA2091A97800916B3D /* Pe-icon-7-stroke.ttf */,
-				1672E4EB2091A97800916B3D /* ZenIconFont.h */,
-				1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */,
-				1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */,
+				16B7839420BD6B5C001552E4 /* AwesomeFont */,
+				16B7839220BD6B3B001552E4 /* Pe_icon */,
 			);
 			path = iconfonts;
 			sourceTree = "<group>";
@@ -873,6 +884,34 @@
 				1672E4F620945B9400916B3D /* ZenTableHeaderRow.m */,
 			);
 			path = Row;
+			sourceTree = "<group>";
+		};
+		16B7839220BD6B3B001552E4 /* Pe_icon */ = {
+			isa = PBXGroup;
+			children = (
+				1672E4E82091A97800916B3D /* Pe-icon-7-stroke.woff */,
+				1672E4E92091A97800916B3D /* Pe-icon-7-stroke.eot */,
+				1672E4EA2091A97800916B3D /* Pe-icon-7-stroke.ttf */,
+				1672E4EB2091A97800916B3D /* ZenIconFont.h */,
+				1672E4EC2091A97800916B3D /* Pe-icon-7-stroke.svg */,
+				1672E4ED2091A97800916B3D /* pe-icon-7-stroke.css */,
+			);
+			path = Pe_icon;
+			sourceTree = "<group>";
+		};
+		16B7839420BD6B5C001552E4 /* AwesomeFont */ = {
+			isa = PBXGroup;
+			children = (
+				16B7839720BD6B8D001552E4 /* fontawesome-webfont.eot */,
+				16B7839920BD6B8D001552E4 /* fontawesome-webfont.svg */,
+				16B7839B20BD6B8E001552E4 /* fontawesome-webfont.ttf */,
+				16B7839820BD6B8D001552E4 /* fontawesome-webfont.woff */,
+				16B7839A20BD6B8E001552E4 /* fontawesome-webfont.woff2 */,
+				16B7839C20BD6B8E001552E4 /* FontAwesome.otf */,
+				16B7839520BD6B83001552E4 /* font-awesome.css */,
+				16B7839120BD65C7001552E4 /* iconfont.h */,
+			);
+			path = AwesomeFont;
 			sourceTree = "<group>";
 		};
 		16B9745220AED28500482FD2 /* Artist Detail */ = {
@@ -1563,6 +1602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE9DB4419BEC4720068C1C3 /* FZLanTingHei-R-GBK.TTF in Resources */,
+				16B783A120BD6B8E001552E4 /* fontawesome-webfont.ttf in Resources */,
 				DBE9DB8C19BEC4720068C1C3 /* list@2x.png in Resources */,
 				DBE9DBB119BEC4720068C1C3 /* pause.png in Resources */,
 				DBE9DC7319C04A1A0068C1C3 /* hot_songs@2x.png in Resources */,
@@ -1610,6 +1650,7 @@
 				DBE9D95219BE97190068C1C3 /* Images.xcassets in Resources */,
 				DBE9DBB719BEC4720068C1C3 /* play2@2x.png in Resources */,
 				DBE9DB6019BEC4720068C1C3 /* bottom_icon_back@2x.png in Resources */,
+				16B783A020BD6B8E001552E4 /* fontawesome-webfont.woff2 in Resources */,
 				DBE9DB7819BEC4720068C1C3 /* clean_more@2x.png in Resources */,
 				DBE9DB4719BEC4720068C1C3 /* account@2x.png in Resources */,
 				DBE9DBC719BEC4720068C1C3 /* rank_more.png in Resources */,
@@ -1625,6 +1666,7 @@
 				DBE9DB5219BEC4720068C1C3 /* back.png in Resources */,
 				DB5C0CE219E773D4008B43C8 /* time_selected@2x.png in Resources */,
 				DBE9DB4619BEC4720068C1C3 /* about_more@2x.png in Resources */,
+				16B7839E20BD6B8E001552E4 /* fontawesome-webfont.woff in Resources */,
 				DBE9DB7D19BEC4720068C1C3 /* cover_default.png in Resources */,
 				DBE9DBB819BEC4720068C1C3 /* play@2x.png in Resources */,
 				DBE9DB9719BEC4720068C1C3 /* menu_saved.png in Resources */,
@@ -1675,6 +1717,7 @@
 				DB5C0CED19E77735008B43C8 /* Artisan-timer.plist in Resources */,
 				DBE9DBAD19BEC4720068C1C3 /* no_message.png in Resources */,
 				DBE9DB8119BEC4720068C1C3 /* dot_border.png in Resources */,
+				16B783A220BD6B8E001552E4 /* FontAwesome.otf in Resources */,
 				DBE9DBCE19BEC4720068C1C3 /* settingcell_bg_selected@2x.png in Resources */,
 				DB5C0D1719E8CC47008B43C8 /* random@2x.png in Resources */,
 				DBE9DBA619BEC4720068C1C3 /* more_reply@2x.png in Resources */,
@@ -1709,6 +1752,7 @@
 				DBE9DB9519BEC4720068C1C3 /* menu_right_arrow.png in Resources */,
 				DBE9DB7B19BEC4720068C1C3 /* cover.png in Resources */,
 				DBE9DB6F19BEC4720068C1C3 /* bottom_icon_share.png in Resources */,
+				16B7839620BD6B83001552E4 /* font-awesome.css in Resources */,
 				DBE9DBAF19BEC4720068C1C3 /* notifications@2x.png in Resources */,
 				DB9800A619D7B32500BB36B5 /* offline_btn@2x.png in Resources */,
 				DBE9DB4E19BEC4720068C1C3 /* arrow_down@2x.png in Resources */,
@@ -1719,6 +1763,7 @@
 				DBE9DBBF19BEC4720068C1C3 /* prev.png in Resources */,
 				DBE9DB6619BEC4720068C1C3 /* bottom_icon_next@2x.png in Resources */,
 				DBE9DB4D19BEC4720068C1C3 /* arrow_down.png in Resources */,
+				16B7839F20BD6B8E001552E4 /* fontawesome-webfont.svg in Resources */,
 				DBE9DB5C19BEC4720068C1C3 /* blackArrow.png in Resources */,
 				DB5C0D1A19E8CC47008B43C8 /* sequential.png in Resources */,
 				DBE9DC7619C04A1A0068C1C3 /* offline@2x.png in Resources */,
@@ -1734,6 +1779,7 @@
 				DBE9DB4519BEC4720068C1C3 /* about_more.png in Resources */,
 				DBE9DB8B19BEC4720068C1C3 /* list2@2x.png in Resources */,
 				DBE9DB3F19BEC4720068C1C3 /* board_1.plist in Resources */,
+				16B7839D20BD6B8E001552E4 /* fontawesome-webfont.eot in Resources */,
 				DBE9DB7019BEC4720068C1C3 /* bottom_icon_share@2x.png in Resources */,
 				DBE9DB7519BEC4720068C1C3 /* btn_signup.png in Resources */,
 				DB5C0D1B19E8CC47008B43C8 /* sequential@2x.png in Resources */,

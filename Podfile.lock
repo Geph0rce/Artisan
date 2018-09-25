@@ -41,11 +41,11 @@ PODS:
     - RFFoundation/Preprocessors (= 0.1.2)
   - RFFoundation/Categories (0.1.2)
   - RFFoundation/Preprocessors (0.1.2)
-  - RFTypeface (0.1.5):
+  - RFTypeface (0.2.1):
     - RFFoundation
-  - SDWebImage (4.4.0):
-    - SDWebImage/Core (= 4.4.0)
-  - SDWebImage/Core (4.4.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -64,10 +64,10 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RFCommonUI: 78d86d68ed1cdb3646c9e00645da70eecc891e10
   RFFoundation: b30559f8d2320a12fdba81fce010f05defd65543
-  RFTypeface: b30c52548ab57a4d774539c9083da79105f7af50
-  SDWebImage: b534502786e43dde36dfcaee89356fe6df30e203
+  RFTypeface: 99ebf839ac59bbe6bf94fa7a8a69c3fd6a0a487e
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 954996a0ac2fe2c04096a6c46d3949abf3d5c792
+PODFILE CHECKSUM: 59c7b4523ab62ba1aa4a571cb98b0c870c5c8300
 
 COCOAPODS: 1.3.1

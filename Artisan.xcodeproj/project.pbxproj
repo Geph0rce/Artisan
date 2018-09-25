@@ -64,6 +64,7 @@
 		16B783A220BD6B8E001552E4 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16B7839C20BD6B8E001552E4 /* FontAwesome.otf */; };
 		16B9745820AED2D000482FD2 /* ZenArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */; };
 		16B9745E20AED35700482FD2 /* ZenPlaylistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */; };
+		16E95059215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E95057215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351B20873C31007C4163 /* NSString+RFNetworking.m */; };
 		16F5352420873C32007C4163 /* UIViewController+CRFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5351C20873C31007C4163 /* UIViewController+CRFNetworking.m */; };
 		16F5352520873C32007C4163 /* RFNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F5352020873C32007C4163 /* RFNetworkTask.m */; };
@@ -407,6 +408,8 @@
 		16B9745720AED2D000482FD2 /* ZenArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenArtistDetailViewController.m; sourceTree = "<group>"; };
 		16B9745C20AED35700482FD2 /* ZenPlaylistModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenPlaylistModel.h; sourceTree = "<group>"; };
 		16B9745D20AED35700482FD2 /* ZenPlaylistModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZenPlaylistModel.m; sourceTree = "<group>"; };
+		16E95057215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		16E95058215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		16F5351920873C31007C4163 /* RFNetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkTask.h; sourceTree = "<group>"; };
 		16F5351A20873C31007C4163 /* RFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFNetworkManager.h; sourceTree = "<group>"; };
 		16F5351B20873C31007C4163 /* NSString+RFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RFNetworking.m"; sourceTree = "<group>"; };
@@ -1033,6 +1036,8 @@
 		16F535372089E396007C4163 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				16E95058215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.h */,
+				16E95057215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.m */,
 				16F535382089E3A9007C4163 /* ZenBaseViewController.h */,
 				16F535392089E3A9007C4163 /* ZenBaseViewController.m */,
 			);
@@ -1923,6 +1928,7 @@
 				16F5352620873C32007C4163 /* RFNetworkManager.m in Sources */,
 				1672E4BC20901FF600916B3D /* DGActivityIndicatorBallScaleAnimation.m in Sources */,
 				DBE9DA5819BE97190068C1C3 /* UIColor+MLPFlatColors.m in Sources */,
+				16E95059215A3374007BA346 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				16F5352320873C32007C4163 /* NSString+RFNetworking.m in Sources */,
 				DBE9DBF019BED02A0068C1C3 /* DoubanArtist.m in Sources */,
 				1672E4BA20901FF600916B3D /* DGActivityIndicatorBallPulseAnimation.m in Sources */,

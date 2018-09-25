@@ -16,5 +16,4 @@ target 'Artisan' do
   pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'FLEX', '~> 2.0', :configurations => ['Debug']
-
 end

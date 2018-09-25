@@ -7,6 +7,7 @@
 //
 
 #import "ZenBaseViewController.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "DGActivityIndicatorView.h"
 
 @interface ZenBaseViewController ()
@@ -25,6 +26,8 @@
     [super viewDidLoad];
     [self.view addSubview:self.indicatorView];
     [self setupNetworkErrorView];
+    self.fd_prefersNavigationBarHidden = YES;
+    self.navigationController.fd_viewControllerBasedNavigationBarAppearanceEnabled = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -10,6 +10,7 @@
 
 @interface ZenArtistHeaderView ()
 
+@property (nonatomic, strong) UIControl *control;
 @property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UIVisualEffectView *blurView;
 @property (nonatomic, strong) UIImageView *avatarImageView;
@@ -29,6 +30,7 @@
     if (self) {
         [self addSubview:self.backgroundImageView];
         [self addSubview:self.blurView];
+        [self addSubview:self.control];
         [self addSubview:self.avatarImageView];
         [self addSubview:self.nameLabel];
         [self addSubview:self.styleLabel];
@@ -48,6 +50,10 @@
             make_width_equalTo(60.0);
             make_bottom_equalTo(-20.0);
             make_height_equalTo(60.0);
+        }];
+        
+        [self.control mas_makeConstraints:^(MASConstraintMaker *make) {
+            make_edges_equalTo(self.avatarImageView);
         }];
         
         [self.styleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -108,7 +114,17 @@
     return [[NSAttributedString alloc] init];
 }
 
+- (void)didSelectAvatarAction:(id)sender {
+    !self.didSelectAvatar ?: self.didSelectAvatar();
+}
 
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *view = [super hitTest:point withEvent:event];
+    if (view == self) {
+        return nil;
+    }
+    return view;
+}
 
 #pragma mark - Getters
 
@@ -125,6 +141,7 @@
     if (!_blurView) {
         UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleRegular];
         _blurView = [[UIVisualEffectView alloc] initWithEffect:effect];
+        _blurView.userInteractionEnabled = NO;
     }
     return _blurView;
 }
@@ -172,6 +189,14 @@
         _bottomLineView.backgroundColor = [UIColor zenLineColor];
     }
     return _bottomLineView;
+}
+
+- (UIControl *)control {
+    if (!_control) {
+        _control = [[UIControl alloc] init];
+        [_control addTarget:self action:@selector(didSelectAvatarAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _control;
 }
 
 @end

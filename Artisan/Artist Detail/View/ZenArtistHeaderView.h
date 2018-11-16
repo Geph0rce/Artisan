@@ -11,6 +11,9 @@
 
 @interface ZenArtistHeaderView : UIView
 
+@property (nonatomic, copy) dispatch_block_t didSelectAvatar;
+
 - (void)reloadData:(ZenTopArtistModel *)model;
+
 
 @end

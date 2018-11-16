@@ -7,7 +7,9 @@
 //
 
 #import "ZenArtistHeaderView.h"
+#import "ZenTopArtistRow.h"
 #import "ZenArtistDetailViewController.h"
+
 
 #define kZenArtistHeaderViewHeight (102.0 + RFStatusBarHeight + RFNavigationBarHeight)
 
@@ -24,22 +26,42 @@
 @implementation ZenArtistDetailViewController
 
 - (void)dealloc {
-    DLog(@"dealloc")
+    DLog(@"dealloc");
+    [self.tableView removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     self.title = self.model.name;
+    [self setCustomNavigationBarHidden:YES animated:NO];
     FORBIDDEN_ADJUST_SCROLLVIEW_INSETS(self, self.tableView);
     [self setLeftTopBarItems:@[self.backBarButtonItem]];
     [self.view addSubview:self.tableView];
+    [self.view addSubview:self.headerContentView];
+    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make_edges_equalTo(self.view);
     }];
     
+    [self.headerContentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make_top_equalTo(0.0);
+        make_left_equalTo(self.view);
+        make_right_equalTo(self.view);
+        make_height_equalTo(kZenArtistHeaderViewHeight);
+    }];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(kZenArtistHeaderViewHeight, 0.0, 0.0, 0.0);
     [self.headerContentView reloadData:self.model];
+    
+    [self.data enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        ZenTopArtistRow *row = [[ZenTopArtistRow alloc] init];
+        row.model = obj;
+        [self.section addRow:row];
+    }];
     [self.tableView reloadData];
+//    [self.tableView layoutIfNeeded];
+    [self.tableView setContentOffset:CGPointMake(0.0, -kZenArtistHeaderViewHeight)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +76,7 @@
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    return;
     CGFloat maxOpaqueOffset = 102.0;
     if (scrollView == self.tableView) {
         let yOffset = self.tableView.contentOffset.y;
@@ -95,6 +118,24 @@
     return YES;
 }
 
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([object isEqual:self.tableView]) {
+        CGPoint offset = self.tableView.contentOffset;
+        DLog(@"offset: %@", @(offset.y));
+        CGFloat top = -(offset.y + kZenArtistHeaderViewHeight);
+        top = MAX(top, -64.0);
+        top = MIN(top, 0.0);
+        [self.headerContentView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make_top_equalTo(top);
+        }];
+        CGFloat insetTop = MIN(kZenArtistHeaderViewHeight, -offset.y);
+       // self.tableView.contentInset = UIEdgeInsetsMake(insetTop, 0.0, 0.0, 0.0);
+
+        [self.headerContentView layoutIfNeeded];
+    }
+}
+
 #pragma mark - Getters
 
 - (RFTableView *)tableView {
@@ -106,7 +147,7 @@
         _tableView.estimatedSectionHeaderHeight = 0.0;
         _tableView.estimatedSectionFooterHeight = 0.0;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.tableHeaderView = self.headerView;
+        [_tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     }
     return _tableView;
 }
@@ -130,6 +171,9 @@
 - (ZenArtistHeaderView *)headerContentView {
     if (!_headerContentView) {
         _headerContentView = [[ZenArtistHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, SCREEN_WIDTH, kZenArtistHeaderViewHeight)];
+        _headerContentView.didSelectAvatar = ^{
+            DLog(@"ava avatar!!!");
+        };
     }
     return _headerContentView;
 }

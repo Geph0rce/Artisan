@@ -15,6 +15,7 @@
 @property (nonatomic, strong) RFTableView *tableView;
 @property (nonatomic, strong) RFTableDataSource *dataSource;
 @property (nonatomic, strong) RFTableSection *section;
+@property (nonatomic, strong) NSArray *list;
 
 @end
 
@@ -64,6 +65,7 @@
         ZenTableHeaderRow *row = [[ZenTableHeaderRow alloc] init];
         row.title = @"热门音乐人";
         [self.section addRow:row];
+        self.list = response.artists;
         [response.artists enumerateObjectsUsingBlock:^(ZenTopArtistModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             ZenTopArtistRow *row = [[ZenTopArtistRow alloc] init];
             row.model = obj;
@@ -72,6 +74,7 @@
                 strongify(self, row);
                 ZenArtistDetailViewController *controller = [[ZenArtistDetailViewController alloc] init];;
                 controller.model = row.model;
+                controller.data = self.list;
                 [self.navigationController pushViewController:controller animated:YES];
             };
             [self.section addRow:row];

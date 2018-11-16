@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) ZenTopArtistModel *model;
 
+@property (nonatomic, strong) NSArray *data;
+
 @end

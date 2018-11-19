@@ -51,7 +51,6 @@
         make_height_equalTo(kZenArtistHeaderViewHeight);
     }];
     
-    self.tableView.contentInset = UIEdgeInsetsMake(kZenArtistHeaderViewHeight, 0.0, 0.0, 0.0);
     [self.headerContentView reloadData:self.model];
     
     [self.data enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -147,6 +146,8 @@
         _tableView.estimatedSectionHeaderHeight = 0.0;
         _tableView.estimatedSectionFooterHeight = 0.0;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.contentInset = UIEdgeInsetsMake(kZenArtistHeaderViewHeight, 0.0, 0.0, 0.0);
+        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(kZenArtistHeaderViewHeight - 20.0, 0.0, 0.0, 0.0);
         [_tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     }
     return _tableView;
